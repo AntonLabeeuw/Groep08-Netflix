@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidenav {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: #211F1F;
+}
+
+.sidenav a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #000;
+}
+
+.navbar-brand {
+  color: #E50914 !important;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+/*# sourceMappingURL=screen.css.map */

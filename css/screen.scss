@@ -1,0 +1,38 @@
+$colorW : #fff;
+$colorB : #000;
+$colorSidebar :#211F1F;
+$colorRed1: #E50914;
+$colorOrange: #FFA00A;
+$colorBlue1: #0D3C73;
+$colorBlue2: #549494;
+$colorGreen: #55BC7D;
+$colorGrey : #707070;
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.sidenav {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: $colorSidebar;
+}
+.sidenav a {
+  color: $colorW;
+  text-decoration: none;
+  display: block;
+}
+.navbar{
+  width: 100%;
+  background-color: $colorB;
+}
+.navbar-brand{
+  color: $colorRed1 !important;
+}
+.content {
+  flex: 1 0 auto;
+}
