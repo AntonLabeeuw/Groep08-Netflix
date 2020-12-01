@@ -1,5 +1,7 @@
-html, body {
+html,
+body {
   height: 100%;
+  background-color: #000;
 }
 
 body {
@@ -38,5 +40,73 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  background-color: #000 !important;
+  color: #fff;
+}
+
+.footer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.form-control {
+  border-radius: 0 !important;
+}
+
+.form-control__red::-webkit-input-placeholder {
+  color: #fff !important;
+  background-color: #E50914 !important;
+  border: none !important;
+}
+
+.form-control__red:-ms-input-placeholder {
+  color: #fff !important;
+  background-color: #E50914 !important;
+  border: none !important;
+}
+
+.form-control__red::-ms-input-placeholder {
+  color: #fff !important;
+  background-color: #E50914 !important;
+  border: none !important;
+}
+
+.form-control__red::placeholder {
+  color: #fff !important;
+  background-color: #E50914 !important;
+  border: none !important;
+}
+
+.input-group {
+  height: 4rem;
+}
+
+.input-group input {
+  height: 4rem !important;
+}
+
+.input-group-prepend,
+.input-group-apend,
+.input-group-text {
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.input-group-prepend span,
+.input-group-apend span,
+.input-group-text span {
+  background-color: #E50914;
+  border: none;
+}
+
+.br input {
+  border: none;
+  border-right: 0.15rem solid #E50914;
+}
+
+.bl input {
+  border: none;
+  border-left: 0.15rem solid #fff;
 }
 /*# sourceMappingURL=screen.css.map */
