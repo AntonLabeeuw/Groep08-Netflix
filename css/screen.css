@@ -18,7 +18,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: 1;
-  background-color: #211F1F;
+  background-color: #211f1f;
 }
 
 .sidenav a {
@@ -33,7 +33,7 @@ body {
 }
 
 .navbar-brand {
-  color: #E50914 !important;
+  color: #e50914 !important;
 }
 
 .content {
@@ -56,25 +56,25 @@ body {
 
 .form-control__red::-webkit-input-placeholder {
   color: #fff !important;
-  background-color: #E50914 !important;
+  background-color: #e50914 !important;
   border: none !important;
 }
 
 .form-control__red:-ms-input-placeholder {
   color: #fff !important;
-  background-color: #E50914 !important;
+  background-color: #e50914 !important;
   border: none !important;
 }
 
 .form-control__red::-ms-input-placeholder {
   color: #fff !important;
-  background-color: #E50914 !important;
+  background-color: #e50914 !important;
   border: none !important;
 }
 
 .form-control__red::placeholder {
   color: #fff !important;
-  background-color: #E50914 !important;
+  background-color: #e50914 !important;
   border: none !important;
 }
 
@@ -96,13 +96,13 @@ body {
 .input-group-prepend span,
 .input-group-apend span,
 .input-group-text span {
-  background-color: #E50914;
+  background-color: #e50914;
   border: none;
 }
 
 .br input {
   border: none;
-  border-right: 0.15rem solid #E50914;
+  border-right: 0.15rem solid #e50914;
 }
 
 .bl input {

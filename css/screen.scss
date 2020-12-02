@@ -1,87 +1,89 @@
 $colorW: #fff;
 $colorB: #000;
-$colorSidebar :#211F1F;
-$colorRed1: #E50914;
-$colorOrange: #FFA00A;
-$colorBlue1: #0D3C73;
+$colorSidebar: #211f1f;
+$colorRed1: #e50914;
+$colorOrange: #ffa00a;
+$colorBlue1: #0d3c73;
 $colorBlue2: #549494;
-$colorGreen: #55BC7D;
+$colorGreen: #55bc7d;
 $colorGrey: #707070;
 html,
 body {
-    height: 100%;
-    background-color: $colorB;
+  height: 100%;
+  background-color: $colorB;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidenav {
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    background-color: $colorSidebar;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: $colorSidebar;
 }
 
 .sidenav a {
-    color: $colorW;
-    text-decoration: none;
-    display: block;
+  color: $colorW;
+  text-decoration: none;
+  display: block;
 }
 
 .navbar {
-    width: 100%;
-    background-color: $colorB;
+  width: 100%;
+  background-color: $colorB;
 }
 
 .navbar-brand {
-    color: $colorRed1 !important;
+  color: $colorRed1 !important;
 }
 
 .content {
-    flex: 1 0 auto;
-    background-color: $colorB !important;
-    color: $colorW;
+  flex: 1 0 auto;
+  background-color: $colorB !important;
+  color: $colorW;
 }
 
 .footer {
-    flex: 1 1;
+  flex: 1 1;
 }
 
 .form-control {
-    border-radius: 0 !important;
-    &__red::placeholder {
-        color: $colorW !important;
-        background-color: $colorRed1 !important;
-        border: none !important;
-    }
+  border-radius: 0 !important;
+  &__red::placeholder {
+    color: $colorW !important;
+    background-color: $colorRed1 !important;
+    border: none !important;
+  }
 }
-.input-group{
-    height: 4rem;
-    input{
-        height: 4rem !important;
-    }
+.input-group {
+  height: 4rem;
+  input {
+    height: 4rem !important;
+  }
 }
 .input-group-prepend,
 .input-group-apend,
 .input-group-text {
-    span {
-        
-        background-color: $colorRed1;
-        border: none;
-    }
-    border: none !important;
-    border-radius: 0 !important;
+  span {
+    background-color: $colorRed1;
+    border: none;
+  }
+  border: none !important;
+  border-radius: 0 !important;
 }
 
 .br input {
-    border: none;
-    border-right: 0.15rem solid $colorRed1;
+  border: none;
+  border-right: 0.15rem solid $colorRed1;
 }
 
 .bl input {
-    border: none;
-    border-left: 0.15rem solid $colorW;
+  border: none;
+  border-left: 0.15rem solid $colorW;
+}
+@media (max-width: 767px) {
+    
 }
