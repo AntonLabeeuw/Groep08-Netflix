@@ -7,107 +7,13 @@ $colorBlue1: #0d3c73;
 $colorBlue2: #549494;
 $colorGreen: #55bc7d;
 $colorGrey: #707070;
-html,
-body {
-  height: 100%;
-  width: auto;
-  background-color: $colorB;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.sidenav {
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  background-color: $colorSidebar;
-}
-
-.sidenav a {
-  color: $colorW;
-  text-decoration: none;
-  display: block;
-}
-
-.navbar {
-  width: 100%;
-  background-color: $colorB;
-}
-
-.navbar-brand {
-  color: $colorRed1 !important;
-}
-
-.content {
-  flex: 1 0 auto;
-  background-color: $colorB !important;
-  color: $colorW;
-}
-
-.footer {
-  flex: 1 1;
-}
-
-.form-control {
-  border-radius: 0 !important;
-  &__red::placeholder {
-    color: $colorW !important;
-    background-color: $colorRed1 !important;
-    border: none !important;
-  }
-}
-.input-group {
-  height: 4rem;
-  input {
-    height: 4rem !important;
-  }
-}
-.input-group-prepend,
-.input-group-apend,
-.input-group-text {
-  span {
-    background-color: $colorRed1;
-    border: none;
-  }
-  border: none !important;
-  border-radius: 0 !important;
-}
-
-.br input {
-  border: none;
-  border-right: 0.15rem solid $colorRed1;
-}
-
-.bl input {
-  border: none;
-  border-left: 0.15rem solid $colorW;
-}
-.film1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-          &__h1-recent {
-            color: white;
-            font-size: 38px;
-            font-weight: 800;
-          }
-}
 .film1 .dropdown {
   margin-left: 39px;
 }
 .series {
   margin-top: 77px;
   &__h2-series {
-    color: white;
+    color: $colorW;
     font-size: 28px;
     font-weight: 800;
   }
@@ -119,13 +25,13 @@ body {
     width: 100%;
     margin-right: -100%;
     margin-left: 10px;
-    border-top: 1px solid red;
+    border-top: 1px solid $colorRed1;
   }
 }
 .movies {
   margin-top: 77px;
   &__h2-movies {
-    color: white;
+    color: $colorW;
     font-size: 28px;
     font-weight: 800;
   }
@@ -137,7 +43,7 @@ body {
     width: 100%;
     margin-right: -100%;
     margin-left: 10px;
-    border-top: 1px solid red;
+    border-top: 1px solid $colorRed1;
   }
 }
 .series-list {
@@ -158,14 +64,14 @@ body {
     margin-left: 36px;
   }
   &__pijl {
-    color: #E50914;
+    color: $colorRed1;
     font-size: 42px;
     vertical-align: middle;
     margin: auto;
     margin-left: 150px;
   }
   &__plus {
-    color: #E50914;
+    color: $colorRed1;
     font-size: 42px;
     vertical-align: middle;
     margin: auto;
@@ -193,7 +99,7 @@ body {
       margin-left: 36px;
     }
     &__pijl {
-      color: #E50914;
+      color: $colorRed1;
       font-size: 80px;
       vertical-align: middle;
       margin: auto;
@@ -201,7 +107,7 @@ body {
     }
     
     &__plus {
-      color: #E50914;
+      color: $colorRed1;
       font-size: 42px;
       vertical-align: middle;
       margin: auto;
@@ -211,6 +117,4 @@ body {
       bottom: 44.5%;
     }
 }
-@media (max-width: 767px) {
-    
-}
+

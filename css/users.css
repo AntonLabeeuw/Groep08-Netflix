@@ -1,0 +1,60 @@
+.form-control {
+  border-radius: 0 !important;
+}
+
+.form-control__red::-webkit-input-placeholder {
+  color: #fff !important;
+  background-color: #e50914 !important;
+  border: none !important;
+}
+
+.form-control__red:-ms-input-placeholder {
+  color: #fff !important;
+  background-color: #e50914 !important;
+  border: none !important;
+}
+
+.form-control__red::-ms-input-placeholder {
+  color: #fff !important;
+  background-color: #e50914 !important;
+  border: none !important;
+}
+
+.form-control__red::placeholder {
+  color: #fff !important;
+  background-color: #e50914 !important;
+  border: none !important;
+}
+
+.input-group {
+  height: 4rem;
+}
+
+.input-group input {
+  height: 4rem !important;
+}
+
+.input-group-prepend,
+.input-group-apend,
+.input-group-text {
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.input-group-prepend span,
+.input-group-apend span,
+.input-group-text span {
+  background-color: #e50914;
+  border: none;
+}
+
+.br input {
+  border: none;
+  border-right: 0.15rem solid #e50914;
+}
+
+.bl input {
+  border: none;
+  border-left: 0.15rem solid #fff;
+}
+/*# sourceMappingURL=users.css.map */

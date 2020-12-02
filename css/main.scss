@@ -1,0 +1,62 @@
+$colorW: #fff;
+$colorB: #000;
+$colorSidebar: #211f1f;
+$colorRed1: #e50914;
+$colorOrange: #ffa00a;
+$colorBlue1: #0d3c73;
+$colorBlue2: #549494;
+$colorGreen: #55bc7d;
+$colorGrey: #707070;
+html,
+body {
+  height: 100%;
+  width: auto;
+  background-color: $colorB;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sidenav {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: $colorSidebar;
+}
+
+.sidenav a {
+  color: $colorW;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar {
+  width: 100%;
+  background-color: $colorB;
+}
+
+.navbar-brand {
+  color: $colorRed1 !important;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  background-color: $colorB !important;
+  color: $colorW;
+}
+
+.footer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
