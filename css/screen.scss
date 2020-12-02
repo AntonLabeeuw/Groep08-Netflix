@@ -1,3 +1,19 @@
+
+@import 'settings';
+@import 'tools';
+
+@import "generic.normalize";
+@import "../bootstrap-4.5.2/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Playfair+Display:wght@400;700;900&family=Poppins:wght@700&display=swap');
+
+@import 'elements';
+
+@import 'objects';
+
+@import 'components.content';
+
+
+
 $colorW: #fff;
 $colorB: #000;
 $colorSidebar: #211f1f;
