@@ -1,0 +1,121 @@
+.film1{
+  &__h1-recent{
+    color: white;
+    font-size: 38px;
+    font-weight: 800;
+  }
+  display: flex;
+  flex-direction: row;
+  .dropdown{
+    margin-left: 39px;
+  }
+  //(scss)content en override is hier gebruikt geweest voor recent e filteritem
+}
+.series{
+  margin-top: 77px;
+  &__h2-series{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    &::after{
+      content:"";
+      display: inline-block;
+      height: 0.5em;
+      vertical-align: bottom;
+      width: 100%;
+      margin-right: -100%;
+      margin-left: 10px;
+      border-top: 1px solid red;
+    }
+  }
+}
+.movies{
+  margin-top: 77px;
+  &__h2-movies{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    &::after{
+      content:"";
+      display: inline-block;
+      height: 0.5em;
+      vertical-align: bottom;
+      width: 100%;
+      margin-right: -100%;
+      margin-left: 10px;
+      border-top: 1px solid red;
+    }
+  }
+}
+.series-list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  position: relative;
+  @include media-breakpoint-down(md){
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    &__2 , &__3 , &__4, &__5{
+      margin-left: 0px !important;
+    }
+  }
+  &__2 , &__3 , &__4, &__5{
+    margin-left: 36px;
+  }
+  &__1{
+    margin-left: 0;
+  }
+  &__pijl{
+    color: #E50914;
+    font-size: 42px;
+    vertical-align: middle; 
+    margin: auto; 
+    margin-left: 150px;
+  }
+  &__plus{
+    color: #E50914;
+    font-size: 42px;
+    vertical-align: middle; 
+    margin: auto; 
+    position: absolute;
+    top: 44.5%;
+    margin-left: -5%;
+    bottom: 44.5%;
+  }
+}
+.movies-list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  position: relative;
+  @include media-breakpoint-down(md){
+    display: flex;
+    flex-direction: column;
+  }
+  &__2 , &__3 , &__4, &__5{
+    margin-left: 36px;
+  }
+  &__1{
+    margin-left: 0;
+  }
+  &__pijl{
+    color: #E50914;
+    font-size: 80px;
+    vertical-align: middle; 
+    margin: auto; 
+    margin-left: 150px;
+  }
+  &__plus{
+    color: #E50914;
+    font-size: 42px;
+    vertical-align: middle; 
+    margin: auto; 
+    position: absolute;
+    top: 44.5%;
+    margin-left: -5%;
+    bottom: 44.5%;
+  }
+
+}
