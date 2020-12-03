@@ -28,6 +28,7 @@ $colorGrey: #707070;
 .input-group-prepend,
 .input-group-apend,
 .input-group-text {
+  cursor: pointer;
   span {
     background-color: $colorRed1;
     border: none;
@@ -45,3 +46,17 @@ $colorGrey: #707070;
   border: none;
   border-left: 0.15rem solid $colorW;
 }
+.btn{
+  color: $colorB;
+  &btn__white{
+    background-color: $colorW !important;
+  }
+}
+table>thead>tr>th{
+  border:none !important;
+}
+table>tbody,thead>tr>th,td:not(:nth-last-of-type(1)){
+  width: 13.8888888% !important;
+  text-align: center;
+}
+
