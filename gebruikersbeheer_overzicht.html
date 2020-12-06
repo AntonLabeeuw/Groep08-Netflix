@@ -9,7 +9,8 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <script
-      src="https://kit.fontawesome.com/8223252f3c.js " crossorigin="anonymous"
+      src="https://kit.fontawesome.com/8223252f3c.js "
+      crossorigin="anonymous"
     ></script>
     <bootstrap>
       <link
@@ -17,14 +18,21 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         crossorigin="anonymous"
       />
-      <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"
       ></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css"
         crossorigin="anonymous"
       ></script>
     </bootstrap>
@@ -32,68 +40,70 @@
   </head>
 
   <body>
-    <!--read users in from json -->
+    <!--read users in from json & put in table-->
     <script>
-      var users =[];
+      var users = [];
       var tbdoy = document.getElementById("tbody");
-      $.getJSON("JSON/users.json", function(jsonfile) {
+      $.getJSON("JSON/users.json", function (jsonfile) {
         allusers = jsonfile.users;
         allusers.forEach(GetUsers);
-        function GetUsers(item,index){
-          users[index]=item;
-          
+        function GetUsers(item, index) {
+          users[index] = item;
         }
         //console.log(users[0]);
         users.forEach(addToTable);
-        function addToTable(user,idex){
-          console.log(user);
+        function addToTable(user, idex) {
+          //console.log(user);
           var y = document.createElement("TR");
           y.setAttribute("id", "myTr" + user["id"]);
           document.getElementById("tbody").appendChild(y);
 
+          var checkboxtd = document.createElement("TD");
+          var checkbox = document.createElement("INPUT");
+          checkbox.type ="checkbox";
+          checkboxtd.appendChild(checkbox);
+          document.getElementById("myTr" + user["id"]).appendChild(checkboxtd);
+
           var idtd = document.createElement("TD");
-          idtd.innerHTML= user["id"];
-          document.getElementById("myTr"+ user["id"]).appendChild(idtd);
+          idtd.innerHTML = user["id"];
+          document.getElementById("myTr" + user["id"]).appendChild(idtd);
 
           var emailtd = document.createElement("TD");
-          emailtd.innerHTML= user["email"];
-          document.getElementById("myTr"+ user["id"]).appendChild(emailtd);
+          emailtd.innerHTML = user["email"];  
+          document.getElementById("myTr" + user["id"]).appendChild(emailtd);
 
           var typeabonneetd = document.createElement("TD");
-          typeabonneetd.innerHTML= user["typeabonnee"];
-          document.getElementById("myTr"+ user["id"]).appendChild(typeabonneetd);
+          typeabonneetd.innerHTML = user["typeabonnee"];
+          document
+            .getElementById("myTr" + user["id"])
+            .appendChild(typeabonneetd);
 
           var aangemaakttd = document.createElement("TD");
-          aangemaakttd.innerHTML= user["aangemaakt"];
-          document.getElementById("myTr"+ user["id"]).appendChild(aangemaakttd);
+          aangemaakttd.innerHTML = user["aangemaakt"];
+          document
+            .getElementById("myTr" + user["id"])
+            .appendChild(aangemaakttd);
 
           var laatstelogintd = document.createElement("TD");
-          laatstelogintd.innerHTML= user["laatstelogin"];
-          document.getElementById("myTr"+ user["id"]).appendChild(laatstelogintd);
+          laatstelogintd.innerHTML = user["laatstelogin"];
+          document
+            .getElementById("myTr" + user["id"])
+            .appendChild(laatstelogintd);
 
           var profielentd = document.createElement("TD");
-          profielentd.innerHTML= user["profielen"].length;
-          document.getElementById("myTr"+ user["id"]).appendChild(profielentd);
+          profielentd.innerHTML = user["profielen"].length;
+          document.getElementById("myTr" + user["id"]).appendChild(profielentd);
 
           var Icons = document.createElement("TD");
           var editIcon = document.createElement("I");
           editIcon.className = "fas fa-pen col-6";
           Icons.appendChild(editIcon);
-         var deleteIcon = document.createElement("I");
+          var deleteIcon = document.createElement("I");
           deleteIcon.className = "fas fa-times col-6";
           Icons.appendChild(deleteIcon);
-          document.getElementById("myTr"+ user["id"]).appendChild(Icons);
+          document.getElementById("myTr" + user["id"]).appendChild(Icons);
         }
       });
-    
-      /*var y = document.createElement("TR");
-          y.setAttribute("id", "myTr");
-          document.getElementById("tbody").appendChild(y);
-
-          var z = document.createElement("TD");
-          var t = document.createTextNode(item["id"]);
-          z.appendChild(t);
-          document.getElementById("myTr").appendChild(z);*/
     </script>
 
     <div_header class="row m-0">
@@ -116,7 +126,7 @@
 
       <!-- hier start je main body -->
       <main class="col-md content mt-5 p-5">
-        <div class="row content">
+        <div class="row content px-5">
           <div class="col-sm-4 text-center mb-2 p-0 order-sm-12">
             <div class="input-group bl">
               <div class="input-group-prepend">
@@ -164,25 +174,146 @@
                 <a class="dropdown-item" href="#">ID</a>
                 <a class="dropdown-item" href="#">E-mail</a>
                 <a class="dropdown-item" href="#">Aangemaakt</a>
+                <a class="dropdown-item" href="#">Type</a>
+                <a class="dropdown-item" href="#">Login</a>
+                <a class="dropdown-item" href="#">Profielen</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="row content">
+        <div class="row content px-5">
           <!--USERS-->
           <!--Table-->
-          <div class="table-responsive">
+          <div class="table-responsive pt-5">
+           
+
+            <script>
+              function sortTable(tableClass, n) {
+              var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+
+              table = document.getElementById(tableClass);
+              switching = true;
+              dir = "asc";
+              while (switching) {
+                  switching = false;
+                  rows = table.getElementsByTagName("TR");
+                  for (i = 1; i < (rows.length - 1); i++) {
+                      shouldSwitch = false;
+                      x = rows[i].getElementsByTagName("TD")[n];
+                      y = rows[i + 1].getElementsByTagName("TD")[n];
+                              var cmpX=isNaN(parseInt(x.innerHTML))?x.innerHTML.toLowerCase():parseInt(x.innerHTML);
+                              var cmpY=isNaN(parseInt(y.innerHTML))?y.innerHTML.toLowerCase():parseInt(y.innerHTML);
+              cmpX=(cmpX=='-')?0:cmpX;
+              cmpY=(cmpY=='-')?0:cmpY;
+                      if (dir == "asc") {
+                          if (cmpX > cmpY) {
+                              shouldSwitch= true;
+                              break;
+                          }
+                      } else if (dir == "desc") {
+                          if (cmpX < cmpY) {
+                              shouldSwitch= true;
+                              break;
+                          }
+                      }
+                  }
+                  if (shouldSwitch) {
+                      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                      switching = true;
+                      switchcount ++;      
+                  } else {
+                      if (switchcount == 0 && dir == "asc") {
+                          dir = "desc";
+                          switching = true;
+                      }
+                  }
+              }
+              }
+              </script>
+
+            <div class="Checkboxes">
+              <p class="form-check-inline">Toon:</p>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="inlineCheckbox1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineCheckbox1">ID</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="inlineCheckbox2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineCheckbox2"
+                  >E-mail</label
+                >
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="inlineCheckbox2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineCheckbox2"
+                  >Type</label
+                >
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="inlineCheckbox2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineCheckbox2"
+                  >Aangemaakt</label
+                >
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="inlineCheckbox2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineCheckbox2"
+                  >Laastste login</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="inlineCheckbox2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineCheckbox2"
+                  >Profielen</label
+                >
+              </div>
+            </div>
+
             <table id="tablePreview" class="table table-hover text-white">
               <!--Table head-->
               <thead class="border-top-0">
-                <tr>
-                  <th class="border-top-0">ID</th>
-                  <th class="border-top-0">E-mail</th>
-                  <th class="border-top-0">Type</th>
-                  <th class="border-top-0">Aangemaakt</th>
-                  <th class="border-top-0">Laastste login</th>
-                  <th class="border-top-0">Profielen</th>
-                  <th class="border-top-0">
+                <tr class="borderBotOnly">
+                  <th class="border-r"><input type="checkbox"/></th>
+                  <th class="border-r"><a onclick="sortTable('tablePreview',1)">ID <i class="fas fa-sort"></i></a></th>
+                  <th class="border-r"><a onclick="sortTable('tablePreview',2)">E-mail <i class="fas fa-sort"></i></a></th>
+                  <th class="border-r"><a onclick="sortTable('tablePreview',3)">Type <i class="fas fa-sort"></i></a></th>
+                  <th class="border-r"><a onclick="sortTable('tablePreview',4)">Aangemaakt <i class="fas fa-sort"></i></a></th>
+                  <th class="border-r"><a>Laastste login </a></th>
+                  <th class="border-r"><a>Profielen</a></th>
+                  <th class="border-r">
                     <i class="fas fa-times col-12"></i>
                   </th>
                 </tr>
@@ -191,51 +322,33 @@
 
               <!--Table body-->
               <tbody id="tbody">
-               <!-- <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>
-                    <i class="fas fa-pen col-6"></i
-                    ><i class="fas fa-times col-6"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>
-                    <i class="fas fa-pen col-6"></i
-                    ><i class="fas fa-times col-6"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>
-                    <i class="fas fa-pen col-6"></i
-                    ><i class="fas fa-times col-6"></i>
-                  </td>
-                </tr>-->
+                
               </tbody>
               <!--Table body-->
             </table>
-          </div>
           <!--Table-->
         </div>
+        <nav class="w-100 pt-1">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" tabindex="-1"> < </a>
+            </li>
+            <li class="page-item disabled"><a class="page-link page-link__active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">  
+              <a class="page-link" href="#">...</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#"> > </a>
+            </li>
+          </ul>
+        </nav>
       </main>
       <!-- hier eindigt je main body -->
+     
     </div_body>
+
     <!-- <div_footer class="row m-0 footer">
             <p>footer</p>
     </div_footer>-->
