@@ -1,0 +1,92 @@
+.form-control {
+  border-radius: 0 !important;
+}
+.form-control__red::placeholder {
+  color: #fff !important;
+  background-color: #e50914 !important;
+  border: none !important;
+}
+
+.input-group {
+  height: 4rem;
+}
+.input-group input {
+  height: 4rem !important;
+}
+
+.input-group-text {
+  padding: 0.5rem 1.5rem !important;
+}
+
+.input-group-prepend,
+.input-group-apend,
+.input-group-text {
+  cursor: pointer;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.input-group-prepend span,
+.input-group-apend span,
+.input-group-text span {
+  background-color: #e50914;
+  border: none;
+}
+
+.br input {
+  border: none;
+  border-right: 0.15rem solid #e50914;
+}
+
+.bl input {
+  border: none;
+  border-left: 0.15rem solid #fff;
+}
+
+.btn {
+  color: #000;
+}
+.btnbtn__white {
+  background-color: #fff !important;
+}
+
+table > thead > tr > th {
+  border-top: none !important;
+}
+
+table > tbody, thead > tr > th, td:not(:nth-last-of-type(1)) {
+  width: 11.6666666% !important;
+  text-align: center;
+}
+
+.page-link {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+.page-link__active {
+  color: #e50914 !important;
+}
+
+.page-link:hover {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e50914 !important;
+  border-top: 1px solid #e50914 !important;
+}
+
+.fa-pen {
+  color: #ffa00a;
+}
+
+.fa-times {
+  color: #e50914;
+}
+
+tr:hover td {
+  background-color: white !important;
+  border-bottom: 1px solid #ffa00a !important;
+}

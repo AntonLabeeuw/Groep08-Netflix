@@ -17,7 +17,6 @@ body {
 }
 
 .sidenav {
-  height: 100%;
   width: 100%;
   z-index: 1;
   background-color: #211f1f;
@@ -51,12 +50,6 @@ body {
   -webkit-box-flex: 1;
   -ms-flex: 1 1;
   flex: 1 1;
-}
-
-@media only screen and (max-width: 1199px) {
-  .sidenav {
-    height: 40%;
-  }
 }
 
 .form-control {
@@ -102,6 +95,7 @@ body {
 .input-group-prepend,
 .input-group-apend,
 .input-group-text {
+  cursor: pointer;
   border: none !important;
   border-radius: 0 !important;
 }
@@ -121,6 +115,64 @@ body {
 .bl input {
   border: none;
   border-left: 0.15rem solid #fff;
+}
+
+.btn {
+  color: #000;
+}
+
+.btnbtn__white {
+  background-color: #fff !important;
+}
+
+table > thead > tr > th {
+  border-top: none !important;
+}
+
+table > tbody, thead > tr > th, td:not(:nth-last-of-type(1)) {
+  width: 11.6666666% !important;
+  text-align: center;
+}
+
+.page-link {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.page-link__active {
+  color: #e50914 !important;
+}
+
+.page-link:hover {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e50914 !important;
+  border-top: 1px solid #e50914 !important;
+}
+
+.fa-pen {
+  color: #ffa00a;
+}
+
+.fa-times {
+  color: #e50914;
+}
+
+tr:first-child {
+  border-bottom: 1px solid #ffa00a !important;
+}
+
+tr:hover td {
+  background-color: #707070 !important;
+  border-bottom: 1px solid #ffa00a !important;
+  color: #fff !important;
+}
+
+.border-r {
+  border-color: #e50914 !important;
 }
 
 .film1 .dropdown {
