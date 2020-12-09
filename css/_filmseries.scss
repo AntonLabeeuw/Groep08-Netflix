@@ -99,8 +99,15 @@ $colorGrey: #707070;
     color: $colorRed1;
     font-size: 42px;
     vertical-align: middle;
+    transition: 2s ease-out;
     margin: auto;
-    margin-left: 150px;
+    &:hover{
+      color: white;
+      text-decoration: none;
+      transition: 2s ease-in;
+      transform: translate(7px, 0px);
+
+    }
     @media only screen and (max-width: 700px){
       display: none;
     }
@@ -114,11 +121,37 @@ $colorGrey: #707070;
     top: 44.5%;
     margin-left: -5%;
     bottom: 44.5%;
+    &:hover{
+      color: white;
+    }
     @media only screen and (max-width: 1690px){
       top: -7%;
     }
     @media only screen and (max-width: 700px){
       top: -3%;
+      margin-left: -20%;
+    }
+  }
+  &__pijl-links {
+    color: $colorRed1;
+    font-size: 42px;
+    vertical-align: middle;
+    margin: auto;
+    position: absolute;
+    top: 64.5%;
+    margin-left: -5%;
+    bottom: 24.5%;
+    transition: 2s ease-out;
+    &:hover{
+      color: white;
+      transition: 2s ease-in;
+      transform: translate(-7px, 0px);
+    }
+    @media only screen and (max-width: 1690px){
+      top: 5%;
+    }
+    @media only screen and (max-width: 700px){
+      top: -0%;
       margin-left: -20%;
     }
   }
@@ -155,6 +188,12 @@ $colorGrey: #707070;
     font-size: 42px;
     vertical-align: middle;
     margin: auto;
+    transition: 2s ease-out;
+    &:hover{
+      color: white;
+      transition: 2s ease-in;
+      transform: translate(7px, 0px);
+    }
     @media only screen and (max-width: 700px){
       display: none;
     }
@@ -169,11 +208,37 @@ $colorGrey: #707070;
     top: 44.5%;
     margin-left: -5%;
     bottom: 44.5%;
+    &:hover{
+      color: white;
+    }
     @media only screen and (max-width: 1690px){
       top: -7%;
     }
     @media only screen and (max-width: 700px){
       top: -3%;
+      margin-left: -20%;
+    }
+  }
+  &__pijl-links {
+    color: $colorRed1;
+    font-size: 42px;
+    vertical-align: middle;
+    margin: auto;
+    position: absolute;
+    top: 64.5%;
+    margin-left: -5%;
+    bottom: 24.5%;
+    transition: 2s ease-in;
+    &:hover{
+      color: white;
+      transition: 2s ease-in;
+      transform: translate(-7px, 0px);
+    }
+    @media only screen and (max-width: 1690px){
+      top: 5%;
+    }
+    @media only screen and (max-width: 700px){
+      top: -0%;
       margin-left: -20%;
     }
   }
@@ -246,15 +311,15 @@ $colorGrey: #707070;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 54px;
+  height: 100px;
   width: 216,43px;
   opacity: 0;
   transition: .5s ease;
   background-color: #910707;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   p{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     margin-left: 22px;
     padding: 10px 0;
