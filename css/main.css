@@ -292,6 +292,10 @@ body {
   margin: auto;
 }
 
+.series-list__pijl:hover {
+  color: white;
+}
+
 @media only screen and (max-width: 700px) {
   .series-list__pijl {
     display: none;
@@ -307,6 +311,10 @@ body {
   top: 44.5%;
   margin-left: -5%;
   bottom: 44.5%;
+}
+
+.series-list__plus:hover {
+  color: white;
 }
 
 @media only screen and (max-width: 1690px) {
@@ -362,6 +370,10 @@ body {
   margin: auto;
 }
 
+.movies-list__pijl:hover {
+  color: white;
+}
+
 @media only screen and (max-width: 700px) {
   .movies-list__pijl {
     display: none;
@@ -377,6 +389,10 @@ body {
   top: 44.5%;
   margin-left: -5%;
   bottom: 44.5%;
+}
+
+.movies-list__plus:hover {
+  color: white;
 }
 
 @media only screen and (max-width: 1690px) {
@@ -483,18 +499,18 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 54px;
+  height: 100px;
   width: 216,43px;
   opacity: 0;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   background-color: #910707;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
 }
 
 .overlay p {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   margin-left: 22px;
   padding: 10px 0;
