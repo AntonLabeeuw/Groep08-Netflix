@@ -1,0 +1,235 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.film1 .dropdown {
+  margin-left: 39px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.film1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.film1__h1-recent {
+  color: white;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.film1 .dropdown {
+  margin-left: 39px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 181px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown__content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown__content a:hover {
+  background-color: #ddd;
+}
+
+:hover > .dropdown__content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: darkred;
+}
+
+.dropbtn {
+  background-color: red;
+  color: white;
+  width: 181px;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropbtn .fa-caret-down {
+  margin-right: 10%;
+  float: right;
+}
+
+.dropbtn .filteritem {
+  margin-left: 15px;
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.c-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.c-form__input {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid #707070;
+}
+
+.c-form__input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #707070;
+}
+
+.c-form__input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c-form__input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.c-form__input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.c-form__input::placeholder {
+  color: transparent;
+}
+
+.c-form__input ~ .c-form__label {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.c-form__input:not(:placeholder-shown) ~ .c-form__label {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.c-form__group {
+  position: relative;
+  width: 776px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .c-form__group {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.c-form__label {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  line-height: 2.2;
+  color: black;
+  cursor: text;
+  font-weight: 300;
+  font-size: 25px;
+  pointer-events: none;
+}
+
+.c-form__input {
+  height: 59px;
+  border-radius: 0px;
+  margin: auto;
+  display: block;
+}
+
+.c-form__input-omschrijving {
+  height: 177px;
+  min-height: 177px;
+}
+
+.input-group-addon.titel {
+  background-color: #FFA00A;
+  border: none;
+  width: 28px;
+}
+
+.input-group-addon.aflevering {
+  background-color: #0D3C73;
+  border: none;
+  width: 28px;
+}
+
+.input-group-addon.seizoen {
+  background-color: #40CD9E;
+  border: none;
+  width: 28px;
+}
+
+.input-group-addon.categorie {
+  background-color: #E50914;
+  border: none;
+  width: 28px;
+}
+
+.input-group-addon.omschrijving {
+  background-color: #707070;
+  border: none;
+  width: 28px;
+}
+
+.o-button {
+  background-color: red;
+  border: none;
+  height: 73px;
+  font-size: 20px;
+  width: 776px;
+  margin-left: 0;
+}
+
+.o-button__submit {
+  background-color: red;
+}
+
+.cover-image {
+  height: 671px;
+}
+
+@media only screen and (max-width: 1420px) {
+  .row-cform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=form-detail.css.map */

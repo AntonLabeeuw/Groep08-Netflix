@@ -1,0 +1,185 @@
+$color1: #FFA00A;
+$color2: #0D3C73;
+$color3: #40CD9E;
+$color4: #E50914;
+$color5: #707070;
+$color-red:#E50914;
+$colorinputwidth: 28px;
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.film1 .dropdown {
+    margin-left: 39px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.film1{
+    &__h1-recent{
+      color: white;
+      font-size: 38px;
+      font-weight: 800;
+    }
+    display: flex;
+    flex-direction: row;
+    .dropdown{
+      margin-left: 39px;
+    }
+    //(scss)content en override is hier gebruikt geweest voor recent e filteritem
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    &__content{
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 181px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      a:hover{
+        background-color: #ddd;
+      }
+    }
+    :hover > &__content{
+      display: block;
+    }
+}
+.dropdown:hover .dropbtn {background-color: darkred;}
+.dropbtn {
+    background-color: red;
+    color: white;
+    width: 181px;
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    .fa-caret-down{
+      margin-right: 10%;
+      float: right;
+    }
+    .filteritem{
+      margin-left: 15px;
+      float: left;
+      color: white;
+      text-decoration: none;
+    }
+}
+.c-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  
+  
+    &__input {
+      transition: all 0.5s;
+      border: 1px solid #707070;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid #707070;
+      
+      }
+      &::placeholder{
+      color: transparent;
+      }
+      & ~ .c-form__label{
+        transition: all 0.2s;
+      }
+      &:not(:placeholder-shown){
+        & ~ .c-form__label{
+          font-size: 1.2rem;
+          line-height: 1.5;
+        }
+      }
+    }
+    &__group{
+    position: relative;  
+    width: 776px;
+    margin-bottom: 15px;
+    @media only screen and (max-width: 1000px){
+    width: 100%;
+    max-width: 100%;
+  }
+    }
+    &__label{
+    position: absolute;
+    top: 0;
+    left: 6px;
+    line-height: 2.2;
+    color: black;
+    cursor: text;
+    font-weight: 300;
+    font-size: 25px;
+    pointer-events: none; 
+    }
+    &__input{
+    height: 59px;
+    border-radius: 0px;
+    margin: auto;
+    display: block; 
+    }
+    &__input-omschrijving{
+    height: 177px;
+    min-height: 177px;
+    }
+    
+}
+.input-group-addon.titel {
+    background-color: $color1;
+    // border: 1px solid #707070;
+    border: none;
+    width: $colorinputwidth;
+
+
+}
+.input-group-addon.aflevering {
+    background-color: $color2;
+    // border: 1px solid #707070;
+    border: none;
+    width: $colorinputwidth;
+}
+.input-group-addon.seizoen {
+    background-color: $color3;
+    // border: 1px solid #707070;
+    border: none;
+    width: $colorinputwidth;
+}
+.input-group-addon.categorie {
+    background-color: $color4;
+    // border: 1px solid #707070;
+    border: none;
+    width: $colorinputwidth;
+}
+.input-group-addon.omschrijving {
+    background-color: $color5;
+    // border: 1px solid #707070;
+    border: none;
+    width: $colorinputwidth;
+}
+.o-button{
+    background-color: red;
+    border: none;
+    height: 73px;
+    font-size: 20px;
+    width: 776px;
+    margin-left: 0;
+    &__submit{
+        background-color: red;
+    }
+}
+.cover-image{
+    height: 671px;
+}
+.row-cform{
+@media only screen and (max-width: 1420px){
+    display: flex;
+    flex-direction: column;
+}   
+}
