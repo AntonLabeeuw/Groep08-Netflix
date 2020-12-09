@@ -289,11 +289,18 @@ body {
   color: #e50914;
   font-size: 42px;
   vertical-align: middle;
+  -webkit-transition: 2s ease-out;
+  transition: 2s ease-out;
   margin: auto;
 }
 
 .series-list__pijl:hover {
   color: white;
+  text-decoration: none;
+  -webkit-transition: 2s ease-in;
+  transition: 2s ease-in;
+  -webkit-transform: translate(7px, 0px);
+          transform: translate(7px, 0px);
 }
 
 @media only screen and (max-width: 700px) {
@@ -326,6 +333,40 @@ body {
 @media only screen and (max-width: 700px) {
   .series-list__plus {
     top: -3%;
+    margin-left: -20%;
+  }
+}
+
+.series-list__pijl-links {
+  color: #e50914;
+  font-size: 42px;
+  vertical-align: middle;
+  margin: auto;
+  position: absolute;
+  top: 64.5%;
+  margin-left: -5%;
+  bottom: 24.5%;
+  -webkit-transition: 2s ease-out;
+  transition: 2s ease-out;
+}
+
+.series-list__pijl-links:hover {
+  color: white;
+  -webkit-transition: 2s ease-in;
+  transition: 2s ease-in;
+  -webkit-transform: translate(-7px, 0px);
+          transform: translate(-7px, 0px);
+}
+
+@media only screen and (max-width: 1690px) {
+  .series-list__pijl-links {
+    top: 5%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .series-list__pijl-links {
+    top: -0%;
     margin-left: -20%;
   }
 }
@@ -368,10 +409,16 @@ body {
   font-size: 42px;
   vertical-align: middle;
   margin: auto;
+  -webkit-transition: 2s ease-out;
+  transition: 2s ease-out;
 }
 
 .movies-list__pijl:hover {
   color: white;
+  -webkit-transition: 2s ease-in;
+  transition: 2s ease-in;
+  -webkit-transform: translate(7px, 0px);
+          transform: translate(7px, 0px);
 }
 
 @media only screen and (max-width: 700px) {
@@ -391,7 +438,6 @@ body {
   bottom: 44.5%;
 }
 
-
 .movies-list__plus:hover {
   color: white;
 }
@@ -405,6 +451,40 @@ body {
 @media only screen and (max-width: 700px) {
   .movies-list__plus {
     top: -3%;
+    margin-left: -20%;
+  }
+}
+
+.movies-list__pijl-links {
+  color: #e50914;
+  font-size: 42px;
+  vertical-align: middle;
+  margin: auto;
+  position: absolute;
+  top: 64.5%;
+  margin-left: -5%;
+  bottom: 24.5%;
+  -webkit-transition: 2s ease-in;
+  transition: 2s ease-in;
+}
+
+.movies-list__pijl-links:hover {
+  color: white;
+  -webkit-transition: 2s ease-in;
+  transition: 2s ease-in;
+  -webkit-transform: translate(-7px, 0px);
+          transform: translate(-7px, 0px);
+}
+
+@media only screen and (max-width: 1690px) {
+  .movies-list__pijl-links {
+    top: 5%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .movies-list__pijl-links {
+    top: -0%;
     margin-left: -20%;
   }
 }
@@ -524,6 +604,7 @@ body {
 .li-container:hover .overlay {
   opacity: 100;
 }
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
