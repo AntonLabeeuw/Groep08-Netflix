@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     .navbar-img{
-        height: 90px;
+        height: 5.625rem;
     }
     .fas{
         color: #FFFFFF;
@@ -20,35 +20,42 @@
     }
 
     i{
-        margin-left: 20px;
+        margin-left: 1.25rem;
     }
 
     .navbar-search{
-       width: 500px; 
+       width: 31.25rem; 
     }
 }
 
 .sidenav{
-    padding-top: 50px;
+    padding-top: 3.125rem;
     position: relative;
 
     .sidenav_prim{
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .sidenav_secu{
-        font-size: 20px;
-        padding-left: 45px;
+        font-size: 1.25rem;
+        padding-left: 1.25rem;
     }
 
     .sidenav-button{
         position: relative;
-        top: 500px;
-        left: 60px;
+        top: 31.25rem;
+        left: 3.75rem;
         background-color: #FFFFFF;
         border-style: none;
-        padding: 10px 20px 10px 20px
-    
+        padding: 0.625rem 1.25rem 0.625rem 1.25rem
     }
 
 }
+
+    a:hover {
+        color: #E50914;
+    }
+    .sidenav-button:hover{
+        background-color: #E50914;
+        color: #FFFFFF;
+    }

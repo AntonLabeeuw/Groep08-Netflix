@@ -309,6 +309,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .series-list__pijl {
+    display: none;
+  }
+}
+
 .series-list__plus {
   color: #e50914;
   font-size: 42px;
@@ -319,10 +325,10 @@ body {
   margin-left: -5%;
   bottom: 44.5%;
 }
-
 .series-list__plus:hover {
   color: white;
 }
+
 
 @media only screen and (max-width: 1690px) {
   .series-list__plus {
@@ -336,6 +342,7 @@ body {
     margin-left: -20%;
   }
 }
+
 
 .series-list__pijl-links {
   color: #e50914;
@@ -409,16 +416,13 @@ body {
   font-size: 42px;
   vertical-align: middle;
   margin: auto;
-  -webkit-transition: 2s ease-out;
   transition: 2s ease-out;
 }
 
 .movies-list__pijl:hover {
   color: white;
-  -webkit-transition: 2s ease-in;
   transition: 2s ease-in;
-  -webkit-transform: translate(7px, 0px);
-          transform: translate(7px, 0px);
+  transform: translate(7px, 0px);
 }
 
 @media only screen and (max-width: 700px) {
@@ -454,6 +458,7 @@ body {
     margin-left: -20%;
   }
 }
+
 
 .movies-list__pijl-links {
   color: #e50914;
@@ -592,6 +597,7 @@ body {
 
 .overlay p {
   font-size: 20px;
+  font-size: 25px;
   color: white;
   margin-left: 22px;
   padding: 10px 0;
@@ -613,7 +619,7 @@ body {
 }
 
 .navbar .navbar-img {
-  height: 90px;
+  height: 5.625rem;
 }
 
 .navbar .fas {
@@ -636,33 +642,42 @@ body {
 }
 
 .navbar i {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .navbar .navbar-search {
-  width: 500px;
+  width: 31.25rem;
 }
 
 .sidenav {
-  padding-top: 50px;
+  padding-top: 3.125rem;
   position: relative;
 }
 
 .sidenav .sidenav_prim {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .sidenav .sidenav_secu {
-  font-size: 20px;
-  padding-left: 45px;
+  font-size: 1.25rem;
+  padding-left: 1.25rem;
 }
 
 .sidenav .sidenav-button {
   position: relative;
-  top: 500px;
-  left: 60px;
+  top: 31.25rem;
+  left: 3.75rem;
   background-color: #FFFFFF;
   border-style: none;
-  padding: 10px 20px 10px 20px;
+  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+}
+
+a:hover {
+  color: #E50914;
+}
+
+.sidenav-button:hover {
+  background-color: #E50914;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */
