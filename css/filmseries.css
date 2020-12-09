@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .film1 .dropdown {
   margin-left: 39px;
 }
@@ -38,7 +42,7 @@
   display: inline-block;
   height: 0.5em;
   vertical-align: bottom;
-  width: 74.6%;
+  width: 79%;
   margin-right: -100%;
   margin-left: 10px;
   border-top: 1px solid #e50914;
@@ -59,7 +63,7 @@
   display: inline-block;
   height: 0.5em;
   vertical-align: bottom;
-  width: 75%;
+  width: 79.5%;
   max-width: 100%;
   margin-right: -100%;
   margin-left: 10px;
@@ -87,9 +91,6 @@
     margin: auto;
     text-align: center;
   }
-  .series-list__2, .series-list__3, .series-list__4, .series-list__5 {
-    margin-left: 0 !important;
-  }
   .series-list__plus {
     color: #e50914;
     font-size: 42px;
@@ -107,16 +108,18 @@
   margin-left: 0 !important;
 }
 
-.series-list__2, .series-list__3, .series-list__4, .series-list__5 {
-  margin-left: 36px;
-}
-
 .series-list__pijl {
   color: #e50914;
   font-size: 42px;
   vertical-align: middle;
   margin: auto;
   margin-left: 150px;
+}
+
+@media only screen and (max-width: 700px) {
+  .series-list__pijl {
+    display: none;
+  }
 }
 
 .series-list__plus {
@@ -128,6 +131,19 @@
   top: 44.5%;
   margin-left: -5%;
   bottom: 44.5%;
+}
+
+@media only screen and (max-width: 1690px) {
+  .series-list__plus {
+    top: -7%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .series-list__plus {
+    top: -3%;
+    margin-left: -20%;
+  }
 }
 
 .movies-list {
@@ -151,24 +167,29 @@
     margin: auto;
     text-align: center;
   }
-  .movies-list__2, .movies-list__3, .movies-list__4, .movies-list__5 {
-    margin-left: 0 !important;
+  .movies-list__plus {
+    color: #e50914;
+    font-size: 42px;
+    vertical-align: middle;
+    margin: auto;
+    position: absolute;
+    top: 44.5%;
+    margin-left: -5%;
+    bottom: 44.5%;
   }
-}
-
-.movies-list__1 {
-  margin-left: 0px !important;
-}
-
-.movies-list__2, .movies-list__3, .movies-list__4, .movies-list__5 {
-  margin-left: 36px;
 }
 
 .movies-list__pijl {
   color: #e50914;
-  font-size: 80px;
+  font-size: 42px;
   vertical-align: middle;
   margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .movies-list__pijl {
+    display: none;
+  }
 }
 
 .movies-list__plus {
@@ -180,6 +201,19 @@
   top: 44.5%;
   margin-left: -5%;
   bottom: 44.5%;
+}
+
+@media only screen and (max-width: 1690px) {
+  .movies-list__plus {
+    top: -7%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .movies-list__plus {
+    top: -3%;
+    margin-left: -20%;
+  }
 }
 
 .dropbtn {
@@ -207,7 +241,7 @@
   display: inline-block;
 }
 
-.dropdown-content {
+.dropdown__content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -217,22 +251,84 @@
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown__content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown__content a:hover {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+:hover > .dropdown__content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
   background-color: darkred;
+}
+
+.li-container {
+  position: relative;
+  margin-left: 36px;
+}
+
+@media only screen and (max-width: 1690px) {
+  .li-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+}
+
+.li-container1 {
+  position: relative;
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 1690px) {
+  .li-container1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 54px;
+  width: 216,43px;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #910707;
+  font-size: 25px;
+  color: white;
+}
+
+.overlay p {
+  font-size: 25px;
+  color: white;
+  margin-left: 22px;
+  padding: 10px 0;
+}
+
+.li-container1:hover .overlay {
+  opacity: 100;
+}
+
+.li-container:hover .overlay {
+  opacity: 100;
 }
 /*# sourceMappingURL=filmseries.css.map */

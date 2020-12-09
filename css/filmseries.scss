@@ -1,3 +1,6 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
 $colorW: #fff;
 $colorB: #000;
 $colorSidebar: #211f1f;
@@ -35,7 +38,7 @@ $colorGrey: #707070;
     display: inline-block;
     height: 0.5em;
     vertical-align: bottom;
-    width: 74.6%;
+    width: 79%;
     margin-right: -100%;
     margin-left: 10px;
     border-top: 1px solid $colorRed1;
@@ -53,7 +56,7 @@ $colorGrey: #707070;
     display: inline-block;
     height: 0.5em;
     vertical-align: bottom;
-    width: 75%;
+    width: 79.5%;
     max-width: 100%;
     margin-right: -100%;
     margin-left: 10px;
@@ -75,9 +78,6 @@ $colorGrey: #707070;
     display: flex;
     margin: auto;
     text-align: center;
-    &__2 , &__3 , &__4, &__5{
-      margin-left: 0 !important;
-    }
     &__plus {
       color: $colorRed1;
       font-size: 42px;
@@ -88,13 +88,12 @@ $colorGrey: #707070;
       margin-left: -5%;
       bottom: 44.5%;
     }
-
   }​​​​​
   &__1{
-      margin-left: 0 !important;
+    margin-left: 0 !important;
   }
   &__2,&__3,&__4,&__5{
-    margin-left: 36px;
+    //margin-left: 36px;
   }
   &__pijl {
     color: $colorRed1;
@@ -102,6 +101,9 @@ $colorGrey: #707070;
     vertical-align: middle;
     margin: auto;
     margin-left: 150px;
+    @media only screen and (max-width: 700px){
+      display: none;
+    }
   }
   &__plus {
     color: $colorRed1;
@@ -112,6 +114,13 @@ $colorGrey: #707070;
     top: 44.5%;
     margin-left: -5%;
     bottom: 44.5%;
+    @media only screen and (max-width: 1690px){
+      top: -7%;
+    }
+    @media only screen and (max-width: 700px){
+      top: -3%;
+      margin-left: -20%;
+    }
   }
 }
 .movies-list {
@@ -129,22 +138,26 @@ $colorGrey: #707070;
     display: flex;
     margin: auto;
     text-align: center;
-    &__2 , &__3 , &__4, &__5{
-      margin-left: 0 !important;
+    &__plus {
+      color: $colorRed1;
+      font-size: 42px;
+      vertical-align: middle;
+      margin: auto;
+      position: absolute;
+      top: 44.5%;
+      margin-left: -5%;
+      bottom: 44.5%;
     }
-
   }
-  &__1{
-    margin-left: 0px !important;
-  }
-  &__2,&__3,&__4,&__5{
-    margin-left: 36px;
-  }
+  
   &__pijl {
     color: $colorRed1;
-    font-size: 80px;
+    font-size: 42px;
     vertical-align: middle;
     margin: auto;
+    @media only screen and (max-width: 700px){
+      display: none;
+    }
   }
     
   &__plus {
@@ -156,6 +169,13 @@ $colorGrey: #707070;
     top: 44.5%;
     margin-left: -5%;
     bottom: 44.5%;
+    @media only screen and (max-width: 1690px){
+      top: -7%;
+    }
+    @media only screen and (max-width: 700px){
+      top: -3%;
+      margin-left: -20%;
+    }
   }
 }
 .dropbtn {
@@ -175,31 +195,74 @@ $colorGrey: #707070;
     text-decoration: none;
   }
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
+  &__content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 181px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    a{
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    a:hover{
+      background-color: #ddd;
+    }
+  }
+  :hover > &__content{
+    display: block;
+  }
 }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 181px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
 .dropdown:hover .dropbtn {background-color: darkred;}
 
+.li-container{
+  position: relative;
+  margin-left: 36px;
+  @media only screen and (max-width: 1690px) {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+}
+.li-container1{
+  position: relative;
+  margin-left: 0px;
+  @media only screen and (max-width: 1690px) {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 54px;
+  width: 216,43px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #910707;
+  font-size: 25px;
+  color: white;
+  p{
+    font-size: 25px;
+    color: white;
+    margin-left: 22px;
+    padding: 10px 0;
+  }
+}
+.li-container1:hover .overlay {
+  opacity: 100;
+}
+.li-container:hover .overlay {
+  opacity: 100;
+}
