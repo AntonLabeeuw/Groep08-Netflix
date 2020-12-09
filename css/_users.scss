@@ -10,32 +10,40 @@ $colorGrey: #707070;
 
 .form-control {
   border-radius: 0 !important;
+
   &__red::placeholder {
     color: $colorW !important;
     background-color: $colorRed1 !important;
     border: none !important;
   }
 }
+
 .input-group {
   height: 4rem;
+
   input {
     height: 4rem !important;
   }
 }
-.input-group-text{
+
+.input-group-text {
   padding: 0.5rem 1.5rem !important;
 }
+
 .input-group-prepend,
 .input-group-apend,
 .input-group-text {
   cursor: pointer;
+
   span {
     background-color: $colorRed1;
     border: none;
   }
+
   border: none !important;
   border-radius: 0 !important;
 }
+
 .br input {
   border: none;
   border-right: 0.15rem solid $colorRed1;
@@ -45,53 +53,148 @@ $colorGrey: #707070;
   border: none;
   border-left: 0.15rem solid $colorW;
 }
-.btn{
+
+.btn {
   color: $colorB;
-  &btn__white{
+
+  &btn__white {
     background-color: $colorW !important;
   }
 }
-table>thead>tr>th{
-  border-top:none !important;
+
+table>thead>tr>th {
+  border-top: none !important;
 }
-table>tbody,thead>tr>th,td:not(:nth-last-of-type(1)){
-  width: 11.6666666% !important;
+
+table>tbody,
+thead>tr>th,
+td:not(:nth-last-of-type(1)) {
+  width: 11.6666666%;
   text-align: center;
 }
-.page-link{
+
+.page-link {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;    
-  box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   color: $colorW !important;
   background-color: transparent !important;
   border: none !important;
-  &__active{
+
+  &__active {
     color: $colorRed1 !important;
   }
 }
-.page-link:hover{
+
+.page-link:hover {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;    
-  box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   border-bottom: 1px solid $colorRed1 !important;
   border-top: 1px solid $colorRed1 !important;
 }
-.fa-pen{
+
+.fa-pen {
   color: $colorOrange;
+  height: 100% !important;
 }
-.fa-times{
+
+.fa-times {
   color: $colorRed1;
 }
-tr:first-child{
-  border-bottom: 1px solid $colorOrange !important;
+
+.fa-pen:hover {
+  color: $colorGreen;
 }
-tr:hover{
-  td{
-    background-color: $colorGrey !important;
-    border-bottom: 1px solid $colorOrange !important;
-    color: $colorW !important;
+
+.fa-times:hover {
+  color: $colorGreen;
+}
+
+tr:hover {
+  border: none;
+
+  td {
+    background-color: $colorGrey;
+    border-bottom: 1px solid $colorOrange;
+    color: $colorW;
   }
 }
-.border-r{
+
+.border-r {
   border-color: $colorRed1 !important;
+}
+.paddingRows{
+  padding:3rem;
+}
+@media screen and (max-width: 960px) {
+  .paddingRows{
+    padding:0.5rem;
+  }
+  table {
+    border: 0;
+  }
+  table tbody tr:not(:last-child){
+    margin-bottom: 5rem !important;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  .fa-pen {
+    height: 100%;
+    text-align: center;
+  }
+
+  .fa-times {
+    text-align: center;
+  }
+
+  table>tbody,
+  thead>tr>th,
+  td:not(:nth-last-of-type(1)) {
+    width: 100%;
+    text-align: right;
+  }
+}
+input.page-link{
+  width: 2.5rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }
