@@ -102,6 +102,9 @@ td:not(:nth-last-of-type(1)) {
 .fa-times {
   color: $colorRed1;
 }
+.fa-plus {
+  color: $colorGreen;
+}
 
 .fa-pen:hover {
   color: $colorGreen;
@@ -177,6 +180,9 @@ tr:hover {
   }
 
   .fa-times {
+    text-align: center;
+  }
+  .fa-plus {
     text-align: center;
   }
 
