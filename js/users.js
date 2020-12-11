@@ -78,7 +78,84 @@
              }
          });
      }
+     function printAllArchivedUsers() {
+         console.log("archive loaded");
+        var archiveUsers = [];
+        $.getJSON("JSON/archive_users.json", function (jsonfile) {
+            allArchivedUsers = jsonfile.archived_users;
+            allArchivedUsers.forEach(GetUsers);
 
+            function GetUsers(item, index) {
+                archiveUsers[index] = item;
+            }
+            //console.log(archiveUsers[0]);
+            archiveUsers.forEach(addToTable);
+
+            function addToTable(archiveUser, idex) {
+                //console.log(archiveUsers);
+                var y = document.createElement("TR");
+                y.setAttribute("id", "myTr" + archiveUser["id"]);
+                document.getElementById("tbody").appendChild(y);
+
+                var checkboxtd = document.createElement("TD");
+                checkboxtd.setAttribute("class", "tdW100 text-center");
+
+                var checkbox = document.createElement("INPUT");
+                checkbox.type = "checkbox";
+                checkboxtd.appendChild(checkbox);
+                document.getElementById("myTr" + archiveUser["id"]).appendChild(checkboxtd);
+
+                var idtd = document.createElement("TD");
+                idtd.setAttribute("class", "tdW100");
+                idtd.setAttribute("data-label", "Id");
+                idtd.innerHTML = archiveUser["id"];
+                document.getElementById("myTr" + archiveUser["id"]).appendChild(idtd);
+
+                var emailtd = document.createElement("TD");
+                emailtd.setAttribute("class", "tdW100");
+                emailtd.setAttribute("data-label", "Email");
+                emailtd.innerHTML = archiveUser["email"];
+                document.getElementById("myTr" + archiveUser["id"]).appendChild(emailtd);
+
+                var typeabonneetd = document.createElement("TD");
+                typeabonneetd.setAttribute("class", "tdW100");
+                typeabonneetd.setAttribute("data-label", "Type");
+                typeabonneetd.innerHTML = archiveUser["typeabonnee"];
+                document
+                    .getElementById("myTr" + archiveUser["id"])
+                    .appendChild(typeabonneetd);
+
+                var aangemaakttd = document.createElement("TD");
+                aangemaakttd.setAttribute("class", "tdW100");
+                aangemaakttd.setAttribute("data-label", "Aangemaakt");
+                aangemaakttd.innerHTML = archiveUser["aangemaakt"];
+                document
+                    .getElementById("myTr" + archiveUser["id"])
+                    .appendChild(aangemaakttd);
+
+                var gearchiveerdtd = document.createElement("TD");
+                gearchiveerdtd.setAttribute("class", "tdW100");
+                gearchiveerdtd.setAttribute("data-label", "Gearchiveerdtd");
+                gearchiveerdtd.innerHTML = archiveUser["gearchiveerd"];
+                document
+                    .getElementById("myTr" + archiveUser["id"])
+                    .appendChild(gearchiveerdtd);
+
+                var profielentd = document.createElement("TD");
+                profielentd.setAttribute("class", "tdW100");
+                profielentd.setAttribute("data-label", "Profielen");
+                profielentd.innerHTML = archiveUser["profielen"].length;
+                document.getElementById("myTr" + archiveUser["id"]).appendChild(profielentd);
+
+                var Icons = document.createElement("TD");
+                var addIcon = document.createElement("I");
+                Icons.setAttribute("class", "tdW100");
+                addIcon.className = "fas fa-plus col-12";
+                Icons.appendChild(addIcon);
+                document.getElementById("myTr" + archiveUser["id"]).appendChild(Icons);
+            }
+        });
+    }
      function sortTable(tableClass, n) {
          var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
 

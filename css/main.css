@@ -165,6 +165,10 @@ td:not(:nth-last-of-type(1)) {
   color: #e50914;
 }
 
+.fa-plus {
+  color: #55bc7d;
+}
+
 .fa-pen:hover {
   color: #55bc7d;
 }
@@ -186,6 +190,7 @@ tr:hover td {
 .border-r {
   border-color: #e50914 !important;
 }
+
 .paddingRows {
   padding: 3rem;
 }
@@ -233,6 +238,9 @@ tr:hover td {
     text-align: center;
   }
   .fa-times {
+    text-align: center;
+  }
+  .fa-plus {
     text-align: center;
   }
   table > tbody,
@@ -360,6 +368,8 @@ body {
     bottom: 44.5%;
   }
 }
+
+​​​​​
 .series-list__1 {
   margin-left: 0 !important;
 }
@@ -388,18 +398,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .series-list__pijl {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .series-list__pijl {
-    display: none;
-  }
-}
-
 .series-list__plus {
   color: #e50914;
   font-size: 42px;
@@ -410,10 +408,10 @@ body {
   margin-left: -5%;
   bottom: 44.5%;
 }
+
 .series-list__plus:hover {
   color: white;
 }
-
 
 @media only screen and (max-width: 1690px) {
   .series-list__plus {
@@ -427,7 +425,6 @@ body {
     margin-left: -20%;
   }
 }
-
 
 .series-list__pijl-links {
   color: #e50914;
@@ -459,19 +456,6 @@ body {
 @media only screen and (max-width: 700px) {
   .series-list__pijl-links {
     top: -0%;
-    margin-left: -20%;
-  }
-}
-
-@media only screen and (max-width: 1690px) {
-  .series-list__plus {
-    top: -7%;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .series-list__plus {
-    top: -3%;
     margin-left: -20%;
   }
 }
@@ -514,13 +498,16 @@ body {
   font-size: 42px;
   vertical-align: middle;
   margin: auto;
+  -webkit-transition: 2s ease-out;
   transition: 2s ease-out;
 }
 
 .movies-list__pijl:hover {
   color: white;
+  -webkit-transition: 2s ease-in;
   transition: 2s ease-in;
-  transform: translate(7px, 0px);
+  -webkit-transform: translate(7px, 0px);
+          transform: translate(7px, 0px);
 }
 
 @media only screen and (max-width: 700px) {
@@ -590,6 +577,7 @@ body {
     margin-left: -20%;
   }
 }
+
 .dropbtn {
   background-color: red;
   color: white;
@@ -692,7 +680,7 @@ body {
 }
 
 .overlay p {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   margin-left: 22px;
   padding: 10px 0;
