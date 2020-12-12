@@ -1,3 +1,6 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
 $colorW: #fff;
 $colorB: #000;
 $colorSidebar: #211f1f;
@@ -9,6 +12,19 @@ $colorGreen: #55bc7d;
 $colorGrey: #707070;
 .film1 .dropdown {
   margin-left: 39px;
+}
+.film1{
+  &__h1-recent{
+    color: white;
+    font-size: 38px;
+    font-weight: 800;
+  }
+  display: flex;
+  flex-direction: row;
+  .dropdown{
+    margin-left: 39px;
+  }
+  //(scss)content en override is hier gebruikt geweest voor recent e filteritem
 }
 .series {
   margin-top: 77px;
@@ -22,7 +38,7 @@ $colorGrey: #707070;
     display: inline-block;
     height: 0.5em;
     vertical-align: bottom;
-    width: 100%;
+    width: 79%;
     margin-right: -100%;
     margin-left: 10px;
     border-top: 1px solid $colorRed1;
@@ -40,7 +56,8 @@ $colorGrey: #707070;
     display: inline-block;
     height: 0.5em;
     vertical-align: bottom;
-    width: 100%;
+    width: 79.5%;
+    max-width: 100%;
     margin-right: -100%;
     margin-left: 10px;
     border-top: 1px solid $colorRed1;
@@ -52,60 +69,15 @@ $colorGrey: #707070;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   list-style: none;
   position: relative;
-  &__1{
-      margin-left: 0;
-  }
-  &__2,&__3,&__4,&__5{
-    margin-left: 0px !important;
-    margin-left: 36px;
-  }
-  &__pijl {
-    color: $colorRed1;
-    font-size: 42px;
-    vertical-align: middle;
+  padding-left: 0;
+  @media only screen and (max-width: 1690px) {
+    display: flex;
     margin: auto;
-    margin-left: 150px;
-  }
-  &__plus {
-    color: $colorRed1;
-    font-size: 42px;
-    vertical-align: middle;
-    margin: auto;
-    position: absolute;
-    top: 44.5%;
-    margin-left: -5%;
-    bottom: 44.5%;
-  }
-}
-.movies-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
-  position: relative;
-  &__1{
-    margin-left: 0;
-    }
-    &__2,&__3,&__4,&__5{
-      margin-left: 0px !important;
-      margin-left: 36px;
-    }
-    &__pijl {
-      color: $colorRed1;
-      font-size: 80px;
-      vertical-align: middle;
-      margin: auto;
-      margin-left: 150px;
-    }
-    
+    text-align: center;
     &__plus {
       color: $colorRed1;
       font-size: 42px;
@@ -116,5 +88,246 @@ $colorGrey: #707070;
       margin-left: -5%;
       bottom: 44.5%;
     }
-}
+  }​​​​​
+  &__1{
+    margin-left: 0 !important;
+  }
+  &__2,&__3,&__4,&__5{
+    //margin-left: 36px;
+  }
+  &__pijl {
+    color: $colorRed1;
+    font-size: 42px;
+    vertical-align: middle;
+    transition: 2s ease-out;
+    margin: auto;
+    &:hover{
+      color: white;
+      text-decoration: none;
+      transition: 2s ease-in;
+      transform: translate(7px, 0px);
 
+    }
+    @media only screen and (max-width: 700px){
+      display: none;
+    }
+  }
+  &__plus {
+    color: $colorRed1;
+    font-size: 42px;
+    vertical-align: middle;
+    margin: auto;
+    position: absolute;
+    top: 44.5%;
+    margin-left: -5%;
+    bottom: 44.5%;
+    &:hover{
+      color: white;
+    }
+    @media only screen and (max-width: 1690px){
+      top: -7%;
+    }
+    @media only screen and (max-width: 700px){
+      top: -3%;
+      margin-left: -20%;
+    }
+  }
+  &__pijl-links {
+    color: $colorRed1;
+    font-size: 42px;
+    vertical-align: middle;
+    margin: auto;
+    position: absolute;
+    top: 64.5%;
+    margin-left: -5%;
+    bottom: 24.5%;
+    transition: 2s ease-out;
+    &:hover{
+      color: white;
+      transition: 2s ease-in;
+      transform: translate(-7px, 0px);
+    }
+    @media only screen and (max-width: 1690px){
+      top: 5%;
+    }
+    @media only screen and (max-width: 700px){
+      top: -0%;
+      margin-left: -20%;
+    }
+  }
+}
+.movies-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+  position: relative;
+  padding-left: 0;
+  @media only screen and (max-width: 1690px) {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    &__plus {
+      color: $colorRed1;
+      font-size: 42px;
+      vertical-align: middle;
+      margin: auto;
+      position: absolute;
+      top: 44.5%;
+      margin-left: -5%;
+      bottom: 44.5%;
+    }
+  }
+  
+  &__pijl {
+    color: $colorRed1;
+    font-size: 42px;
+    vertical-align: middle;
+    margin: auto;
+    transition: 2s ease-out;
+    &:hover{
+      color: white;
+      transition: 2s ease-in;
+      transform: translate(7px, 0px);
+    }
+    @media only screen and (max-width: 700px){
+      display: none;
+    }
+  }
+    
+  &__plus {
+    color: $colorRed1;
+    font-size: 42px;
+    vertical-align: middle;
+    margin: auto;
+    position: absolute;
+    top: 44.5%;
+    margin-left: -5%;
+    bottom: 44.5%;
+    &:hover{
+      color: white;
+    }
+    @media only screen and (max-width: 1690px){
+      top: -7%;
+    }
+    @media only screen and (max-width: 700px){
+      top: -3%;
+      margin-left: -20%;
+    }
+  }
+  &__pijl-links {
+    color: $colorRed1;
+    font-size: 42px;
+    vertical-align: middle;
+    margin: auto;
+    position: absolute;
+    top: 64.5%;
+    margin-left: -5%;
+    bottom: 24.5%;
+    transition: 2s ease-in;
+    &:hover{
+      color: white;
+      transition: 2s ease-in;
+      transform: translate(-7px, 0px);
+    }
+    @media only screen and (max-width: 1690px){
+      top: 5%;
+    }
+    @media only screen and (max-width: 700px){
+      top: -0%;
+      margin-left: -20%;
+    }
+  }
+}
+.dropbtn {
+  background-color: red;
+  color: white;
+  width: 181px;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  .fa-caret-down{
+    margin-right: 10%;
+    float: right;
+  }
+  .filteritem{
+    margin-left: -15%;
+    color: white;
+    text-decoration: none;
+  }
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  &__content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 181px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    a{
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    a:hover{
+      background-color: #ddd;
+    }
+  }
+  :hover > &__content{
+    display: block;
+  }
+}
+.dropdown:hover .dropbtn {background-color: darkred;}
+
+.li-container{
+  position: relative;
+  margin-left: 36px;
+  @media only screen and (max-width: 1690px) {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+}
+.li-container1{
+  position: relative;
+  margin-left: 0px;
+  @media only screen and (max-width: 1690px) {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 216,43px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #910707;
+  font-size: 20px;
+  color: white;
+  p{
+    font-size: 20px;
+    color: white;
+    margin-left: 22px;
+    padding: 10px 0;
+  }
+}
+.li-container1:hover .overlay {
+  opacity: 100;
+}
+.li-container:hover .overlay {
+  opacity: 100;
+}
