@@ -3,7 +3,61 @@ $colorB: #000;
 $colorSidebar: #211f1f;
 $colorRed1: #e50914;
 $colorOrange: #ffa00a;
+$colorOrange-dark: #BD7C15;
 $colorBlue1: #0d3c73;
+$ColorBlue1-dark: #0B2B50;
 $colorBlue2: #549494;
+$colorBlue2-dark: #4D7E7E;
 $colorGreen: #55bc7d;
+$colorGreen-dark: #469866;
 $colorGrey: #707070;
+
+
+
+.c-stats{
+    display: flex;
+    flex-direction: column;
+
+    &__stat{
+        display: flex;
+        background-color: $colorSidebar;
+        width: 398px;
+        height: 100px;
+        margin-bottom: 34px;
+    }
+
+    &__icon{
+        width: 100px;
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    &__series .c-stats__icon{
+        color: $colorOrange-dark;
+        background-color: $colorOrange;
+    }
+
+    &__films .c-stats__icon{
+        color: $ColorBlue1-dark;
+        background-color: $colorBlue1;
+    }
+
+    &__miniseries .c-stats__icon{
+        color: $colorGreen-dark;
+        background-color: $colorGreen;
+    }
+
+    &__likes .c-stats__icon{
+        color: $colorBlue2-dark;
+        background-color: $colorBlue2;
+    }
+
+    &__text{
+        color: $colorW;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-top: 34px;
+    }
+    
+}
