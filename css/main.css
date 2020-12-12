@@ -265,6 +265,35 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+input.borderWcolor {
+  border: none;
+  border-right: 1.5rem solid lime;
+}
+
+input.borderWcolor__red, input.borderWcolor__red:focus {
+  border-color: #e50914;
+}
+
+input.borderWcolor__orange, input.borderWcolor__orange:focus {
+  border-color: #ffa00a;
+}
+
+input.borderWcolor__green, input.borderWcolor__green:focus {
+  border-color: #55bc7d;
+}
+
+input.borderWcolor__grey, input.borderWcolor__grey:focus {
+  border-color: #707070;
+}
+
+input.borderWcolor__blue1, input.borderWcolor__blue1:focus {
+  border-color: #0d3c73;
+}
+
+input.borderWcolor__blue2, input.borderWcolor__blue2:focus {
+  border-color: #549494;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }

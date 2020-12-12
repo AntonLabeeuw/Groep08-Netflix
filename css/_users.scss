@@ -204,3 +204,25 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+input.borderWcolor{
+  border: none;
+  border-right: 1.5rem solid lime;
+  &__red,&__red:focus{
+    border-color: $colorRed1;
+  }
+  &__orange,&__orange:focus{
+    border-color: $colorOrange;
+  }
+  &__green,&__green:focus{
+    border-color: $colorGreen;
+  }
+  &__grey,&__grey:focus{
+    border-color: $colorGrey;
+  }
+  &__blue1,&__blue1:focus{
+    border-color: $colorBlue1;
+  }
+  &__blue2,&__blue2:focus{
+    border-color: $colorBlue2;
+  }  
+}
