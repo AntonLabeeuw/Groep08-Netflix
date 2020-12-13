@@ -779,6 +779,12 @@ h1 {
   margin-bottom: 35px;
 }
 
+h2 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 47px;
+}
+
 p {
   margin: 0;
 }
@@ -920,6 +926,30 @@ p {
   font-weight: bold;
   font-size: 1.5rem;
   padding-top: 34px;
+}
+
+.c-populairst {
+  margin-left: 183px;
+}
+
+.c-populairst__populair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-populairst img {
+  width: 559px;
+  height: 302px;
+}
+
+.c-populairst__serie {
+  border-right: 2px #e50914 solid;
+  padding-right: 77px;
+}
+
+.c-populairst__film {
+  margin-left: 77px;
 }
 
 .navbar {
