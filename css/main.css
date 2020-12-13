@@ -772,6 +772,29 @@ body {
   opacity: 100;
 }
 
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+
+p {
+  margin: 0;
+}
+
+.c-grafiekStats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 183px;
+}
+
+.c-grafiek {
+  width: 817px;
+}
+
 .c-stats {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -780,6 +803,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 59px;
 }
 
 .c-stats__stat {
@@ -789,7 +813,11 @@ body {
   background-color: #211f1f;
   width: 398px;
   height: 100px;
-  margin-bottom: 34px;
+  margin-bottom: 53.5px;
+}
+
+.c-stats__stat:last-child {
+  margin-bottom: 0;
 }
 
 .c-stats__icon {
@@ -819,6 +847,74 @@ body {
 }
 
 .c-stats__text {
+  color: #fff;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 34px;
+}
+
+.c-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-laatsteUur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 183px;
+}
+
+.c-laatsteUur__balkjes {
+  border-right: 2px #e50914 solid;
+  padding-right: 218px;
+}
+
+.c-laatsteUur__balkje {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #211f1f;
+  width: 398px;
+  height: 100px;
+  margin-bottom: 33px;
+}
+
+.c-laatsteUur__balkje:last-child {
+  margin-bottom: 0;
+}
+
+.c-laatsteUur__gegeven {
+  width: 100px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fff;
+  padding-top: 35px;
+}
+
+.c-laatsteUur__inkomen .c-laatsteUur__gegeven {
+  background-color: #ffa00a;
+}
+
+.c-laatsteUur__bekeken .c-laatsteUur__gegeven {
+  background-color: #0d3c73;
+}
+
+.c-laatsteUur__sociaal .c-laatsteUur__gegeven {
+  background-color: #55bc7d;
+}
+
+.c-laatsteUur__leden .c-laatsteUur__gegeven {
+  background-color: #549494;
+}
+
+.c-laatsteUur__text {
   color: #fff;
   padding-left: 10px;
   font-weight: bold;
