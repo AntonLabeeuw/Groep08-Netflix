@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="./slick-master/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick-master/slick/slick-theme.css">
     <link rel="stylesheet" href="css/screen.css" />
     <script src="https://kit.fontawesome.com/8223252f3c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,9 +19,56 @@
     </bootstrap>
     <link rel="stylesheet" href="css/main.css" />
     <script src="dist/main.js"></script>
+    <style type="text/css">
+        html, body {
+          margin: 0;
+          padding: 0;
+        }
+    
+        * {
+          box-sizing: border-box;
+        }
+    
+        .slider {
+          width: 87.6%;
+          margin: 100px auto;
+          
+        }
+    
+        .slick-slide {
+          margin: 0px 0px;
+        }
+        /* #slick-slide00, #slick-slide01, #slick-slide02, #slick-slide03, #slick-slide04, #slick-slide05{
+          width: 253px !important;
+        } */
+        .slick-slide img {
+          width: 217px;
+          height: 325px;
+        }
+        .slick-prev:before,
+        .slick-next:before {
+          color: red;
+          font-size: 35px;
+        }
+    
+    
+        .slick-slide {
+          transition: all ease-in-out .3s;
+          opacity: .5;
+        }
+        
+        .slick-active {
+          opacity: 1;
+        }
+        .slick-list{
+          margin-left: -1.6rem;
+        }
+        .slick-current {
+          opacity: 1;
+        }
+      </style>
 </head>
 <body>
-    
     <div_header class="row m-0">
         <!--Top Nav -->
         <nav class="navbar p-0">
@@ -82,7 +131,7 @@
                </div>
        
                <!--lijst voor de covers van de series-->
-               <div class="row m-0">
+               <!-- <div class="row m-0">
                    <div class="col-12">
                    <ul class="series-list row m-0">
                        <i class="fas fa-plus series-list__plus"></i>
@@ -95,7 +144,34 @@
                        <i class="fas fa-chevron-right series-list__pijl"></i>
                    </ul>
                    </div>
-               </div>
+               </div> -->
+               <a class="series-list"><i class="fas fa-plus series-list__plus"></i></a>
+               <ul class="row m-0 regular slider">
+                <li class="li-container" href="Film_serie_detail_create.html">
+                  <a href="index2.html"><img class="image series-list__1" src="media/PeakyBlinders.png"><div class="overlay"><p>Misdaad<br>Peaky Blinders</p></div></a>
+                </li>
+
+                <li class="li-container" href="film_serie_detail.html">
+                  <a href="index2.html"><img class="series-list__2" src="media/The100.png"><div class="overlay"><p>Actie<br>The 100</p></div></a>
+                </li>
+
+                <li class="li-container">
+                  <a><img class="series-list__3" src="media/Vikings.png"><div class="overlay"><p>Actie<br>Vikings</p></div></a>
+                </li>
+
+                <li class="li-container">
+                  <a><img class="series-list__4" src="media/Lucifer.png"><div class="overlay"><p>Actie<br>Lucifer</p></div></a>
+                </li>
+
+                <li class="li-container">
+                  <a><img class="series-list__5" src="media/Sherlock.png"><div class="overlay"><p>Actie<br>Sherlock</p></div></a>
+                </li>
+
+                <li class="li-container">
+                  <a href="index2.html"><img class="image series-list__1" src="media/MI6.png"><div class="overlay"><p>Misdaad<br>MI6</p></div></a>
+                </li>
+              </ul>
+
                 <!-- Movies lijst-->
                <div class="row m-0">
                    <div class="col-12">
@@ -106,7 +182,7 @@
                </div>
        
                <!--lijst voor de covers van de movies-->
-               <div class="row m-0">
+               <!-- <div class="row m-0">
                    <div class="col-12">
                    <ul class="movies-list row m-0">
                        <i class="fas fa-plus movies-list__plus"></i>
@@ -119,11 +195,34 @@
                        <i class="fas fa-chevron-right movies-list__pijl"></i>
                    </ul>
                    </div>
-               </div>
-       
-               
-       
-       
+               </div> -->
+               <a class="movies-list"><i class="fas fa-plus movies-list__plus"></i></a>
+               <ul class="row m-0 regular slider">
+                <li class="li-container" href="Film_serie_detail_create.html">
+                  <a href="index2.html"><img class="movies-list__1" src="media/MI6.png"><div class="overlay"><p>Misdaad<br>MI6</p></div></a>
+                </li>
+
+                <li class="li-container" href="film_serie_detail.html">
+                  <a href="index2.html"><img class="movies-list__2" src="media/Code8.png"><div class="overlay"><p>Misdaad<br>Code 8</p></div></a>
+                </li>
+
+                <li class="li-container">
+                  <a><img class="movies-list__3" src="media/Zombieland.png"><div class="overlay"><p>Misdaad<br>Zombieland</p></div></a>
+                </li>
+
+                <li class="li-container">
+                  <a><img class="movies-list__4" src="media/Aquaman.png"><div class="overlay"><p>Misdaad<br>Aquaman</p></div></a>
+                </li>
+
+                <li class="li-container">
+                  <a><img class="movies-list__5" src="media/TheBabysitter.png"><div class="overlay"><p>Misdaad<br>The babysitter</p></div></a>
+                </li>
+
+                <li class="li-container">
+                  <a href="index2.html"><img class="movies-list__4" src="media/Aquaman.png"><div class="overlay"><p>Misdaad<br>Aquaman</p></div></a>
+                </li>
+              </ul>
+
            </div>
         </main>
 
@@ -133,6 +232,38 @@
       <!-- <div_footer class="row m-0 footer">
               <p>footer</p>
       </div_footer>-->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./slick-master/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+    $(document).on('ready', function() {
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 3,
+    //start responsive option
+    responsive: [
+    {
+      breakpoint: 600, //at 600px wide, only 2 slides will show
+      settings: {
+        slidesToShow: 2,
+        vertical: true,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480, //at 480px wide, only one slide will show
+      settings: {
+        slidesToShow: 1,
+        vertical: true,
+        slidesToScroll: 1
+      }
+    }
+    ]
+      });
+    });
+</script>
     
 
 </body>
