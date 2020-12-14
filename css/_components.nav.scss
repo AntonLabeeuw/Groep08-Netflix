@@ -28,7 +28,13 @@
     }
 }
 
-.sidenav{
+
+.sidenav{    
+    & a{
+        color: #FFF;
+        text-decoration: none;
+    }
+
     padding-top: 3.125rem;
     position: relative;
 
@@ -53,6 +59,9 @@
 }
 
     a:hover {
+        color: #E50914;
+    }
+    #active{
         color: #E50914;
     }
     .sidenav-button:hover{

@@ -25,7 +25,6 @@ body {
 }
 
 .sidenav a {
-  color: #fff;
   text-decoration: none;
   display: block;
 }
@@ -51,6 +50,85 @@ body {
   -webkit-box-flex: 1;
   -ms-flex: 1 1;
   flex: 1 1;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.navbar .navbar-img {
+  height: 5.625rem;
+}
+
+.navbar .fas {
+  color: #FFFFFF;
+}
+
+.navbar .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar .navbar-icons {
+  position: absolute;
+  left: 72vw;
+}
+
+.navbar i {
+  margin-left: 1.25rem;
+}
+
+.navbar .navbar-search {
+  width: 31.25rem;
+}
+
+.sidenav {
+  padding-top: 3.125rem;
+  position: relative;
+}
+
+.sidenav a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.sidenav .sidenav_prim {
+  font-size: 1.5rem;
+}
+
+.sidenav .sidenav_secu {
+  font-size: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.sidenav .sidenav-button {
+  position: relative;
+  top: 31.25rem;
+  left: 3.75rem;
+  background-color: #FFFFFF;
+  border-style: none;
+  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+}
+
+a:hover {
+  color: #E50914;
+}
+
+#active {
+  color: #E50914;
+}
+
+.sidenav-button:hover {
+  background-color: #E50914;
+  color: #FFFFFF;
 }
 
 .form-control {
@@ -130,8 +208,10 @@ table > thead > tr > th {
   border-top: none !important;
 }
 
-table > tbody, thead > tr > th, td:not(:nth-last-of-type(1)) {
-  width: 11.6666666% !important;
+table > tbody,
+thead > tr > th,
+td:not(:nth-last-of-type(1)) {
+  width: 11.6666666%;
   text-align: center;
 }
 
@@ -156,24 +236,111 @@ table > tbody, thead > tr > th, td:not(:nth-last-of-type(1)) {
 
 .fa-pen {
   color: #ffa00a;
+  height: 100% !important;
 }
 
 .fa-times {
   color: #e50914;
 }
 
-tr:first-child {
-  border-bottom: 1px solid #ffa00a !important;
+.fa-plus {
+  color: #55bc7d;
+}
+
+.fa-pen:hover {
+  color: #55bc7d;
+}
+
+.fa-times:hover {
+  color: #55bc7d;
+}
+
+tr:hover {
+  border: none;
 }
 
 tr:hover td {
-  background-color: #707070 !important;
-  border-bottom: 1px solid #ffa00a !important;
-  color: #fff !important;
+  background-color: #707070;
+  border-bottom: 1px solid #ffa00a;
+  color: #fff;
 }
 
 .border-r {
   border-color: #e50914 !important;
+}
+
+.paddingRows {
+  padding: 3rem;
+}
+
+@media screen and (max-width: 960px) {
+  .paddingRows {
+    padding: 0.5rem;
+  }
+  table {
+    border: 0;
+  }
+  table tbody tr:not(:last-child) {
+    margin-bottom: 5rem !important;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  .fa-pen {
+    height: 100%;
+    text-align: center;
+  }
+  .fa-times {
+    text-align: center;
+  }
+  .fa-plus {
+    text-align: center;
+  }
+  table > tbody,
+  thead > tr > th,
+  td:not(:nth-last-of-type(1)) {
+    width: 100%;
+    text-align: right;
+  }
+}
+
+input.page-link {
+  width: 2.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 body {
