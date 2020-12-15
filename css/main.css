@@ -952,6 +952,59 @@ p {
   margin-left: 77px;
 }
 
+.c-recent {
+  margin-left: 93px;
+  margin-bottom: 50px;
+}
+
+.c-recent__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-recent__covers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-recent__cover {
+  margin-right: 47px;
+}
+
+.c-recent__cover:last-child {
+  margin-right: 0;
+}
+
+.c-recent__cover img {
+  width: 271px;
+}
+
+.c-recent__links {
+  margin-right: 65px;
+  font-size: 2.5rem;
+  color: #e50914;
+  cursor: pointer;
+  margin-top: 181.5px;
+}
+
+.c-recent__links:hover {
+  color: #fff;
+}
+
+.c-recent__rechts {
+  margin-left: 65px;
+  font-size: 2.5rem;
+  color: #e50914;
+  cursor: pointer;
+  margin-top: 181.5px;
+}
+
+.c-recent__rechts:hover {
+  color: #fff;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -173,3 +173,52 @@ p{
         margin-left: 77px;
     }
 }
+
+.c-recent{
+    margin-left: 93px;
+    margin-bottom: 50px;
+
+    &__row{
+        display: flex;
+    }
+
+    &__covers{
+        display: flex;
+    }
+
+    &__cover{
+        margin-right: 47px;
+    }
+
+    &__cover:last-child{
+        margin-right: 0;
+    }
+
+    &__cover img{
+        width: 271px;
+    }
+
+    &__links{
+        margin-right: 65px;
+        font-size: 2.5rem;
+        color: $colorRed1;
+        cursor: pointer;
+        margin-top: 181.5px;
+
+        &:hover{
+            color: $colorW;
+        }
+    }
+
+    &__rechts{
+        margin-left: 65px;
+        font-size: 2.5rem;
+        color: $colorRed1;
+        cursor: pointer;
+        margin-top: 181.5px;
+
+        &:hover{
+            color: $colorW;
+        }
+    }
+}
