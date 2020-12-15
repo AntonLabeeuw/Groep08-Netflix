@@ -2,6 +2,7 @@ $colorW: #fff;
 $colorB: #000;
 $colorSidebar: #211f1f;
 $colorRed1: #e50914;
+$colorRed1-dark: #B1060F;
 $colorOrange: #ffa00a;
 $colorOrange-dark: #BD7C15;
 $colorBlue1: #0d3c73;
@@ -148,6 +149,32 @@ p{
         font-weight: bold;
         font-size: 1.5rem;
         padding-top: 34px;
+    }
+}
+
+.c-gebruikers{
+    margin-left: 192px;
+
+    &__table{
+        margin-bottom: 63px;
+    }
+
+    &__td{
+        padding: 33px 28.5px;
+        border-bottom: $colorGrey 2px solid;
+    }
+
+    &__button{
+        color: $colorW;
+        background-color: $colorRed1;
+        padding: 29px 181.5px;
+
+        &:hover{
+            background-color: $colorRed1-dark;
+            color: $colorW;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
     }
 }
 
