@@ -205,18 +205,21 @@ $colorGrey: #707070;
     vertical-align: middle;
     margin: auto;
     position: absolute;
-    top: 44.5%;
+    // top: 44.5%;
     margin-left: -5%;
-    bottom: 44.5%;
+    // bottom: 44.5%;
+    // bottom: 15%;
+    top: 80%;
     &:hover{
       color: white;
     }
     @media only screen and (max-width: 1690px){
-      top: -7%;
+      // top: -7%;
     }
     @media only screen and (max-width: 700px){
-      top: -3%;
-      margin-left: -20%;
+      // top: -3%;
+      bottom: 15%;
+      margin-right: -20%;
     }
   }
   &__pijl-links {
@@ -226,7 +229,7 @@ $colorGrey: #707070;
     margin: auto;
     position: absolute;
     top: 64.5%;
-    margin-left: -5%;
+    margin-left: -10%;
     bottom: 24.5%;
     transition: 2s ease-in;
     &:hover{
@@ -239,7 +242,7 @@ $colorGrey: #707070;
     }
     @media only screen and (max-width: 700px){
       top: -0%;
-      margin-left: -20%;
+      margin-left: -10%;
     }
   }
 }
@@ -288,7 +291,7 @@ $colorGrey: #707070;
 
 .li-container{
   position: relative;
-  margin-left: 36px;
+  //margin-left: 36px;
   @media only screen and (max-width: 1690px) {
     display: flex;
     margin: auto;
@@ -312,7 +315,7 @@ $colorGrey: #707070;
   left: 0;
   right: 0;
   height: 100px;
-  width: 216,43px;
+  width: 217px !important;
   opacity: 0;
   transition: .5s ease;
   background-color: #910707;
@@ -330,4 +333,16 @@ $colorGrey: #707070;
 }
 .li-container:hover .overlay {
   opacity: 100;
+}
+.slick-prev{
+  @media only screen and (max-width: 700px){
+   transform: rotate(90deg); 
+  }
+  
+}
+.slick-next{
+  @media only screen and (max-width: 700px){
+   transform: rotate(90deg); 
+  }
+  
 }
