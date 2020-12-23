@@ -130,6 +130,72 @@ tr:hover {
 .paddingRows{
   padding:3rem;
 }
+input.page-link{
+  width: 2.5rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input.borderWcolor,button.borderWcolor,div.borderWcolor{
+  border: none;
+  border-radius: 0;
+  border-right: 1.5rem solid lime;
+  &__red,&__red:focus{
+    border-color: $colorRed1;
+  }
+  &__orange,&__orange:focus{
+    border-color: $colorOrange;
+  }
+  &__green,&__green:focus{
+    border-color: $colorGreen;
+  }
+  &__grey,&__grey:focus{
+    border-color: $colorGrey;
+  }
+  &__blue1,&__blue1:focus{
+    border-color: $colorBlue1;
+  }
+  &__blue2,&__blue2:focus{
+    border-color: $colorBlue2;
+  } 
+}
+.selection{
+  float: left;
+}
+.dropdownIcon{
+  float: right;
+}
+.form-control.btn{
+  border: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: $colorW;
+  &__red{
+    background-color: $colorRed1;
+  }
+}
+.btn:hover{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: $colorW !important;
+  border-right: 1.5rem solid $colorW;
+}
+
+.break-even{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#dropprofielen{
+  display: none;
+}
 @media screen and (max-width: 960px) {
   .paddingRows{
     padding:0.5rem;
@@ -192,37 +258,12 @@ tr:hover {
     width: 100%;
     text-align: right;
   }
-}
-input.page-link{
-  width: 2.5rem;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-input[type=number] {
-  -moz-appearance: textfield;
-}
-input.borderWcolor{
-  border: none;
-  border-right: 1.5rem solid lime;
-  &__red,&__red:focus{
-    border-color: $colorRed1;
+  #dropprofielen .imgDiv{
+    text-align: center;
   }
-  &__orange,&__orange:focus{
-    border-color: $colorOrange;
+  .break-even {
+    &__input{
+    margin-top: 1rem;
+    }
   }
-  &__green,&__green:focus{
-    border-color: $colorGreen;
-  }
-  &__grey,&__grey:focus{
-    border-color: $colorGrey;
-  }
-  &__blue1,&__blue1:focus{
-    border-color: $colorBlue1;
-  }
-  &__blue2,&__blue2:focus{
-    border-color: $colorBlue2;
-  }  
 }
