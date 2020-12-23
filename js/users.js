@@ -197,3 +197,11 @@
              }
          }
      }
+     function toggleProfiles() {
+        var x = document.getElementById("dropprofielen");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
