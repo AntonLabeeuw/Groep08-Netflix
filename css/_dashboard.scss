@@ -2,8 +2,250 @@ $colorW: #fff;
 $colorB: #000;
 $colorSidebar: #211f1f;
 $colorRed1: #e50914;
+$colorRed1-dark: #B1060F;
 $colorOrange: #ffa00a;
+$colorOrange-dark: #BD7C15;
 $colorBlue1: #0d3c73;
+$ColorBlue1-dark: #0B2B50;
 $colorBlue2: #549494;
+$colorBlue2-dark: #4D7E7E;
 $colorGreen: #55bc7d;
+$colorGreen-dark: #469866;
 $colorGrey: #707070;
+
+h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 55px;
+    margin-bottom: 35px;
+}
+
+h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 47px;
+}
+
+p{
+    margin: 0;
+}
+
+.c-grafiekStats{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 183px;
+}
+
+.c-grafiek{
+    width: 817px;
+}
+
+.c-stats{
+    display: flex;
+    flex-direction: column;
+    margin-left: 59px;
+
+    &__stat{
+        display: flex;
+        background-color: $colorSidebar;
+        width: 398px;
+        height: 100px;
+        margin-bottom: 41px;
+    }
+
+    &__stat:last-child{
+        margin-bottom: 0;
+    }
+
+    &__icon{
+        width: 100px;
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    &__series .c-stats__icon{
+        color: $colorOrange-dark;
+        background-color: $colorOrange;
+    }
+
+    &__films .c-stats__icon{
+        color: $ColorBlue1-dark;
+        background-color: $colorBlue1;
+    }
+
+    &__miniseries .c-stats__icon{
+        color: $colorGreen-dark;
+        background-color: $colorGreen;
+    }
+
+    &__likes .c-stats__icon{
+        color: $colorBlue2-dark;
+        background-color: $colorBlue2;
+    }
+
+    &__text{
+        color: $colorW;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-top: 34px;
+    }
+    
+}
+
+.c-info{
+    display: flex;
+}
+
+.c-laatsteUur{
+    display: flex;
+    flex-direction: column;
+    margin-left: 183px;
+
+    &__balkjes{
+        border-right: 2px $colorRed1 solid;
+        padding-right: 218px;
+    }
+
+    &__balkje{
+        display: flex;
+        background-color: $colorSidebar;
+        width: 398px;
+        height: 100px;
+        margin-bottom: 33px;
+    }
+
+    &__balkje:last-child{
+        margin-bottom: 0;
+    }
+
+    &__gegeven{
+        width: 100px;
+        font-size: 1.4rem;
+        text-align: center;
+        color: $colorW;
+        padding-top: 35px;
+    }
+
+    &__inkomen .c-laatsteUur__gegeven{
+        background-color: $colorOrange;
+    }
+
+    &__bekeken .c-laatsteUur__gegeven{
+        background-color: $colorBlue1;
+    }
+
+    &__sociaal .c-laatsteUur__gegeven{
+        background-color: $colorGreen;
+    }
+
+    &__leden .c-laatsteUur__gegeven{
+        background-color: $colorBlue2;
+    }
+
+    &__text{
+        color: $colorW;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-top: 34px;
+    }
+}
+
+.c-gebruikers{
+    margin-left: 192px;
+
+    &__table{
+        margin-bottom: 63px;
+    }
+
+    &__td{
+        padding: 33px 28.5px;
+        border-bottom: $colorGrey 2px solid;
+    }
+
+    &__button{
+        color: $colorW;
+        background-color: $colorRed1;
+        padding: 29px 181.5px;
+
+        &:hover{
+            background-color: $colorRed1-dark;
+            color: $colorW;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+    }
+}
+
+.c-populairst{
+    margin-left: 183px;
+    
+    &__populair{
+        display: flex;
+
+    }
+
+    & img{
+        width: 559px;
+        height: 302px;
+    }
+
+    &__serie{
+        border-right: 2px $colorRed1 solid;
+        padding-right: 77px;
+    }
+
+    &__film{
+        margin-left: 77px;
+    }
+}
+
+.c-recent{
+    margin-left: 93px;
+    margin-bottom: 50px;
+
+    &__row{
+        display: flex;
+    }
+
+    &__covers{
+        display: flex;
+    }
+
+    &__cover{
+        margin-right: 47px;
+    }
+
+    &__cover:last-child{
+        margin-right: 0;
+    }
+
+    &__cover img{
+        width: 271px;
+    }
+
+    &__links{
+        margin-right: 65px;
+        font-size: 2.5rem;
+        color: $colorRed1;
+        cursor: pointer;
+        margin-top: 181.5px;
+
+        &:hover{
+            color: $colorW;
+        }
+    }
+
+    &__rechts{
+        margin-left: 65px;
+        font-size: 2.5rem;
+        color: $colorRed1;
+        cursor: pointer;
+        margin-top: 181.5px;
+
+        &:hover{
+            color: $colorW;
+        }
+    }
+}
