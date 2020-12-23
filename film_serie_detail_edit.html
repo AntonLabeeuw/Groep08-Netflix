@@ -60,21 +60,21 @@
                     <div class="col-xl-8 col-lg-7 row-cform__eerstedeel">
                         <form class="c-form" method="POST">
                             <div class="form-group input-group c-form__group">
-                                <input type="text" name="titel" placeholder="ex. Zorro" required minlength="2" class="form-control c-form__input c-form__input-titel"
+                                <input type="text" name="titel" placeholder="ex. Zorro" value="Peaky Blinders" required minlength="2" class="form-control c-form__input c-form__input-titel"
                                 title="Deze titel bevat letters of cijfers (bv. Zorro)">
                                 <span class="input-group-addon titel"></span>
                                 <label class="c-form__label" for="titel">Titel</label> 
                             </div>
 
                             <div class="form-group input-group c-form__group">
-                                <input type="number" name="aflevering" placeholder="ex. Aflevering 1" minlength="1" class="form-control c-form__input c-form__input-aflevering"
+                                <input type="number" name="aflevering" placeholder="ex. Aflevering 1"  value="4" minlength="1" class="form-control c-form__input c-form__input-aflevering"
                                 title="Aflevering bevat alleen cijfers (bv. 22)"/> 
                                 <span class="input-group-addon aflevering"></span>
                                 <label class="c-form__label" for="aflevering">Aflevering optioneel</label>
                             </div>
 
                             <div class="form-group input-group c-form__group">
-                              <input type="number" name="seizoen" placeholder="ex. Seizoen 03" minlength="1" class="form-control c-form__input c-form__input-seizoen"
+                              <input type="number" name="seizoen" placeholder="ex. Seizoen 03" value="01" minlength="1" class="form-control c-form__input c-form__input-seizoen"
                               title="Seizoen bevat alleen cijfers (bv. 03)"/> 
                               <span class="input-group-addon seizoen"></span>
                               <label class="c-form__label" for="seizoen">Seizoen optioneel</label>
@@ -93,7 +93,7 @@
                                 <option value="thriller">Thriller</option>
                                 <option value="komedie">Komedie</option>
                                 <option value="romantiek">Romantiek</option>
-                                <option value="misdaad">Misdaad</option>
+                                <option value="misdaad" selected>Misdaad</option>
                                 <option value="erotisch">Erotisch</option>
                                 <option value="western">Western</option>
                                 <option value="Andere">Andere</option>
@@ -105,7 +105,7 @@
 
                             <div class="form-group input-group c-form__group">
                               <textarea type="text" name="Omschrijving" placeholder="Dit is de mededeling" required class="form-control c-form__input c-form__input-omschrijving"
-                              title="Schrijf hier de omschrijving van de film of serie"></textarea>
+                              title="Schrijf hier de omschrijving van de film of serie">Peaky Blinders is een Britse historische dramaserie van Steven Knight. De serie gaat over de Peaky Blinders, een criminele bende uit Birmingham, en hun activiteiten in Birmingham kort na de Eerste Wereldoorlog. De hoofdrollen worden gespeeld door Cillian Murphy, Helen McCrory, Sophie Rundle en Sam Neill (in de eerste twee seizoenen).</textarea>
                               <span class="input-group-addon omschrijving"></span>
                               <label class="c-form__label" for="omschrijving">Omschrijving</label>
                             </div>
@@ -120,7 +120,7 @@
                             </div>
 
                             <div class="form-group input-group c-form__group">
-                              <input type="number" name="speelduur" placeholder="speelduur in min" required class="form-control c-form__input c-form__input-speelduur"
+                              <input type="number" name="speelduur" placeholder="speelduur in min" value="45" required class="form-control c-form__input c-form__input-speelduur"
                               title="Speelduur ingeven in minuten, alleen cijfers ingeven.(Bv 120)"></input>
                               <span class="input-group-addon speelduur"></span>
                               <label class="c-form__label" for="speelduur">Speelduur</label>
@@ -136,7 +136,7 @@
                           </form>
                           <div class="col-xl-1 col-lg-5 row-cform__tweededeel">
                             <div class="img-content">
-                              <img class="cover-uploaden" src="media/placeholder.png">
+                              <img class="cover-uploaden" src="media/PeakyBlinders.png">
                               <div class="cover-uploaden-div">
                                 <button class="cover-uploaden-div">Wijzig cover</button>
                               </div>
@@ -165,7 +165,7 @@
    
            <a class="series-list"></a>
            <ul class="row m-0 regular slider">
-            <li class="li-container" href="Film_serie_detail_edit.html" style="padding-right: 63px;">
+            <li class="li-container" style="padding-right: 63px;">
               <a href="film_serie_detail_edit.html"><img class="image series-list__1" src="media/PeakyBlinders.png"><div class="overlay"><p>Misdaad<br>Peaky Blinders</p></div></a>
             </li>
 

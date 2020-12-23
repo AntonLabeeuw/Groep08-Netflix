@@ -28,44 +28,6 @@
         * {
           box-sizing: border-box;
         }
-    
-        .slider {
-          width: 87.6%;
-          margin: 100px auto;
-          
-        }
-    
-        .slick-slide {
-          margin: 0px 0px;
-        }
-        /* #slick-slide00, #slick-slide01, #slick-slide02, #slick-slide03, #slick-slide04, #slick-slide05{
-          width: 253px !important;
-        } */
-        .slick-slide img {
-          width: 217px;
-          height: 325px;
-        }
-        .slick-prev:before,
-        .slick-next:before {
-          color: red;
-          font-size: 35px;
-        }
-    
-    
-        .slick-slide {
-          transition: all ease-in-out .3s;
-          opacity: .5;
-        }
-        
-        .slick-active {
-          opacity: 1;
-        }
-        .slick-list{
-          margin-left: -1.6rem;
-        }
-        .slick-current {
-          opacity: 1;
-        }
       </style>
 </head>
 <body>
@@ -145,14 +107,14 @@
                    </ul>
                    </div>
                </div> -->
-               <a class="series-list"><i class="fas fa-plus series-list__plus"></i></a>
+               <a class="series-list" href="film_serie_detail.html"><i class="fas fa-plus series-list__plus"></i></a>
                <ul class="row m-0 regular slider">
-                <li class="li-container" href="Film_serie_detail_create.html">
-                  <a href="index2.html"><img class="image series-list__1" src="media/PeakyBlinders.png"><div class="overlay"><p>Misdaad<br>Peaky Blinders</p></div></a>
+                <li class="li-container" href="film_serie_detail_edit.html">
+                  <a href="film_serie_detail_edit.html"><img class="image series-list__1" src="media/PeakyBlinders.png"><div class="overlay"><p>Misdaad<br>Peaky Blinders</p></div></a>
                 </li>
 
-                <li class="li-container" href="film_serie_detail.html">
-                  <a href="index2.html"><img class="series-list__2" src="media/The100.png"><div class="overlay"><p>Actie<br>The 100</p></div></a>
+                <li class="li-container">
+                  <a href=""><img class="series-list__2" src="media/The100.png"><div class="overlay"><p>Actie<br>The 100</p></div></a>
                 </li>
 
                 <li class="li-container">
@@ -168,7 +130,7 @@
                 </li>
 
                 <li class="li-container">
-                  <a href="index2.html"><img class="image series-list__1" src="media/MI6.png"><div class="overlay"><p>Misdaad<br>MI6</p></div></a>
+                  <a href=""><img class="image series-list__1" src="media/MI6.png"><div class="overlay"><p>Misdaad<br>MI6</p></div></a>
                 </li>
               </ul>
 
@@ -196,14 +158,14 @@
                    </ul>
                    </div>
                </div> -->
-               <a class="movies-list"><i class="fas fa-plus movies-list__plus"></i></a>
+               <a class="movies-list" href="film_serie_detail.html"><i class="fas fa-plus movies-list__plus"></i></a>
                <ul class="row m-0 regular slider">
-                <li class="li-container" href="Film_serie_detail_create.html">
-                  <a href="index2.html"><img class="movies-list__1" src="media/MI6.png"><div class="overlay"><p>Misdaad<br>MI6</p></div></a>
+                <li class="li-container">
+                  <a><img class="movies-list__1" src="media/MI6.png"><div class="overlay"><p>Misdaad<br>MI6</p></div></a>
                 </li>
 
                 <li class="li-container" href="film_serie_detail.html">
-                  <a href="index2.html"><img class="movies-list__2" src="media/Code8.png"><div class="overlay"><p>Misdaad<br>Code 8</p></div></a>
+                  <a><img class="movies-list__2" src="media/Code8.png"><div class="overlay"><p>Misdaad<br>Code 8</p></div></a>
                 </li>
 
                 <li class="li-container">
@@ -219,7 +181,7 @@
                 </li>
 
                 <li class="li-container">
-                  <a href="index2.html"><img class="movies-list__4" src="media/Aquaman.png"><div class="overlay"><p>Misdaad<br>Aquaman</p></div></a>
+                  <a><img class="movies-list__4" src="media/Aquaman.png"><div class="overlay"><p>Misdaad<br>Aquaman</p></div></a>
                 </li>
               </ul>
 
@@ -245,10 +207,19 @@
     //start responsive option
     responsive: [
     {
-      breakpoint: 600, //at 600px wide, only 2 slides will show
+      breakpoint: 1000, //at 600px wide, only 2 slides will show
       settings: {
         slidesToShow: 2,
         vertical: true,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 1500, //at 600px wide, only 2 slides will show
+      settings: {
+        slidesToShow: 3,
+        vertical: false,
+        marginRight: 200 + "px",
         slidesToScroll: 2
       }
     },
