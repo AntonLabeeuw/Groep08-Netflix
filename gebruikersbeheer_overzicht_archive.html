@@ -16,7 +16,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"></script>
         <script src="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css"></script>
     </bootstrap>
-    <title>Gebruikersbeheer Overzicht</title>
+    <title>Gebruikersbeheer Archive</title>
 </head>
 
 <body>
@@ -40,22 +40,13 @@
         <!-- hier start je main body -->
         <main class="col-md content mt-5  ">
             <div class="row content paddingRows">
-                <div class="col-sm-4 text-center mb-2 p-0 order-sm-12">
-                    <div class="input-group bl">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text text-white">
-                                <i class="fas fa-plus text-white" aria-hidden="true">
-                                </i>
-                            </span>
-                        </div>
-                        <input disabled class="form-control form-control__red" type="text" placeholder="Toevoegen"
-                            aria-label="add">
-                    </div>
+                <div class="col-sm-5 text-center p-0">
+                    <H1 class="text-left">Archieven</H1>
                 </div>
-                <div class="col-sm text-center p-0 order-sm-6">
+                <div class="col-sm text-center p-0">
                     <!--SPACING-->
                 </div>
-                <div class="col-sm-4 text-center mb-2 p-0 order-sm-1">
+                <div class="col-sm-5 text-center mb-2 p-0">
                     <div class="row m-0 h-100 input-group br">
                         <div class="col-3 p-0 m-0">
                             <select type="text" id="dropBox"
@@ -65,7 +56,7 @@
                                 <option value="2">E-mail</option>
                                 <option value="3">Type</option>
                                 <option value="4">Aangemaakt</option>
-                                <option value="4">Laatste login</option>
+                                <option value="4">Gearchiveerd</option>
                                 <option value="4">Profielen</option>
                             </select>
                         </div>
@@ -110,7 +101,7 @@
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">Laastste login
+                            <label class="form-check-label" for="inlineCheckbox2">Gearchiveerd
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -147,13 +138,13 @@
                                     </a>
                                 </th>
                                 <th class="border-r">
-                                    <a>Laastste login</a>
+                                    <a>Gearchiveerd</a>
                                 </th>
                                 <th class="border-r">
                                     <a>Profielen</a>
                                 </th>
                                 <th class="border-r">
-                                    <i class="fas fa-times col-12"></i>
+                                    <i class="fas fa-plus col-12"></i>
                                 </th>
                             </tr>
                         </thead>
@@ -161,7 +152,7 @@
                         <!--Table body-->
                         <tbody id="tbody">
                             <script>
-                                printAllUsers();
+                                printAllArchivedUsers();
                             </script>
                         </tbody>
                         <!--Table body-->

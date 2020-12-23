@@ -35,7 +35,6 @@ body {
 }
 
 .sidenav a {
-  color: $colorW;
   text-decoration: none;
   display: block;
 }
@@ -62,8 +61,7 @@ body {
       -ms-flex: 1 1;
           flex: 1 1;
 }
-
 @import 'users';
 @import 'filmseries';
 @import 'dashboard';
-@import 'components.nav'
+@import 'components.nav';
