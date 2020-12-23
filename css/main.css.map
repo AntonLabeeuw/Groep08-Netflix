@@ -5,8 +5,7 @@
         "main.scss",
         "_users.scss",
         "_filmseries.scss",
-        "_dashboard.scss",
-        "_components.nav.scss"
+        "_dashboard.scss"
     ],
     "names": [],
     "file": "main.css"
