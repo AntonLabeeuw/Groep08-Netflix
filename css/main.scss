@@ -60,8 +60,7 @@ body {
       -ms-flex: 1 1;
           flex: 1 1;
 }
-@import "components.nav";
 @import 'users';
 @import 'filmseries';
 @import 'dashboard';
-@import 'components.nav'
+@import 'components.nav';
