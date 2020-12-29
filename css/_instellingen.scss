@@ -1,0 +1,140 @@
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c-abonnementen{
+    
+    
+    &__row td:first-child{
+        width: 464px;
+        text-align-last: left;
+        padding-right: 20px;
+    }
+
+    &__tile{
+        width: 265px;
+        text-align: center;
+    }
+
+    & th{
+        font-size: 1.9rem;
+        border: $colorRed1 2px solid;
+    }
+
+    & td{
+        margin: 0;
+        text-align: center;
+        font-size: 1.7rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: $colorRed1 2px solid;
+    }
+
+    & .fa-check{
+        color: $colorGreen;
+    }
+
+    & .fa-times{
+        fill: $colorRed1;
+    }
+
+
+}
+
+.c-promos{
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__promo{
+        width: 30%;
+        border: $colorRed1 1px solid;
+    }
+
+    &__head{
+        font-size: 1.5rem;
+        background-color: $colorRed1;
+        padding: 1.5rem 10px;
+        display: flex;
+        justify-content: space-between;
+
+        // &:hover ~ .c-promos__body{
+        //     display: inline;
+        // }
+    }
+
+    &__body{
+        padding-top: 10px;
+        padding-left: 10px;
+        height: 150px;
+        position: relative;
+        // display: none;
+    }
+
+    &__duur{
+        position: absolute;
+        bottom: 10px;
+    }
+}
+
+.c-layout{
+    margin-bottom: 50px;
+
+    &__logo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__logo-groot{
+        width: 300px;
+    }
+
+    &__logo-klein{
+        width: 100px;
+        height: auto;
+    }
+
+    &__kleuren{
+        margin-bottom: 20px;
+    }
+
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__kleur{
+        height: 100px;
+        width: 100px;
+        margin-right: 50px;
+        border: $colorGrey 1px solid;
+    }
+
+    &__kleur1{
+        background-color: $colorRed1;
+    }
+
+    &__kleur2{
+        background-color: $colorRed2;
+    }
+
+    &__kleur3{
+        background-color: $colorSidebar;
+    }
+
+    &__kleur4{
+        background-color: $colorB;
+    }
+
+    &__kleur5{
+        background-color: $colorW;
+    }
+}
+
+
+
