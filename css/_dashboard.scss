@@ -32,23 +32,32 @@ p{
 
 .c-grafiekStats{
     display: flex;
-    margin-top: 50px;
-    margin-left: 183px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .c-grafiek{
-    width: 817px;
+    width: 63%;
+
+    @media only screen and (max-width: 1000px){
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
 
 .c-stats{
     display: flex;
     flex-direction: column;
-    margin-left: 59px;
+    width: 33%;
+
+    @media only screen and (max-width: 1000px){
+        width: 100%;
+    }
 
     &__stat{
         display: flex;
         background-color: $colorSidebar;
-        width: 398px;
+        width: 100%;
         height: 100px;
         margin-bottom: 41px;
     }
@@ -95,22 +104,27 @@ p{
 
 .c-info{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .c-laatsteUur{
     display: flex;
     flex-direction: column;
-    margin-left: 183px;
+    width: 36%;
 
-    &__balkjes{
-        border-right: 2px $colorRed1 solid;
-        padding-right: 218px;
+    @media only screen and (max-width: 1000px){
+        width: 100%;
     }
+
+    // &__balkjes{
+    //     border-right: $colorRed1 2px solid;
+    // }
 
     &__balkje{
         display: flex;
         background-color: $colorSidebar;
-        width: 398px;
+        width: 100%;
         height: 100px;
         margin-bottom: 33px;
     }
@@ -153,7 +167,10 @@ p{
 }
 
 .c-gebruikers{
-    margin-left: 192px;
+
+    // @media only screen and (max-width: 1000px){
+    //     width: 100%;
+    // }
 
     &__table{
         margin-bottom: 63px;
@@ -179,73 +196,88 @@ p{
 }
 
 .c-populairst{
-    margin-left: 183px;
     
     &__populair{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
     }
 
     & img{
-        width: 559px;
-        height: 302px;
+        width: 100%;
     }
 
     &__serie{
-        border-right: 2px $colorRed1 solid;
-        padding-right: 77px;
+        width: 45%;
+
+        @media only screen and (max-width: 1000px){
+            width: 100%;
+            margin-bottom: 30px;
+        }
     }
 
     &__film{
-        margin-left: 77px;
+        width: 45%;
+
+        @media only screen and (max-width: 1000px){
+            width: 100%;
+        }
     }
 }
 
 .c-recent{
-    margin-left: 93px;
-    margin-bottom: 50px;
 
-    &__row{
-        display: flex;
-    }
-
-    &__covers{
-        display: flex;
-    }
-
-    &__cover{
-        margin-right: 47px;
-    }
-
-    &__cover:last-child{
-        margin-right: 0;
-    }
-
-    &__cover img{
-        width: 271px;
-    }
-
-    &__links{
-        margin-right: 65px;
-        font-size: 2.5rem;
-        color: $colorRed1;
-        cursor: pointer;
-        margin-top: 181.5px;
-
-        &:hover{
-            color: $colorW;
-        }
-    }
-
-    &__rechts{
-        margin-left: 65px;
-        font-size: 2.5rem;
-        color: $colorRed1;
-        cursor: pointer;
-        margin-top: 181.5px;
-
-        &:hover{
-            color: $colorW;
-        }
+    & ul{
+        margin: 0;
     }
 }
+
+// .c-recent{
+//     margin-left: 93px;
+//     margin-bottom: 50px;
+
+//     &__row{
+//         display: flex;
+//     }
+
+//     &__covers{
+//         display: flex;
+//     }
+
+//     &__cover{
+//         margin-right: 47px;
+//     }
+
+//     &__cover:last-child{
+//         margin-right: 0;
+//     }
+
+//     &__cover img{
+//         width: 271px;
+//     }
+
+//     &__links{
+//         margin-right: 65px;
+//         font-size: 2.5rem;
+//         color: $colorRed1;
+//         cursor: pointer;
+//         margin-top: 181.5px;
+
+//         &:hover{
+//             color: $colorW;
+//         }
+//     }
+
+//     &__rechts{
+//         margin-left: 65px;
+//         font-size: 2.5rem;
+//         color: $colorRed1;
+//         cursor: pointer;
+//         margin-top: 181.5px;
+
+//         &:hover{
+//             color: $colorW;
+//         }
+//     }
+// }
