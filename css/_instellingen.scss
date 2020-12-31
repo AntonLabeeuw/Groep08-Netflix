@@ -54,6 +54,18 @@
     &__promo{
         width: 30%;
         border: $colorRed1 1px solid;
+
+        @media only screen and (max-width: 1000px){
+            width: 45%;
+            margin-bottom: 50px;
+        }
+
+        @media only screen and (max-width: 600px){
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+
     }
 
     &__head{
@@ -63,9 +75,9 @@
         display: flex;
         justify-content: space-between;
 
-        // &:hover ~ .c-promos__body{
-        //     display: inline;
-        // }
+        &:hover ~ .c-promos__body{
+            display: block;
+        }
     }
 
     &__body{
@@ -73,7 +85,7 @@
         padding-left: 10px;
         height: 150px;
         position: relative;
-        // display: none;
+        display: none;
     }
 
     &__duur{
@@ -112,6 +124,7 @@
         height: 100px;
         width: 100px;
         margin-right: 50px;
+        margin-bottom: 50px;
         border: $colorGrey 1px solid;
     }
 
