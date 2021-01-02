@@ -894,12 +894,22 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
-  margin-left: 183px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .c-grafiek {
-  width: 817px;
+  width: 63%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .c-grafiek {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 
 .c-stats {
@@ -910,7 +920,13 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 59px;
+  width: 33%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .c-stats {
+    width: 100%;
+  }
 }
 
 .c-stats__stat {
@@ -918,7 +934,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   background-color: #211f1f;
-  width: 398px;
+  width: 100%;
   height: 100px;
   margin-bottom: 41px;
 }
@@ -965,6 +981,11 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .c-laatsteUur {
@@ -975,12 +996,13 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 183px;
+  width: 36%;
 }
 
-.c-laatsteUur__balkjes {
-  border-right: 2px #e50914 solid;
-  padding-right: 218px;
+@media only screen and (max-width: 1000px) {
+  .c-laatsteUur {
+    width: 100%;
+  }
 }
 
 .c-laatsteUur__balkje {
@@ -988,7 +1010,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   background-color: #211f1f;
-  width: 398px;
+  width: 100%;
   height: 100px;
   margin-bottom: 33px;
 }
@@ -1029,10 +1051,6 @@ p {
   padding-top: 34px;
 }
 
-.c-gebruikers {
-  margin-left: 192px;
-}
-
 .c-gebruikers__table {
   margin-bottom: 63px;
 }
@@ -1056,81 +1074,44 @@ p {
   transition: background-color 0.2s ease;
 }
 
-.c-populairst {
-  margin-left: 183px;
-}
-
 .c-populairst__populair {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .c-populairst img {
-  width: 559px;
-  height: 302px;
+  width: 100%;
 }
 
 .c-populairst__serie {
-  border-right: 2px #e50914 solid;
-  padding-right: 77px;
+  width: 45%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .c-populairst__serie {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .c-populairst__film {
-  margin-left: 77px;
+  width: 45%;
 }
 
-.c-recent {
-  margin-left: 93px;
-  margin-bottom: 50px;
+@media only screen and (max-width: 1000px) {
+  .c-populairst__film {
+    width: 100%;
+  }
 }
 
-.c-recent__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c-recent__covers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c-recent__cover {
-  margin-right: 47px;
-}
-
-.c-recent__cover:last-child {
-  margin-right: 0;
-}
-
-.c-recent__cover img {
-  width: 271px;
-}
-
-.c-recent__links {
-  margin-right: 65px;
-  font-size: 2.5rem;
-  color: #e50914;
-  cursor: pointer;
-  margin-top: 181.5px;
-}
-
-.c-recent__links:hover {
-  color: #fff;
-}
-
-.c-recent__rechts {
-  margin-left: 65px;
-  font-size: 2.5rem;
-  color: #e50914;
-  cursor: pointer;
-  margin-top: 181.5px;
-}
-
-.c-recent__rechts:hover {
-  color: #fff;
+.c-recent ul {
+  margin: 0;
 }
 
 .navbar {
@@ -1241,7 +1222,6 @@ a:hover {
     display: inline;
   }
 }
-
 
 .footer {
   color: white;
@@ -1366,6 +1346,7 @@ a:hover {
   border-bottom: 3px solid white;
   padding-bottom: 5px;
   padding-top: 5px;
+}
 
 .head__foto {
   position: relative;
@@ -1400,6 +1381,164 @@ a:hover {
   width: 180px;
   height: 50px;
   margin: 50px 25px;
+}
 
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-abonnementen__row td:first-child {
+  width: 464px;
+  text-align-last: left;
+  padding-right: 20px;
+}
+
+.c-abonnementen__tile {
+  width: 265px;
+  text-align: center;
+}
+
+.c-abonnementen th {
+  font-size: 1.9rem;
+  border: #e50914 2px solid;
+}
+
+.c-abonnementen td {
+  margin: 0;
+  text-align: center;
+  font-size: 1.7rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: #e50914 2px solid;
+}
+
+.c-abonnementen .fa-check {
+  color: #55bc7d;
+}
+
+.c-abonnementen .fa-times {
+  fill: #e50914;
+}
+
+.c-promos__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-promos__promo {
+  width: 30%;
+  border: #e50914 1px solid;
+}
+
+@media only screen and (max-width: 1000px) {
+  .c-promos__promo {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .c-promos__promo {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.c-promos__head {
+  font-size: 1.5rem;
+  background-color: #e50914;
+  padding: 1.5rem 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-promos__head:hover ~ .c-promos__body {
+  display: block;
+}
+
+.c-promos__body {
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 150px;
+  position: relative;
+  display: none;
+}
+
+.c-promos__duur {
+  position: absolute;
+  bottom: 10px;
+}
+
+.c-layout {
+  margin-bottom: 50px;
+}
+
+.c-layout__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-layout__logo-groot {
+  width: 300px;
+}
+
+.c-layout__logo-klein {
+  width: 100px;
+  height: auto;
+}
+
+.c-layout__kleuren {
+  margin-bottom: 20px;
+}
+
+.c-layout__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-layout__kleur {
+  height: 100px;
+  width: 100px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  border: #707070 1px solid;
+}
+
+.c-layout__kleur1 {
+  background-color: #e50914;
+}
+
+.c-layout__kleur2 {
+  background-color: #B1060F;
+}
+
+.c-layout__kleur3 {
+  background-color: #211f1f;
+}
+
+.c-layout__kleur4 {
+  background-color: #000;
+}
+
+.c-layout__kleur5 {
+  background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
