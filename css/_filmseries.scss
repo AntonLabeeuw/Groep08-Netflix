@@ -18,6 +18,7 @@ $colorGrey: #707070;
     color: white;
     font-size: 38px;
     font-weight: 800;
+    margin-top: 0 !important;
   }
   display: flex;
   flex-direction: row;
@@ -292,6 +293,9 @@ $colorGrey: #707070;
 .li-container{
   position: relative;
   //margin-left: 36px;
+  a:focus{
+    outline: none;
+  }
   @media only screen and (max-width: 1690px) {
     display: flex;
     margin: auto;
@@ -333,6 +337,9 @@ $colorGrey: #707070;
     color: white;
     margin-left: 22px;
     padding: 10px 0;
+    @media only screen and (max-width: 1690px){
+      margin-left: 0;
+     }
   }
 }
 .li-container1:hover .overlay {
@@ -342,12 +349,22 @@ $colorGrey: #707070;
   opacity: 100;
 }
 .slick-prev{
+  transition: all ease-in-out 0.6s;
+  &:hover{
+    transition: 0.4s;
+    transform: translate(0px, -1px);
+  }
   @media only screen and (max-width: 700px){
    transform: rotate(90deg); 
   }
   
 }
 .slick-next{
+  transition: all ease-in-out 0.6s;
+  &:hover{
+    transition: 0.4s;
+    transform: translate(0px, -1px);
+  }
   @media only screen and (max-width: 700px){
    transform: rotate(90deg); 
   }
@@ -375,6 +392,7 @@ $colorGrey: #707070;
   font-size: 35px;
   &:hover{
     background-color: white !important;
+    color: white !important;
   }
 }
 
