@@ -8,6 +8,7 @@
         "_dashboard.scss",
         "_components.nav.scss",
         "_footer.scss"
+        "_gebruikersstart.scss"
     ],
     "names": [],
     "file": "main.css"

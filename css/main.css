@@ -1202,7 +1202,7 @@ p {
   padding: 0.625rem 1.25rem 0.625rem 1.25rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
   .sidenav {
     display: none;
   }
@@ -1241,6 +1241,7 @@ a:hover {
     display: inline;
   }
 }
+
 
 .footer {
   color: white;
@@ -1365,5 +1366,40 @@ a:hover {
   border-bottom: 3px solid white;
   padding-bottom: 5px;
   padding-top: 5px;
+
+.head__foto {
+  position: relative;
+}
+
+.head__button {
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.fa-pen {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.head__dropdown {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  width: 180px;
+  height: 50px;
+  margin: 50px 25px;
+
 }
 /*# sourceMappingURL=main.css.map */

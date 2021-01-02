@@ -1,0 +1,49 @@
+$colorW: #fff;
+$colorB: #000;
+$colorSidebar: #211f1f;
+$colorRed1: #e50914;
+$colorRed1-dark: #B1060F;
+$colorOrange: #ffa00a;
+$colorOrange-dark: #BD7C15;
+$colorBlue1: #0d3c73;
+$ColorBlue1-dark: #0B2B50;
+$colorBlue2: #549494;
+$colorBlue2-dark: #4D7E7E;
+$colorGreen: #55bc7d;
+$colorGreen-dark: #469866;
+$colorGrey: #707070;
+
+.head__foto{
+    position: relative;
+}
+.head__button {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    background-color: $colorRed1;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .fa-pen{
+      color: $colorW;
+      margin-right: 10px;
+  }
+
+  .head__dropdown{
+
+      background-color: $colorRed1;
+      color: $colorW;
+      border: none;
+      font-size: 16px;
+      width: 180px;
+      height: 50px;
+      margin: 50px 25px;
+  }
