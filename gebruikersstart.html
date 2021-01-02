@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/8223252f3c.js" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img class = "navbar-img" src="media/netflix.png" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0 float-right">
+            <input class="form-control ml-sm-2 navbar-search" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <ul class="navbar-nav nav__icons">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fas fa-plus fa-2x"></i> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-bell fa-2x"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"><i class="fas fa-user-circle fa-2x"></i></a>
+            </li>
+            <a class= "nav-resp" href="#about">Dashboard</a>
+            <a class= "nav-resp" href="#services">Gebruikersbeheer</a>
+            <a class= "nav-resp" href="#clients">Gebruikers</a>
+            <a class= "nav-resp" href="#contact">Archieven</a>
+            <a class= "nav-resp" href="#contact">Film/Serie</a>
+            <a class= "nav-resp" href="#contact">Film toevoegen</a>
+            <a class= "nav-resp" href="#contact">Serie toevoegen</a>
+            <a class= "nav-resp" href="#contact">Edit</a>
+          </ul>
+
+        </div>
+      </nav>
+      <div_body class="row m-0 content">
+      <sidenav class="col-md-2 pl-5 sidenav">
+        <a class= "sidenav_prim" href="#about">Dashboard</a>
+        <a class= "sidenav_prim" href="#services">Gebruikersbeheer</a>
+        <a class= "sidenav_secu" href="#clients">Gebruikers</a>
+        <a class= "sidenav_secu" href="#contact">Archieven</a>
+        <a class= "sidenav_prim" href="#contact">Film/Serie</a>
+        <a class= "sidenav_secu" href="#contact">Film toevoegen</a>
+        <a class= "sidenav_secu" href="#contact">Serie toevoegen</a>
+        <a class= "sidenav_secu" href="#contact">Edit</a>
+
+        <button class="sidenav-button" type="button" onclick="alert('Hello world!')"><i class="far fa-question-circle fa-lg"></i> Support</button>
+      </sidenav>
+      <main class="ml-5">
+
+        <h2 class="ml-4">Achtergrond afbeelding</h2>
+          <div class="head__foto">
+            <img  class = "img-fluid" src="media/Daredevil-Banner-1024x474.png" alt="">
+            <button class="head__button"><i class="fas fa-pen"></i>Edit</button>
+          </div>
+
+          <h2 class="ml-4">categoriën</h2>
+        
+            <select class="head__dropdown" name="series" id="series">
+                <option value="lijst">Mijn lijst</option>
+                <option value="kijken">Verder kijken</option>
+                <option value="Populair">Populair</option>
+                <option value="10">Top 10</option>
+            </select>
+
+            <div class="row">
+                <ul class="row m-0 regular">
+            <li class="li-container" style="padding-right: 63px;">
+              <a href="film_serie_detail_edit.html"><img class="image series-list__1" src="media/PeakyBlinders.png"><div class="overlay"><p>Misdaad<br>Peaky Blinders</p></div></a>
+            </li>
+
+            <li class="li-container" href="" style="padding-right: 63px;">
+              <a><img class="series-list__2" src="media/The100.png"><div class="overlay"><p>Actie<br>The 100</p></div></a>
+            </li>
+
+            <li class="li-container" style="padding-right: 63px;">
+              <a><img class="series-list__3" src="media/Vikings.png"><div class="overlay"><p>Actie<br>Vikings</p></div></a>
+            </li>
+
+            <li class="li-container" style="padding-right: 63px;">
+              <a><img class="series-list__4" src="media/Lucifer.png"><div class="overlay"><p>Actie<br>Lucifer</p></div></a>
+            </li>
+
+            <li class="li-container" style="padding-right: 63px;">
+              <a><img class="series-list__5" src="media/Sherlock.png"><div class="overlay"><p>Actie<br>Sherlock</p></div></a>
+            </li>
+          </ul>
+            </div>
+
+            <select class="head__dropdown" name="series" id="series">
+                <option value="kijken">Verder kijken</option>
+                <option value="lijst">Mijn lijst</option>
+                <option value="Populair">Populair</option>
+                <option value="10">Top 10</option>
+            </select>
+
+            <div class="row">
+                <ul class="row m-0 regular">
+            <li class="li-container" style="padding-right: 63px;">
+              <a href="film_serie_detail_edit.html"><img class="image series-list__1" src="media/Mfamily.png"><div class="overlay"><p>Komedie<br>modern family</p></div></a>
+            </li>
+
+            <li class="li-container" href="" style="padding-right: 63px;">
+              <a><img class="series-list__2" src="media/Wdead.png"><div class="overlay"><p>Horror<br>The Walking Dead</p></div></a>
+            </li>
+
+            <li class="li-container" style="padding-right: 63px;">
+              <a><img class="series-list__3" src="media/Queens.png"><div class="overlay"><p>Actie<br>Queen's Gambit</p></div></a>
+            </li>
+
+            <li class="li-container" style="padding-right: 63px;">
+              <a><img class="series-list__4" src="media/BrBad.png"><div class="overlay"><p>Drugs<br>Breaking Bad</p></div></a>
+            </li>
+
+            <li class="li-container" style="padding-right: 63px;">
+              <a><img class="series-list__5" src="media/witcher.png"><div class="overlay"><p>Actie<br>The Witcher</p></div></a>
+            </li>
+          </ul>
+            </div>
+
+            <select class="head__dropdown" name="series" id="series">
+                <option value="Populair">Populair</option>
+                <option value="lijst">Mijn lijst</option>
+                <option value="kijken">Verder kijken</option>
+                <option value="10">Top 10</option>
+            </select>
+
+            <div class="row">
+                <ul class="row m-0 regular">
+            <li class="li-container" style="padding-right: 63px;">
+              <a href="film_serie_detail_edit.html"><img class="image series-list__1" src="media/Dark.png"><div class="overlay"><p>Tijdreizen<br>Dark</p></div></a>
+            </li>
+
+            <li class="li-container" href="" style="padding-right: 63px;">
+              <a><img class="series-list__2" src="media/elite.png"><div class="overlay"><p>Actie<br>Elite</p></div></a>
+            </li>
+
+            <li class="li-container" style="padding-right: 63px;">
+              <a><img class="series-list__3" src="media/Sthings.png"><div class="overlay"><p>Actie<br>Stranger Things</p></div></a>
+            </li>
+
+            <li class="li-container" style="padding-right: 63px;">
+              <a><img class="series-list__4" src="media/topboy.png"><div class="overlay"><p>Actie<br>Top Boy</p></div></a>
+            </li>
+
+            <li class="li-container" style="padding-right: 63px;">
+              <a><img class="series-list__5" src="media/7.png"><div class="overlay"><p>Actie<br>Seven Seconds</p></div></a>
+            </li>
+          </ul>
+            </div>
+       
+         
+      </main>
+
+    </div_body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
