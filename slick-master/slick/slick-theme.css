@@ -38,14 +38,13 @@
 .slick-next:focus {
   outline: none;
   background: transparent;
-  color: white;
+  color: transparent;
 }
 
 .slick-prev:hover:before, .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before {
   opacity: 1;
-  color: white;
 }
 
 .slick-prev.slick-disabled:before,
