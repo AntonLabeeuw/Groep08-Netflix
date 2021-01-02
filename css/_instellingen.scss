@@ -13,6 +13,14 @@
         padding-right: 20px;
     }
 
+    &__naam{
+
+        @media only screen and (max-width: 960px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     &__tile{
         width: 265px;
         text-align: center;
