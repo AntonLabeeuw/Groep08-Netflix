@@ -79,8 +79,7 @@ td:not(:nth-last-of-type(1)) {
   box-sizing: border-box;
   color: $colorW !important;
   background-color: transparent !important;
-  border: none !important;
-
+  border-color: transparent !important;
   &__active {
     color: $colorRed1 !important;
   }

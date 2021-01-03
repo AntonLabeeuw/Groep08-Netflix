@@ -141,7 +141,7 @@ td:not(:nth-last-of-type(1)) {
   box-sizing: border-box;
   color: #fff !important;
   background-color: transparent !important;
-  border: none !important;
+  border-color: transparent !important;
 }
 
 .page-link__active {
@@ -1176,7 +1176,7 @@ p {
 
 .sidenav .sidenav-button {
   position: relative;
-  top: 31.25rem;
+  top: 30%;
   left: 3.75rem;
   background-color: #FFFFFF;
   border-style: none;
