@@ -8,13 +8,19 @@ $colorBlue2: #549494;
 $colorGreen: #55bc7d;
 $colorGrey: #707070;
 
+*{
+  font-family: 'Poppins';
+}
+
 .form-control {
   border-radius: 0 !important;
-
+  
   &__red::placeholder {
     color: $colorW !important;
-    background-color: $colorRed1 !important;
     border: none !important;
+  }
+  &__red{
+    background-color: $colorRed1 !important;
   }
 }
 
@@ -80,6 +86,7 @@ td:not(:nth-last-of-type(1)) {
   color: $colorW !important;
   background-color: transparent !important;
   border-color: transparent !important;
+
   &__active {
     color: $colorRed1 !important;
   }
@@ -101,6 +108,7 @@ td:not(:nth-last-of-type(1)) {
 .fa-times {
   color: $colorRed1;
 }
+
 .fa-plus {
   color: $colorGreen;
 }
@@ -115,71 +123,93 @@ td:not(:nth-last-of-type(1)) {
 
 tr:hover {
   border: none;
-
   td {
     background-color: $colorGrey;
     border-bottom: 1px solid $colorOrange;
     color: $colorW;
   }
 }
-
 .border-r {
   border-color: $colorRed1 !important;
 }
-.paddingRows{
-  padding:3rem;
+
+.paddingRows {
+  padding: 3rem;
 }
-input.page-link{
+
+input.page-link {
   width: 2.5rem;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 input[type=number] {
   -moz-appearance: textfield;
 }
-input.borderWcolor,button.borderWcolor,div.borderWcolor{
+
+input.borderWcolor,
+button.borderWcolor,
+div.borderWcolor {
   border: none;
   border-radius: 0;
   border-right: 1.5rem solid lime;
-  &__red,&__red:focus{
+
+  &__red,
+  &__red:focus {
     border-color: $colorRed1;
   }
-  &__orange,&__orange:focus{
+
+  &__orange,
+  &__orange:focus {
     border-color: $colorOrange;
   }
-  &__green,&__green:focus{
+
+  &__green,
+  &__green:focus {
     border-color: $colorGreen;
   }
-  &__grey,&__grey:focus{
+
+  &__grey,
+  &__grey:focus {
     border-color: $colorGrey;
   }
-  &__blue1,&__blue1:focus{
+
+  &__blue1,
+  &__blue1:focus {
     border-color: $colorBlue1;
   }
-  &__blue2,&__blue2:focus{
+
+  &__blue2,
+  &__blue2:focus {
     border-color: $colorBlue2;
-  } 
+  }
 }
-.selection{
+
+.selection {
   float: left;
 }
-.dropdownIcon{
+
+.dropdownIcon {
   float: right;
 }
-.form-control.btn{
+
+.form-control.btn {
   border: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: $colorW;
-  &__red{
+
+  &__red {
     background-color: $colorRed1;
   }
 }
-.btn:hover{
+
+.btn:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -187,23 +217,40 @@ input.borderWcolor,button.borderWcolor,div.borderWcolor{
   border-right: 1.5rem solid $colorW;
 }
 
-.break-even{
+.break-even {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-#dropprofielen{
+
+#dropprofielen {
   display: none;
 }
+
+td:hover {
+  background-color: lime;
+}
+.iconbox{
+  padding:0 !important;
+  vertical-align: middle !important
+}
+table td:hover i.fa-plus{
+  font-size: 1.7rem;
+}
+//smaller screen
 @media screen and (max-width: 960px) {
-  .paddingRows{
-    padding:0.5rem;
+  .paddingRows {
+    padding: 0.5rem;
   }
+
   table {
     border: 0;
+    border-collapse:separate !important; 
+    border-spacing:0 3rem !important;
   }
-  table tbody tr:not(:last-child){
-    margin-bottom: 5rem !important;
+
+  table tbody tr:not(:last-child) {
+    margin-bottom:5rem !important;
   }
 
   table caption {
@@ -222,7 +269,7 @@ input.borderWcolor,button.borderWcolor,div.borderWcolor{
   }
 
   table td {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid transparent;
     display: block;
     font-size: .8em;
     text-align: right;
@@ -235,8 +282,8 @@ input.borderWcolor,button.borderWcolor,div.borderWcolor{
     text-transform: uppercase;
   }
 
-  table td:last-child {
-    border-bottom: 0;
+  table td:first-child {
+    border-top: 0;
   }
 
   .fa-pen {
@@ -247,6 +294,7 @@ input.borderWcolor,button.borderWcolor,div.borderWcolor{
   .fa-times {
     text-align: center;
   }
+
   .fa-plus {
     text-align: center;
   }
@@ -257,12 +305,14 @@ input.borderWcolor,button.borderWcolor,div.borderWcolor{
     width: 100%;
     text-align: right;
   }
-  #dropprofielen .imgDiv{
+
+  #dropprofielen .imgDiv {
     text-align: center;
   }
+
   .break-even {
-    &__input{
-    margin-top: 1rem;
+    &__input {
+      margin-top: 1rem;
     }
   }
 }

@@ -69,10 +69,10 @@
                  var Icons = document.createElement("TD");
                  var editIcon = document.createElement("I");
                  Icons.setAttribute("class", "tdW100");
-                 editIcon.className = "fas fa-pen col-6";
+                 editIcon.className = "fas fa-pen col-5";
                  Icons.appendChild(editIcon);
                  var deleteIcon = document.createElement("I");
-                 deleteIcon.className = "fas fa-times col-6";
+                 deleteIcon.className = "fas fa-times col-5";
                  Icons.appendChild(deleteIcon);
                  document.getElementById("myTr" + user["id"]).appendChild(Icons);
              }
@@ -149,7 +149,7 @@
 
                 var Icons = document.createElement("TD");
                 var addIcon = document.createElement("I");
-                Icons.setAttribute("class", "tdW100");
+                Icons.setAttribute("class", "tdW100 iconbox");
                 addIcon.className = "fas fa-plus col-12";
                 Icons.appendChild(addIcon);
                 document.getElementById("myTr" + archiveUser["id"]).appendChild(Icons);
