@@ -125,7 +125,7 @@ body {
   color: #000;
 }
 
-.btnbtn__white {
+.btn__white {
   background-color: #fff !important;
 }
 
@@ -217,7 +217,7 @@ button.borderWcolor,
 div.borderWcolor {
   border: none;
   border-radius: 0;
-  border-right: 1.5rem solid lime;
+  border-right: 1.5rem solid transparent;
 }
 
 input.borderWcolor__red, input.borderWcolor__red:focus,
@@ -281,13 +281,14 @@ div.borderWcolor__blue2:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #fff;
+  border-right: 1.5rem solid #e50914;
 }
 
 .form-control.btn__red {
   background-color: #e50914;
 }
 
-.btn:hover {
+.form-control.btn:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #fff !important;
@@ -311,7 +312,7 @@ div.borderWcolor__blue2:focus {
 }
 
 td:hover {
-  background-color: lime;
+  background-color: transparent;
 }
 
 .iconbox {
@@ -321,6 +322,16 @@ td:hover {
 
 table td:hover i.fa-plus {
   font-size: 1.7rem;
+}
+
+a.noStyle {
+  text-decoration: none;
+  color: #fff;
+}
+
+a.noStyle:hover, a.noStyle:focus, a.noStyle:active {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media screen and (max-width: 960px) {

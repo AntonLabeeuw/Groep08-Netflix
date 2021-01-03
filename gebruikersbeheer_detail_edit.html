@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <link rel="shortcut icon" href="media/netflix_logo_klein.png">
   <meta charset="UTF-8">
@@ -18,7 +17,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css"></script>
   </bootstrap>
-  <title>Gebruikersbeheer Archive</title>
+  <title>Gebruikersbeheer detail</title>
+  <script>
+    getUser(localStorage.getItem("user_id"));
+    localStorage.removeItem("user_id");
+  </script>
 </head>
 
 <body>
@@ -43,20 +46,19 @@
           <a class="nav-link disabled" href="#"><i class="fas fa-user-circle fa-2x"></i></a>
         </li>
         <a class= "nav-resp" href="dashboard.html">Dashboard</a>
-            <a class= "nav-resp" href="gebruikersbeheer_overzicht.html">Gebruikersbeheer</a>
-            <a class= "nav-resp" href="gebruikersbeheer_detail_edit.html">Gebruikers</a>
-            <a class= "nav-resp" href="gebruikersbeheer_overzicht_archive.html">Archieven</a>
-            <a class= "nav-resp" href="film_serie_overzicht.html">Film/Serie</a>
-            <a class= "nav-resp" href="film_serie_detail.html">Film toevoegen</a>
-            <a class= "nav-resp" href="film_serie_detail.html">Serie toevoegen</a>
-            <a class= "nav-resp" href="film_serie_detail_edit.html">Edit</a>
+          <a class= "nav-resp" href="gebruikersbeheer_overzicht.html">Gebruikersbeheer</a>
+          <a class= "nav-resp" href="gebruikersbeheer_detail_edit.html">Gebruikers</a>
+          <a class= "nav-resp" href="gebruikersbeheer_overzicht_archive.html">Archieven</a>
+          <a class= "nav-resp" href="film_serie_overzicht.html">Film/Serie</a>
+          <a class= "nav-resp" href="film_serie_detail.html">Film toevoegen</a>
+          <a class= "nav-resp" href="film_serie_detail.html">Serie toevoegen</a>
+          <a class= "nav-resp" href="film_serie_detail_edit.html">Edit</a>
       </ul>
 
     </div>
   </nav>
-<div_body class="row m-0 content">
-    <!--side Nav -->
-    <sidenav class="col-md-2 pl-5 sidenav">
+    <div_body class="row m-0 content">
+      <sidenav class="col-md-2 pl-5 sidenav">
         <a class= "sidenav_prim" href="dashboard.html">Dashboard</a>
         <a class= "sidenav_prim" href="gebruikersbeheer_overzicht.html">Gebruikersbeheer</a>
         <a class= "sidenav_secu" href="gebruikersbeheer_detail_edit.html">Gebruikers</a>
@@ -72,7 +74,7 @@
     <main class="col-md content mt-5  ">
       <div class="row content paddingRows">
         <div class="col-12-sm">
-          <h1>Gebruikersgegevens</h1>
+          <h1 id="user">Gebruikersgegevens</h1>
         </div>
       </div>
       <form>
@@ -179,9 +181,9 @@
                 </div>
                 <div class="col-md-7 p-0 break-even">
                   <input type="text" class="form-control borderWcolor borderWcolor__blue2" placeholder="Profielnaam"
-                    name="profielnaam">
+                    name="profielnaam0">
                   <input type="text" class="form-control borderWcolor borderWcolor__blue2 break-even__input"
-                    placeholder="Leeftijd categorie" name="leeftdijcategorie">
+                    placeholder="Leeftijd categorie" name="leeftdijcategorie0">
                 </div>
               </div>
               <div class="row m-0 content justify-content-center pt-4">
@@ -190,20 +192,9 @@
                 </div>
                 <div class="col-md-7 p-0 break-even">
                   <input type="text" class="form-control borderWcolor borderWcolor__blue2" placeholder="Profielnaam"
-                    name="profielnaam">
+                    name="profielnaam1">
                   <input type="text" class="form-control borderWcolor borderWcolor__blue2 break-even__input"
-                    placeholder="Leeftijd categorie" name="leeftdijcategorie">
-                </div>
-              </div>
-              <div class="row m-0 content justify-content-center pt-4">
-                <div class="col-md-3 p-0 imgDiv">
-                  <img class="img-fluid" src="media/profiel.png">
-                </div>
-                <div class="col-md-7 p-0 break-even">
-                  <input type="text" class="form-control borderWcolor borderWcolor__blue2" placeholder="Profielnaam"
-                    name="profielnaam">
-                  <input type="text" class="form-control borderWcolor borderWcolor__blue2 break-even__input"
-                    placeholder="Leeftijd categorie" name="leeftdijcategorie">
+                    placeholder="Leeftijd categorie" name="leeftdijcategorie1">
                 </div>
               </div>
             </div>

@@ -63,7 +63,7 @@ $colorGrey: #707070;
 .btn {
   color: $colorB;
 
-  &btn__white {
+  &__white {
     background-color: $colorW !important;
   }
 }
@@ -156,7 +156,7 @@ button.borderWcolor,
 div.borderWcolor {
   border: none;
   border-radius: 0;
-  border-right: 1.5rem solid lime;
+  border-right: 1.5rem solid transparent;
 
   &__red,
   &__red:focus {
@@ -203,13 +203,13 @@ div.borderWcolor {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: $colorW;
-
+  border-right: 1.5rem solid $colorRed1;
   &__red {
     background-color: $colorRed1;
   }
 }
 
-.btn:hover {
+.form-control.btn:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -228,7 +228,7 @@ div.borderWcolor {
 }
 
 td:hover {
-  background-color: lime;
+  background-color: transparent;
 }
 .iconbox{
   padding:0 !important;
@@ -237,6 +237,17 @@ td:hover {
 table td:hover i.fa-plus{
   font-size: 1.7rem;
 }
+a.noStyle{
+  text-decoration: none;
+  color: $colorW;
+  &:hover, 
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: $colorW;
+  }
+}
+
 //smaller screen
 @media screen and (max-width: 960px) {
   .paddingRows {

@@ -5,7 +5,7 @@
         "naam": "Stevens",
         "gebruikersnaam": "Lienste",
         "email": "lien.stevens@howest.be",
-        "dateOfBirth": "1984-06-24",
+        "geboortedatum": "1984-06-24",
         "adres":
         {
             "straat": "Graaf Karel De Goedelaan",
@@ -50,7 +50,7 @@
         "naam": "Fallein",
         "gebruikersnaam": "Angelo",
         "email": "angelo.fallein@howest.be",
-        "dateOfBirth": "1987-05-12",
+        "geboortedatum": "1987-05-12",
         "adres":
         {
             "straat": "Sint-Martens-Latemlaan",
@@ -95,7 +95,7 @@
         "naam": "Stevens",
         "gebruikersnaam": "Lienste",
         "email": "lien.stevens@howest.be",
-        "dateOfBirth": "1984-06-24",
+        "geboortedatum": "1984-06-24",
         "adres":
         {
             "straat": "Graaf Karel De Goedelaan",
@@ -140,7 +140,7 @@
         "naam": "Fallein",
         "gebruikersnaam": "Angelo",
         "email": "angelo.fallein@howest.be",
-        "dateOfBirth": "1987-05-12",
+        "geboortedatum": "1987-05-12",
         "adres":
         {
             "straat": "Sint-Martens-Latemlaan",
@@ -185,7 +185,7 @@
         "naam": "Stevens",
         "gebruikersnaam": "Lienste",
         "email": "lien.stevens@howest.be",
-        "dateOfBirth": "1984-06-24",
+        "geboortedatum": "1984-06-24",
         "adres":
         {
             "straat": "Graaf Karel De Goedelaan",
@@ -230,7 +230,7 @@
         "naam": "Stevens",
         "gebruikersnaam": "Lienste",
         "email": "lien.stevens@howest.be",
-        "dateOfBirth": "1984-06-24",
+        "geboortedatum": "1984-06-24",
         "adres":
         {
             "straat": "Graaf Karel De Goedelaan",
@@ -275,7 +275,7 @@
         "naam": "Fallein",
         "gebruikersnaam": "Angelo",
         "email": "angelo.fallein@howest.be",
-        "dateOfBirth": "1987-05-12",
+        "geboortedatum": "1987-05-12",
         "adres":
         {
             "straat": "Sint-Martens-Latemlaan",
@@ -320,7 +320,7 @@
         "naam": "Stevens",
         "gebruikersnaam": "Lienste",
         "email": "lien.stevens@howest.be",
-        "dateOfBirth": "1984-06-24",
+        "geboortedatum": "1984-06-24",
         "adres":
         {
             "straat": "Graaf Karel De Goedelaan",
@@ -365,7 +365,7 @@
         "naam": "Fallein",
         "gebruikersnaam": "Angelo",
         "email": "angelo.fallein@howest.be",
-        "dateOfBirth": "1987-05-12",
+        "geboortedatum": "1987-05-12",
         "adres":
         {
             "straat": "Sint-Martens-Latemlaan",
@@ -410,7 +410,7 @@
         "naam": "Fallein",
         "gebruikersnaam": "Angelo",
         "email": "angelo.fallein@howest.be",
-        "dateOfBirth": "1987-05-12",
+        "geboortedatum": "1987-05-12",
         "adres":
         {
             "straat": "Sint-Martens-Latemlaan",
@@ -455,7 +455,7 @@
         "naam": "Fallein",
         "gebruikersnaam": "Angelo",
         "email": "angelo.fallein@howest.be",
-        "dateOfBirth": "1987-05-12",
+        "geboortedatum": "1987-05-12",
         "adres":
         {
             "straat": "Sint-Martens-Latemlaan",
