@@ -21,23 +21,52 @@
 </head>
 
 <body>
-    <!-- <div_header class="row m-0"> -->
-        <!--Top Nav -->
-        <nav class="navbar p-0">
-            <div class="col-2 p-0 text-center">
-                <a class="navbar-brand" href="#">Navbar</a>
-            </div>
-            <div class="col-10"></div>
-        </nav>
-    </div_header>
+    <nav class="navbar navbar-expand-lg">
+        <img class = "navbar-img" src="media/netflix.png" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0 float-right">
+            <input class="form-control ml-sm-2 navbar-search" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <ul class="navbar-nav nav__icons">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fas fa-plus fa-2x"></i> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-bell fa-2x"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"><i class="fas fa-user-circle fa-2x"></i></a>
+            </li>
+            <a class= "nav-resp" href="#about">Dashboard</a>
+            <a class= "nav-resp" href="#services">Gebruikersbeheer</a>
+            <a class= "nav-resp" href="#clients">Gebruikers</a>
+            <a class= "nav-resp" href="#contact">Archieven</a>
+            <a class= "nav-resp" href="#contact">Film/Serie</a>
+            <a class= "nav-resp" href="#contact">Film toevoegen</a>
+            <a class= "nav-resp" href="#contact">Serie toevoegen</a>
+            <a class= "nav-resp" href="#contact">Edit</a>
+          </ul>
+
+        </div>
+      </nav>
     <div_body class="row m-0 content">
         <!--side Nav -->
-        <sidenav class="col-xl-2 pl-5 sidenav">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#clients">Clients</a>
-            <a href="#contact">Contact</a>
-        </sidenav>
+        <sidenav class="col-md-2 pl-5 sidenav">
+            <a class= "sidenav_prim" href="dashboard.html">Dashboard</a>
+            <a class= "sidenav_prim" href="gebruikersbeheer_overzicht.html">Gebruikersbeheer</a>
+            <a class= "sidenav_secu" href="gebruikersbeheer_detail_edit.html">Gebruikers</a>
+            <a class= "sidenav_secu" href="gebruikersbeheer_overzicht_archive.html">Archieven</a>
+            <a class= "sidenav_prim" href="film_serie_overzicht.html">Film/Serie</a>
+            <a class= "sidenav_secu" href="film_serie_detail.html">Film toevoegen</a>
+            <a class= "sidenav_secu" href="film_serie_detail.html">Serie toevoegen</a>
+            <a class= "sidenav_secu" href="film_serie_detail_edit.html">Edit</a>
+    
+            <button class="sidenav-button" type="button" onclick="alert('Hello world!')"><i class="far fa-question-circle fa-lg"></i> Support</button>
+          </sidenav>
         <!-- hier start je main body -->
         <main class="col-md content mt-5  ">
             <div class="row content paddingRows">
