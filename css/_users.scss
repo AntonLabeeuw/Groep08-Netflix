@@ -240,6 +240,7 @@ table td:hover i.fa-plus{
 a.noStyle{
   text-decoration: none;
   color: $colorW;
+  cursor: pointer;
   &:hover, 
   &:focus,
   &:active {
@@ -252,6 +253,9 @@ a.noStyle{
 @media screen and (max-width: 960px) {
   .paddingRows {
     padding: 0.5rem;
+  }
+  .Checkboxes{
+    display: none;
   }
 
   table {
@@ -281,7 +285,7 @@ a.noStyle{
 
   table td {
     border-bottom: 1px solid transparent;
-    display: block;
+    display: block !important;
     font-size: .8em;
     text-align: right;
   }
@@ -297,16 +301,16 @@ a.noStyle{
     border-top: 0;
   }
 
-  .fa-pen {
+  td i.fa-pen {
     height: 100%;
     text-align: center;
   }
 
-  .fa-times {
+  td i.fa-times {
     text-align: center;
   }
 
-  .fa-plus {
+  td i.fa-plus {
     text-align: center;
   }
 

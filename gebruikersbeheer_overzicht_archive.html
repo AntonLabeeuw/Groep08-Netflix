@@ -48,7 +48,7 @@
             </li>
             <a class= "nav-resp" href="dashboard.html">Dashboard</a>
               <a class= "nav-resp" href="gebruikersbeheer_overzicht.html">Gebruikersbeheer</a>
-              <a class= "nav-resp" href="gebruikersbeheer_detail_edit.html">Gebruikers</a>
+              <a class= "nav-resp" href="gebruikersbeheer_overzicht.html">Gebruikers</a>
               <a class= "nav-resp" href="gebruikersbeheer_overzicht_archive.html">Archieven</a>
               <a class= "nav-resp" href="film_serie_overzicht.html">Film/Serie</a>
               <a class= "nav-resp" href="film_serie_detail.html">Film toevoegen</a>
@@ -61,9 +61,9 @@
         <div_body class="row m-0 content">
           <sidenav class="col-md-2 pl-5 sidenav">
             <a class= "sidenav_prim" href="dashboard.html">Dashboard</a>
-            <a class= "sidenav_prim" href="gebruikersbeheer_overzicht.html">Gebruikersbeheer</a>
-            <a class= "sidenav_secu" href="gebruikersbeheer_detail_edit.html">Gebruikers</a>
-            <a class= "sidenav_secu" href="gebruikersbeheer_overzicht_archive.html">Archieven</a>
+            <a class= "sidenav_prim active" href="gebruikersbeheer_overzicht.html">Gebruikersbeheer</a>
+            <a class= "sidenav_secu" href="gebruikersbeheer_overzicht.html">Gebruikers</a>
+            <a class= "sidenav_secu active__sec" href="gebruikersbeheer_overzicht_archive.html">Archieven</a>
             <a class= "sidenav_prim" href="film_serie_overzicht.html">Film/Serie</a>
             <a class= "sidenav_secu" href="film_serie_detail.html">Film toevoegen</a>
             <a class= "sidenav_secu" href="film_serie_detail.html">Serie toevoegen</a>
@@ -115,32 +115,32 @@
                     <div class="Checkboxes my-2">
                         <p class="form-check-inline my-0">Toon:</p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">ID</label>
+                            <input onclick="show_hide_column(this.id,'1')" class="form-check-input" type="checkbox" id="id" value="id" checked>
+                            <label class="form-check-label" for="id">ID</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">E-mail
+                            <input onclick="show_hide_column(this.id,'2')" class="form-check-input" type="checkbox" id="email" value="email" checked>
+                            <label class="form-check-label" for="email">E-mail
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">Type
+                            <input onclick="show_hide_column(this.id,'3')" class="form-check-input" type="checkbox" id="type" value="type" checked>
+                            <label class="form-check-label" for="type">Type
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">Aangemaakt
+                            <input onclick="show_hide_column(this.id,'4')" class="form-check-input" type="checkbox" id="aangemaakt" value="aangemaakt" checked>
+                            <label class="form-check-label" for="aangemaakt">Aangemaakt
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">Gearchiveerd
+                            <input onclick="show_hide_column(this.id,'5')" class="form-check-input" type="checkbox" id="laatstelogin" value="laatstelogin" checked> 
+                            <label class="form-check-label" for="laatstelogin">Laastste login
                             </label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">Profielen
+                            <input onclick="show_hide_column(this.id,'6')" class="form-check-input" type="checkbox" id="profielen" value="profielen" checked>
+                            <label class="form-check-label" for="profielen">Profielen
                             </label>
                         </div>
                     </div>

@@ -327,6 +327,7 @@ table td:hover i.fa-plus {
 a.noStyle {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 
 a.noStyle:hover, a.noStyle:focus, a.noStyle:active {
@@ -337,6 +338,9 @@ a.noStyle:hover, a.noStyle:focus, a.noStyle:active {
 @media screen and (max-width: 960px) {
   .paddingRows {
     padding: 0.5rem;
+  }
+  .Checkboxes {
+    display: none;
   }
   table {
     border: 0;
@@ -361,7 +365,7 @@ a.noStyle:hover, a.noStyle:focus, a.noStyle:active {
   }
   table td {
     border-bottom: 1px solid transparent;
-    display: block;
+    display: block !important;
     font-size: .8em;
     text-align: right;
   }
@@ -374,14 +378,14 @@ a.noStyle:hover, a.noStyle:focus, a.noStyle:active {
   table td:first-child {
     border-top: 0;
   }
-  .fa-pen {
+  td i.fa-pen {
     height: 100%;
     text-align: center;
   }
-  .fa-times {
+  td i.fa-times {
     text-align: center;
   }
-  .fa-plus {
+  td i.fa-plus {
     text-align: center;
   }
   table > tbody,
@@ -1225,9 +1229,20 @@ p {
   font-size: 1.5rem;
 }
 
+.sidenav .sidenav_prim:hover {
+  color: #E50914 !important;
+  text-decoration: none !important;
+}
+
 .sidenav .sidenav_secu {
   font-size: 1.25rem;
   padding-left: 1.25rem;
+  border-left: 1px solid transparent;
+}
+
+.sidenav .sidenav_secu:hover {
+  color: #E50914 !important;
+  text-decoration: none !important;
 }
 
 .sidenav .sidenav-button {
@@ -1281,6 +1296,27 @@ a:hover {
 
 .form-inline .form-control {
   width: 31.25rem !important;
+}
+
+.active {
+  color: #E50914 !important;
+  text-decoration: none !important;
+}
+
+.active__sec {
+  border-left: 1px solid #fff !important;
+  border-color: #E50914 !important;
+  text-decoration: none !important;
+}
+
+.active__sec:hover {
+  color: #E50914 !important;
+  text-decoration: none !important;
+}
+
+.active:hover {
+  color: #E50914 !important;
+  text-decoration: none !important;
 }
 
 .footer {
