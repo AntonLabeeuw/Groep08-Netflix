@@ -6,6 +6,30 @@ body {
   background-color: #000;
 }
 
+.dashmain {
+  padding-top: 3.438rem;
+}
+
+.fsdemain {
+  padding-top: 7.813rem;
+}
+
+.fsdmain {
+  padding-top: 7.813rem;
+}
+
+.fsomain {
+  padding-top: 3.25rem;
+}
+
+.instmain {
+  padding-top: 2.5rem;
+}
+
+.gebrmain {
+  padding-top: 6.25rem;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +43,7 @@ body {
 
 .sidenav {
   width: 100%;
-  z-index: 1;
+  z-index: 0;
   background-color: #211f1f;
   min-width: 110px !important;
 }
@@ -1175,20 +1199,29 @@ p {
 }
 
 .navbar {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  position: fixed;
   background-color: #000000 !important;
 }
 
 .navbar .navbar-img {
+  z-index: 5;
   height: 5.625rem;
-  margin-right: 9.375rem;
+  margin-right: 8rem;
+  margin-left: 3.375rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar .navbar-img {
+    margin-left: 0px;
+  }
 }
 
 .navbar .fas {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .navbar .test {
@@ -1215,13 +1248,18 @@ p {
   }
 }
 
+.side__fixed {
+  position: fixed;
+}
+
 .sidenav {
+  margin-top: 100px;
   padding-top: 3.125rem;
   position: relative;
 }
 
 .sidenav a {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1230,7 +1268,7 @@ p {
 }
 
 .sidenav .sidenav_prim:hover {
-  color: #E50914 !important;
+  color: #e50914 !important;
   text-decoration: none !important;
 }
 
@@ -1241,15 +1279,15 @@ p {
 }
 
 .sidenav .sidenav_secu:hover {
-  color: #E50914 !important;
+  color: #e50914 !important;
   text-decoration: none !important;
 }
 
 .sidenav .sidenav-button {
-  position: relative;
-  top: 30%;
-  left: 3.75rem;
-  background-color: #FFFFFF;
+  position: fixed;
+  top: 73%;
+  left: 6rem;
+  background-color: #ffffff;
   border-style: none;
   padding: 0.625rem 1.25rem 0.625rem 1.25rem;
 }
@@ -1261,16 +1299,16 @@ p {
 }
 
 a:hover {
-  color: #E50914;
+  color: #e50914;
 }
 
 #active {
-  color: #E50914;
+  color: #e50914;
 }
 
 .sidenav-button:hover {
-  background-color: #E50914;
-  color: #FFFFFF;
+  background-color: #e50914;
+  color: #ffffff;
 }
 
 .navbar-toggler {
@@ -1282,6 +1320,12 @@ a:hover {
   font-family: 'poppins' !important;
 }
 
+@media screen and (max-width: 1000px) {
+  .nav-item {
+    margin-left: 2.4rem;
+  }
+}
+
 .nav-resp {
   display: none;
   font-size: 1.5rem;
@@ -1291,6 +1335,11 @@ a:hover {
 @media screen and (max-width: 1000px) {
   .nav-resp {
     display: inline;
+    margin-left: 3.3rem;
+  }
+  .nav-resp:hover {
+    color: #e50914 !important;
+    text-decoration: none !important;
   }
 }
 
@@ -1299,24 +1348,30 @@ a:hover {
 }
 
 .active {
-  color: #E50914 !important;
+  color: #e50914 !important;
   text-decoration: none !important;
 }
 
 .active__sec {
   border-left: 1px solid #fff !important;
-  border-color: #E50914 !important;
+  border-color: #e50914 !important;
   text-decoration: none !important;
 }
 
 .active__sec:hover {
-  color: #E50914 !important;
+  color: #e50914 !important;
   text-decoration: none !important;
 }
 
 .active:hover {
-  color: #E50914 !important;
+  color: #e50914 !important;
   text-decoration: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar-collapse {
+    margin-bottom: 3rem;
+  }
 }
 
 .footer {
@@ -1470,14 +1525,63 @@ a:hover {
   margin-right: 10px;
 }
 
-.head__dropdown {
-  background-color: #e50914;
-  color: #fff;
-  border: none;
+.head__rij {
+  list-style: none;
+}
+
+.head__dropbtn {
+  background-color: red;
+  color: white;
+  width: 181px;
+  height: 48px;
   font-size: 16px;
-  width: 180px;
-  height: 50px;
+  border: none;
+}
+
+.head__dropbtn .fa-caret-down {
+  margin-right: 10%;
+  float: right;
+}
+
+.head__dropbtn .filteritem {
+  margin-left: -15%;
+  color: white;
+  text-decoration: none;
+}
+
+.head__dropdown {
+  position: relative;
+  display: inline-block;
   margin: 50px 25px;
+}
+
+.head__dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 181px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.head__dropdown__content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.head__dropdown__content a:hover {
+  background-color: #ddd;
+}
+
+:hover > .head__dropdown__content {
+  display: block;
+}
+
+.head__dropdown:hover .head__dropbtn {
+  background-color: #e50914;
 }
 
 .container {
