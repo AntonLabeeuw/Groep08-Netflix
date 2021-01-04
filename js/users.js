@@ -67,7 +67,7 @@
                  document.getElementById("user_" + user["id"]).appendChild(profielentd);
 
                  var Icons = document.createElement("TD");
-                 Icons.setAttribute("class", "tdW100");
+                 Icons.setAttribute("class", "tdW100 text-center");
                  var editIcon = document.createElement("A");
                  editIcon.setAttribute("href", "gebruikersbeheer_detail_edit.html");
                  editIcon.setAttribute("onclick", "localStorage.setItem('user_id', " + user["id"] + ")");

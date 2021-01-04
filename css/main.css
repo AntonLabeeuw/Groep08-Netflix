@@ -1704,9 +1704,10 @@ p {
   margin-left: 3.375rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .navbar .navbar-img {
-    margin-left: 0px;
+    margin-right: 3rem;
+    margin-left: 1rem;
   }
 }
 
