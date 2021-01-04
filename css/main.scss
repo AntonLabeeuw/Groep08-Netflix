@@ -18,14 +18,10 @@ body {
   padding-top: 3.438rem;
   }
 
-  .fsdemain{
-    padding-top: 7.813rem;
-  }
-  
   .fsdmain{
     padding-top: 7.813rem;
   }
-  
+
   .fsomain{
     padding-top: 3.25rem;
   }
@@ -55,6 +51,7 @@ body {
   z-index: 0;
   background-color: $colorSidebar;
   min-width: 110px !important ;
+  max-width: 20rem !important;
 
 }
 
@@ -87,8 +84,10 @@ body {
 }
 @import 'users';
 @import 'filmseries';
+@import 'form-detail';
 @import 'dashboard';
 @import 'components.nav';
 @import 'footer';
 @import 'gebruikersstart';
 @import 'instellingen';
+
