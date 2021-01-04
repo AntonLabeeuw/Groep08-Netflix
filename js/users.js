@@ -218,21 +218,22 @@
              }
          });
      }
-     //Van internet
      function show_hide_column(id,col_no) {
         var tbl = document.getElementById("tablePreview");
         var rows = tbl.getElementsByTagName('tr');
         var checkBox = document.getElementById(id);
         console.log(checkBox.checked);  
-
+        
         for (var row = 0; row < rows.length; row++) {
             var cols = rows[row].children;
             if (col_no >= 0 && col_no < cols.length) {
                 var cell = cols[col_no];
                 if (cell.tagName == 'TD') cell.style.display = checkBox.checked ? 'table-cell' : 'none';
+                if (cell.tagName == 'TH') cell.style.display = checkBox.checked ? 'table-cell' : 'none';
             }
         }
     }
+    //Van internet
      function sortTable(tableClass, n) {
          var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
 
