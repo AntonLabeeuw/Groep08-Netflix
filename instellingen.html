@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Instellingen</title>
+    <link rel="shortcut icon" href="media/netflix_logo_klein.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/8223252f3c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img class = "navbar-img" src="media/netflix.png" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0 float-right">
+            <input class="form-control ml-sm-2 navbar-search" type="search" placeholder="Search" aria-label="Search">
+          </form>
+          <ul class="navbar-nav nav__icons">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fas fa-plus fa-2x"></i> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-bell fa-2x"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"><i class="fas fa-user-circle fa-2x"></i></a>
+            </li>
+            <a class= "nav-resp" href="dashboard.html">Dashboard</a>
+            <a class= "nav-resp" href="gebruikersbeheer_overzicht.html">Gebruikersbeheer</a>
+            <a class= "nav-resp" href="gebruikersbeheer_overzicht.html">Gebruikers</a>
+            <a class= "nav-resp" href="gebruikersbeheer_overzicht_archive.html">Archieven</a>
+            <a class= "nav-resp" href="film_serie_overzicht.html">Film/Serie</a>
+            <a class= "nav-resp" href="film_serie_detail.html">Film toevoegen</a>
+            <a class= "nav-resp" href="film_serie_detail.html">Serie toevoegen</a>
+            <a class= "nav-resp" href="film_serie_detail_edit.html">Edit</a>
+          </ul>
+
+        </div>
+      </nav>
+      <div_body class="row m-0 content">
+      <!-- <sidenav class="col-md-2 pl-5 sidenav">
+        <a class= "sidenav_prim" href="#about">Dashboard</a>
+        <a class= "sidenav_prim" href="#services">Gebruikersbeheer</a>
+        <a class= "sidenav_secu" href="#clients">Gebruikers</a>
+        <a class= "sidenav_secu" href="#contact">Archieven</a>
+        <a class= "sidenav_prim" href="#contact">Film/Serie</a>
+        <a class= "sidenav_secu" href="#contact">Film toevoegen</a>
+        <a class= "sidenav_secu" href="#contact">Serie toevoegen</a>
+        <a class= "sidenav_secu" href="#contact">Edit</a>
+
+        <button class="sidenav-button" type="button" onclick="alert('Hello world!')"><i class="far fa-question-circle fa-lg"></i> Support</button>
+      </sidenav> -->
+      <sidenav class="col-md-2 pl-5 sidenav">
+        <a class= "sidenav_prim" href="dashboard.html">Dashboard</a>
+        <a class= "sidenav_prim" href="gebruikersbeheer_overzicht.html">Gebruikersbeheer</a>
+        <a class= "sidenav_secu" href="gebruikersbeheer_overzicht.html">Gebruikers</a>
+        <a class= "sidenav_secu" href="gebruikersbeheer_overzicht_archive.html">Archieven</a>
+        <a class= "sidenav_prim" href="film_serie_overzicht.html">Film/Serie</a>
+        <a class= "sidenav_secu" href="film_serie_detail.html">Film toevoegen</a>
+        <a class= "sidenav_secu" href="film_serie_detail.html">Serie toevoegen</a>
+        <a class= "sidenav_secu" href="film_serie_detail_edit.html">Edit</a>
+
+        <button class="sidenav-button" type="button" onclick="alert('Hello world!')"><i class="far fa-question-circle fa-lg"></i> Support</button>
+      </sidenav>
+      <main class="container">
+        <section class="c-abonnementen">
+                <h1>Abonnementen</h1>
+                <table class="c-abonnementen__table">
+                    <tr class="c-abonnementen__naam">
+                        <th></th>
+                        <th>Basic</th>
+                        <th>Standaard</th> 
+                        <th>Prenium</th>
+                    </tr>
+                    <tr class="c-abonnementen__row">
+                        <td>Eerste maand gratis</td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr class="c-abonnementen__row">
+                        <td>Altijd opzegbaar</td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr class="c-abonnementen__row">
+                        <td>Aantal schermen</td>
+                        <td class="c-abonnementen__tile">1</td>
+                        <td class="c-abonnementen__tile">2</td>
+                        <td class="c-abonnementen__tile">4</td>
+                    </tr>
+                    <tr class="c-abonnementen__row">
+                        <td>HD</td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-times"></i></td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr class="c-abonnementen__row">
+                        <td>Ultra HD</td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-times"></i></td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-times"></i></td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr class="c-abonnementen__row">
+                        <td>Afleveringen/films downloaden</td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                        <td class="c-abonnementen__tile"><i class="fas fa-check"></i></td>
+                    </tr>
+                </table>
+        </section>
+        <section class="c-promos">
+            <h1>Promo's</h1>
+            <div class="c-promos__row">
+                <article class="c-promos__promo">
+                    <div class="c-promos__head c-promos__head1">
+                        <p>1 maand gratis</p>
+                        <p>x</p>
+                    </div>
+                    <div class="c-promos__body c-promos__body1">
+                        <p>Alle nieuwe klanten krijgen 1 maand gratis Netflix.</p>
+                        <p class="c-promos__duur">Duur: altijd</p>
+                    </div>
+                </article>
+                <article class="c-promos__promo">
+                    <div class="c-promos__head c-promos__head2">
+                        <p>Kerstpromo</p>
+                        <p>x</p>
+                    </div>
+                    <div class="c-promos__body c-promos__body2">
+                        <p>Voor de feestdagen rekenen we 50% korting aan voor alle klanten</p>
+                        <p class="c-promos__duur">Duur: tot 31 januari</p>
+                    </div>
+                </article>
+                <article class="c-promos__promo">
+                    <div class="c-promos__head c-promos__head3">
+                        <p>Getrouwheidspromo</p>
+                        <p>x</p>
+                    </div>
+                    <div class="c-promos__body c-promos__body3">
+                        <p>De klanten die al 5 jaar Netflix hebben krijgen voor 3 maand 1 extra scherm</p>
+                        <p class="c-promos__duur">Duur: 3 maand</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="c-layout">
+            <h1>Layout</h1>
+            <h2>Logo</h2>
+            <article class="c-layout__logo">
+                <img src="media/netflix.png" class="c-layout__logo-groot" alt="Netflix logo groot" title="Netflix logo groot">
+                <img src="media/netflix_logo_klein.png" class="c-layout__logo-klein" alt="Netflix logo klein" title="Netflix logo klein">
+            </article>
+            <article class="c-layout__kleuren">
+                <h2>Kleuren</h2>
+                <div class="c-layout__row">
+                    <div class="c-layout__kleur c-layout__kleur1"></div>
+                    <div class="c-layout__kleur c-layout__kleur2"></div>
+                    <div class="c-layout__kleur c-layout__kleur3"></div>
+                    <div class="c-layout__kleur c-layout__kleur4"></div>
+                    <div class="c-layout__kleur c-layout__kleur5"></div>
+                </div>
+                
+            </article>
+            <article class="c-layout__lettertype">
+                <h2>lettertypes</h2>
+                <p>Gebruikt lettertype: Poppins</p>
+                <h1>Hooftitels: 56px</h1>
+                <h2>Subtitels: 37px</h2>
+                <p>Normale tekst: 24px</p>
+            </article>
+            
+        </section>
+      </main>
+    </div_body>
+    <div_footer class="row m-0 footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left"><h2>© Netflix Adminbeheer</h2></div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn-socials" href="#!"><i class="fab fa-instagram"></i></a>
+                <a class="btn-socials" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn-socials" href="#!"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+                <a class="mr-3" href="#!"><i class="fas fa-phone-alt"></i> 05650607080</a>
+                <a href="#!"><i class="fas fa-clipboard-list"></i> Gebruiksvoorwaarden</a>
+            </div>
+        </div>
+    </div>   
+    </div_footer>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

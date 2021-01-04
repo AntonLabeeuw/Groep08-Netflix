@@ -1,93 +1,130 @@
-.navbar{
+.navbar {
     display: flex;
     position: relative;
     background-color: #000000 !important;
-    .navbar-img{
+
+    .navbar-img {
         height: 5.625rem;
         margin-right: 9.375rem;
     }
-    .fas{
+
+    .fas {
         color: #FFFFFF;
     }
 
-    .test{
-    display: flex;
-    flex-direction: row;
+    .test {
+        display: flex;
+        flex-direction: row;
     }
 
-    i{
+    i {
         margin-left: 1.25rem;
     }
 
-    .navbar-search{
-       width: 31.25rem;
-       @media screen and (max-width: 1000px){
-           display: none;
-       }
+    .navbar-search {
+        width: 31.25rem;
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
     }
 }
 
 
-.sidenav{    
-    & a{
+.sidenav {
+    & a {
         color: #FFF;
         text-decoration: none;
     }
 
     padding-top: 3.125rem;
     position: relative;
-    
 
-    .sidenav_prim{
+
+    .sidenav_prim {
         font-size: 1.5rem;
+        &:hover{
+            color: #E50914 !important;
+            text-decoration: none !important;   
+         }
     }
 
-    .sidenav_secu{
+    .sidenav_secu {
         font-size: 1.25rem;
         padding-left: 1.25rem;
+        border-left: 1px solid transparent;
+        &:hover{
+                color: #E50914 !important;
+                text-decoration: none !important;   
+        }
     }
 
-    .sidenav-button{
+    .sidenav-button {
         position: relative;
-        top: 31.25rem;
+        top: 30%;
         left: 3.75rem;
         background-color: #FFFFFF;
         border-style: none;
         padding: 0.625rem 1.25rem 0.625rem 1.25rem
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1300px) {
         display: none;
     }
 
 }
 
-    a:hover {
-        color: #E50914;
-    }
-    #active{
-        color: #E50914;
-    }
-    .sidenav-button:hover{
-        background-color: #E50914;
-        color: #FFFFFF;
-    }
+a:hover {
+    color: #E50914;
+}
 
-    .navbar-toggler{
-        background-color: #2b2d2f !important;
-    }
-    .nav-link{
-        color: white !important;
-        font-family: 'poppins' !important;
-    }
+#active {
+    color: #E50914;
+}
 
-    .nav-resp{
-        display: none;
-        font-size: 1.5rem;
-        color: #ffffff;
+.sidenav-button:hover {
+    background-color: #E50914;
+    color: #FFFFFF;
+}
 
-        @media screen and (max-width: 1000px) {
-            display: inline;
-            
-        }
+.navbar-toggler {
+    background-color: #2b2d2f !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: 'poppins' !important;
+}
+
+.nav-resp {
+    display: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+
+    @media screen and (max-width: 1000px) {
+        display: inline;
+
     }
+}
+
+.form-inline .form-control {
+    width: 31.25rem !important;
+}
+
+.active {
+    color: #E50914 !important;
+    text-decoration: none !important;
+    &__sec {
+        border-left: 1px solid #fff !important;
+        border-color: #E50914 !important;
+        text-decoration: none !important;
+    }
+    &__sec:hover{
+        color: #E50914 !important;
+        text-decoration: none !important;   
+    }
+    &:hover{
+        color: #E50914 !important;
+        text-decoration: none !important;
+    }
+}

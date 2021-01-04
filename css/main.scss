@@ -2,6 +2,7 @@ $colorW: #fff;
 $colorB: #000;
 $colorSidebar: #211f1f;
 $colorRed1: #e50914;
+$colorRed2: #B1060F;
 $colorOrange: #ffa00a;
 $colorBlue1: #0d3c73;
 $colorBlue2: #549494;
@@ -65,3 +66,6 @@ body {
 @import 'filmseries';
 @import 'dashboard';
 @import 'components.nav';
+@import 'footer';
+@import 'gebruikersstart';
+@import 'instellingen';

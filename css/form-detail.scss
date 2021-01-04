@@ -9,9 +9,12 @@ $colorinputwidth: 28px;
 body{
     font-family: 'Poppins', sans-serif;
 }
+.input-group {
+  height: 59px;
+}
 .film1 .dropdown {
     margin-left: 39px;
-    margin-top: auto;
+    // margin-top: auto;
     margin-bottom: auto;
 }
 .film1{
@@ -30,6 +33,7 @@ body{
 .dropdown {
     position: relative;
     display: inline-block;
+    padding-right: 15px;
     &__content{
       display: none;
       position: absolute;
@@ -70,6 +74,7 @@ body{
       text-decoration: none;
     }
 }
+
 .c-form {
     justify-content: center;
     align-content: center;
@@ -92,7 +97,8 @@ body{
       }
       &:not(:placeholder-shown){
         & ~ .c-form__label{
-          font-size: 1.2rem;
+          //font-size: 1.2rem;
+          font-size: 0.8rem;
           line-height: 1.5;
         }
       }
@@ -105,6 +111,16 @@ body{
     width: 100%;
     max-width: 100%;
   }
+    }
+    &__group-omschrijving{
+      position: relative;  
+      width: 776px;
+      margin-bottom: 37px;
+      height: 177px;
+      @media only screen and (max-width: 1000px){
+      width: 100%;
+      max-width: 100%;
+    }
     }
     &__label{
     position: absolute;
@@ -137,7 +153,7 @@ body{
     
 }
 .input-group input {
-  height: 5.9rem !important;
+  height: 59px !important;
 }
 .input-group-addon.titel {
     background-color: $color1;
@@ -177,13 +193,18 @@ body{
   width: $colorinputwidth;
 }
 .o-button{
+    color: white;
     background-color: red;
     border: none;
     height: 73px;
     font-size: 20px;
     width: 776px;
     margin-left: 0;
+    transition: ease-out 0.6s;
+    border: 1px solid black;
     &:hover{
+      transition: ease-in 0.6s;
+      border: 1px solid white;
       background-color: darkred;
       color: white;
     }
@@ -220,13 +241,18 @@ body{
   position: absolute;
   bottom: 0;
   left: 5;
+  color: white;
   background-color: red;
   height: 73px;
   width: 452px;
-  border: none;
+  //border: none;
+  border: 1px solid red;
+  transition: ease-out 0.6s;
   &:hover{
     background-color: darkred;
     color: white;
+    transition: ease-in 0.6s;
+    border: 1px solid white;
   }
   @media only screen and (max-width: 1000px){
     width: 100%;
@@ -290,18 +316,22 @@ input[type="file"] {
   display: none;
 }
 .custom-file-upload {
+  transition: ease-out 0.6s;
   background-color: red;
   display: inline-block;
   padding-top: 20px;
   font-size: 20px;
+  border: 1px solid black;
   height: 73px;
   font-weight: 400;
   text-align: center;
   width: 100%;
   cursor: pointer;
   &:hover{
+    transition: ease-in 1s;
     background-color: darkred;
     color: white;
+    border: 1px solid white;
   }
 }
 .wijzigitem {
@@ -326,7 +356,12 @@ input[type="file"] {
     // width: 107.5rem;
     margin-right: -100%;
     margin-left: 10px;
+    margin-top: 10px;
     border-top: 1px solid red;
+    @media only screen and (max-width: 1400px) {
+      margin-left: 0px;
+      width: 100%;
+    }
     /* @media only screen and (max-width: 1400px) {
       width: 50%;
     } */

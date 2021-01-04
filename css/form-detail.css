@@ -3,9 +3,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.input-group {
+  height: 59px;
+}
+
 .film1 .dropdown {
   margin-left: 39px;
-  margin-top: auto;
   margin-bottom: auto;
 }
 
@@ -32,6 +35,7 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  padding-right: 15px;
 }
 
 .dropdown__content {
@@ -126,7 +130,7 @@ body {
 }
 
 .c-form__input:not(:placeholder-shown) ~ .c-form__label {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   line-height: 1.5;
 }
 
@@ -138,6 +142,20 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .c-form__group {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.c-form__group-omschrijving {
+  position: relative;
+  width: 776px;
+  margin-bottom: 37px;
+  height: 177px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .c-form__group-omschrijving {
     width: 100%;
     max-width: 100%;
   }
@@ -172,7 +190,7 @@ body {
 }
 
 .input-group input {
-  height: 5.9rem !important;
+  height: 59px !important;
 }
 
 .input-group-addon.titel {
@@ -212,15 +230,22 @@ body {
 }
 
 .o-button {
+  color: white;
   background-color: red;
   border: none;
   height: 73px;
   font-size: 20px;
   width: 776px;
   margin-left: 0;
+  -webkit-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
+  border: 1px solid black;
 }
 
 .o-button:hover {
+  -webkit-transition: ease-in 0.6s;
+  transition: ease-in 0.6s;
+  border: 1px solid white;
   background-color: darkred;
   color: white;
 }
@@ -270,15 +295,21 @@ body {
   position: absolute;
   bottom: 0;
   left: 5;
+  color: white;
   background-color: red;
   height: 73px;
   width: 452px;
-  border: none;
+  border: 1px solid red;
+  -webkit-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
 }
 
 .cover-uploaden-div:hover {
   background-color: darkred;
   color: white;
+  -webkit-transition: ease-in 0.6s;
+  transition: ease-in 0.6s;
+  border: 1px solid white;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -370,10 +401,13 @@ input[type="file"] {
 }
 
 .custom-file-upload {
+  -webkit-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
   background-color: red;
   display: inline-block;
   padding-top: 20px;
   font-size: 20px;
+  border: 1px solid black;
   height: 73px;
   font-weight: 400;
   text-align: center;
@@ -382,8 +416,11 @@ input[type="file"] {
 }
 
 .custom-file-upload:hover {
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
   background-color: darkred;
   color: white;
+  border: 1px solid white;
 }
 
 .wijzigitem {
@@ -417,9 +454,17 @@ input[type="file"] {
   max-width: 100%;
   margin-right: -100%;
   margin-left: 10px;
+  margin-top: 10px;
   border-top: 1px solid red;
   /* @media only screen and (max-width: 1400px) {
       width: 50%;
     } */
+}
+
+@media only screen and (max-width: 1400px) {
+  .wijzigitem__h2-wijzig::after {
+    margin-left: 0px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=form-detail.css.map */

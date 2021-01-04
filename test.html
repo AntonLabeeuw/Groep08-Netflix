@@ -1,0 +1,149 @@
+        <!-- hier start je main body -->
+        <main class="mt-0 pl-5">
+            <!-- col-md-5 content mt-0 pl-5 -->
+              <div class="container-fluid  pl-0">
+                  <div class="row">
+                      <div class="film1 pl-4"><!--Naar Recent omzetten idpv film-->
+                          <h1 class="film1__h1-recent">Nieuw item</h1>
+                          <div class="dropdown">
+                              <button class="dropbtn"><a class="filteritem">film</a><i class="fas fa-caret-down"></i></button>
+                              <div class="dropdown__content">
+                                <a href="#">serie</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row row-cform">
+                      <div class="col-xl-8 col-lg-7 row-cform__eerstedeel">
+                          <form class="c-form" method="POST">
+                              <div class="form-group input-group c-form__group">
+                                  <input type="text" name="titel" placeholder="ex. Zorro" required minlength="2" class="form-control c-form__input c-form__input-titel"
+                                  title="Deze titel bevat letters of cijfers (bv. Zorro)">
+                                  <span class="input-group-addon titel"></span>
+                                  <label class="c-form__label" for="titel">Titel</label> 
+                              </div>
+  
+                              <div class="form-group input-group c-form__group">
+                                  <input type="number" name="aflevering" placeholder="ex. Aflevering 1" minlength="1" class="form-control c-form__input c-form__input-aflevering"
+                                  title="Aflevering bevat alleen cijfers (bv. 22)"/> 
+                                  <span class="input-group-addon aflevering"></span>
+                                  <label class="c-form__label" for="aflevering">Aflevering optioneel</label>
+                              </div>
+  
+                              <div class="form-group input-group c-form__group">
+                                <input type="number" name="seizoen" placeholder="ex. Seizoen 03" minlength="1" class="form-control c-form__input c-form__input-seizoen"
+                                title="Seizoen bevat alleen cijfers (bv. 03)"/> 
+                                <span class="input-group-addon seizoen"></span>
+                                <label class="c-form__label" for="seizoen">Seizoen optioneel</label>
+                              </div>
+  
+                              <div class="form-group input-group c-form__group">
+                                <select id="categorie" class="form-control c-form__input c-form__input-categorie" required name="categorie"
+                                title="Bij categorie kan je kiezen uit onderstaande items">
+                                  <option value="empty"></option>
+                                  <option value="actie">Actie</option>
+                                  <option value="avonturen">Avonturen</option>
+                                  <option value="drama">Drama</option>
+                                  <option value="gangster">Gangster</option>
+                                  <option value="historisch">Historisch</option>
+                                  <option value="horror">Horror</option>
+                                  <option value="thriller">Thriller</option>
+                                  <option value="komedie">Komedie</option>
+                                  <option value="romantiek">Romantiek</option>
+                                  <option value="misdaad">Misdaad</option>
+                                  <option value="erotisch">Erotisch</option>
+                                  <option value="western">Western</option>
+                                  <option value="Andere">Andere</option>
+                                </select>
+                                <span class="input-group-addon categorie"></span>
+                                <label class="c-form__label" for="categorie">Categorie</label>
+                                <!-- <input type="number" name="budget" placeholder="500 eur" required min="100" max="2000" class="form-control c-form__input"/> <br /> -->
+                              </div>
+  
+                              <div class="form-group input-group c-form__group">
+                                <textarea type="text" name="Omschrijving" placeholder="Dit is de mededeling" required class="form-control c-form__input c-form__input-omschrijving"
+                                title="Schrijf hier de omschrijving van de film of serie"></textarea>
+                                <span class="input-group-addon omschrijving"></span>
+                                <label class="c-form__label" for="omschrijving">Omschrijving</label>
+                              </div>
+  
+                              <div class="form-group input-group c-form__group">
+                                <!-- <input id="file-upload" name="trailer" placeholder="Trailer opladen" required class="form-control c-form__input c-form__input-trailer custom-file-upload" type="file" />
+                                <span class="input-group-addon speelduur"></span> -->
+                                <label for="file-upload" class="custom-file-upload">
+                                <i class="fa fa-cloud-upload"></i> Trailer opladen
+                              </label>
+                              <input id="file-upload" type="file" required  title="Laad hier de trailer op van de film of serie"/>
+                              </div>
+  
+                              <div class="form-group input-group c-form__group">
+                                <input type="number" name="speelduur" placeholder="speelduur in min" required class="form-control c-form__input c-form__input-speelduur"
+                                title="Speelduur ingeven in minuten, alleen cijfers ingeven.(Bv 120)"></input>
+                                <span class="input-group-addon speelduur"></span>
+                                <label class="c-form__label" for="speelduur">Speelduur</label>
+                              </div>
+  
+  
+                              
+                              
+  
+  
+                              <button type="submit" class="o-button o-button--submit" id="js-button--submit">Toevoegen</button>
+                              </div>
+                            </form>
+                            <div class="col-xl-1 col-lg-5 row-cform__tweededeel">
+                              <div class="img-content">
+                                <img class="cover-uploaden" src="media/placeholder.png">
+                                <div class="cover-uploaden-div">
+                                  <button class="cover-uploaden-div">Wijzig cover</button>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+  
+  
+  
+  
+  
+  
+            <div class="container-fluid pl-0">
+              <!--Recent + dropdown btn-->
+              <!-- Series titel-->
+             <div class="row m-0">
+                 <div class="col-12 p-0">
+                     <div class="wijzigitem">
+                         <h2 class="wijzigitem__h2-wijzig">Wijzig deze items</h2>
+                     </div>
+                 </div>
+             </div>
+     
+             <a class="series-list"></a>
+             <ul class="row m-0 regular ">
+               <!-- slider -->
+              <li class="li-container" href="Film_serie_detail_edit.html" style="padding-right: 63px;">
+                <a href="film_serie_detail_edit.html"><img class="image series-list__1" src="media/PeakyBlinders.png"><div class="overlay"><p>Misdaad<br>Peaky Blinders</p></div></a>
+              </li>
+  
+              <li class="li-container" href="" style="padding-right: 63px;">
+                <a><img class="series-list__2" src="media/The100.png"><div class="overlay"><p>Actie<br>The 100</p></div></a>
+              </li>
+  
+              <li class="li-container" style="padding-right: 63px;">
+                <a><img class="series-list__3" src="media/Vikings.png"><div class="overlay"><p>Actie<br>Vikings</p></div></a>
+              </li>
+  
+              <li class="li-container" style="padding-right: 63px;">
+                <a><img class="series-list__4" src="media/Lucifer.png"><div class="overlay"><p>Actie<br>Lucifer</p></div></a>
+              </li>
+  
+              <li class="li-container" style="padding-right: 63px;">
+                <a><img class="series-list__5" src="media/Sherlock.png"><div class="overlay"><p>Actie<br>Sherlock</p></div></a>
+              </li>
+            </ul>
+            </div>
+            
+            
+          </main>
