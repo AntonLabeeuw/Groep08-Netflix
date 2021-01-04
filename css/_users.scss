@@ -206,6 +206,18 @@ div.borderWcolor {
   border-right: 1.5rem solid $colorRed1;
   &__red {
     background-color: $colorRed1;
+
+    &:active {
+      background-color: $colorRed1;
+    }
+
+    &:focus {
+      background-color: $colorRed1;
+    }
+
+    &:focus {
+      background-color: $colorRed1;
+    }
   }
 }
 
