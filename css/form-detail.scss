@@ -122,6 +122,15 @@ body{
       max-width: 100%;
     }
     }
+    &__group-upload{
+      position: relative;  
+      width: 776px;
+      margin-bottom: 51px;
+      @media only screen and (max-width: 1000px){
+      width: 100%;
+      max-width: 100%;
+    }
+      }
     &__label{
     position: absolute;
     top: 0;
