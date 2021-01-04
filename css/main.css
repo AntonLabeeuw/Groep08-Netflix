@@ -309,6 +309,18 @@ div.borderWcolor__blue2:focus {
   background-color: #e50914;
 }
 
+.form-control.btn__red:active {
+  background-color: #e50914;
+}
+
+.form-control.btn__red:focus {
+  background-color: #e50914;
+}
+
+.form-control.btn__red:focus {
+  background-color: #e50914;
+}
+
 .form-control.btn:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
