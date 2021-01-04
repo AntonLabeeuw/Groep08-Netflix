@@ -1,130 +1,154 @@
 .navbar {
+  z-index: 1;
+  display: flex;
+  // position: relative;
+  position: fixed;
+  background-color: #000000 !important;
+
+  .navbar-img {
+    z-index: 5;
+    height: 5.625rem;
+    margin-right: 8rem;
+    margin-left: 3.375rem;
+    @media screen and (max-width: 1000px) {
+      margin-left: 0px;
+    }
+  }
+
+  .fas {
+    color: #ffffff;
+  }
+
+  .test {
     display: flex;
-    position: relative;
-    background-color: #000000 !important;
+    flex-direction: row;
+  }
 
-    .navbar-img {
-        height: 5.625rem;
-        margin-right: 9.375rem;
+  i {
+    margin-left: 1.25rem;
+  }
+
+  .navbar-search {
+    width: 31.25rem;
+
+    @media screen and (max-width: 1000px) {
+      display: none;
     }
-
-    .fas {
-        color: #FFFFFF;
-    }
-
-    .test {
-        display: flex;
-        flex-direction: row;
-    }
-
-    i {
-        margin-left: 1.25rem;
-    }
-
-    .navbar-search {
-        width: 31.25rem;
-
-        @media screen and (max-width: 1000px) {
-            display: none;
-        }
-    }
+  }
 }
 
-
+.side__fixed {
+  position: fixed;
+}
 .sidenav {
-    & a {
-        color: #FFF;
-        text-decoration: none;
+  margin-top: 100px;
+  & a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  padding-top: 3.125rem;
+  position: relative;
+
+  .sidenav_prim {
+    font-size: 1.5rem;
+    &:hover {
+      color: #e50914 !important;
+      text-decoration: none !important;
     }
+  }
 
-    padding-top: 3.125rem;
-    position: relative;
-
-
-    .sidenav_prim {
-        font-size: 1.5rem;
-        &:hover{
-            color: #E50914 !important;
-            text-decoration: none !important;   
-         }
+  .sidenav_secu {
+    font-size: 1.25rem;
+    padding-left: 1.25rem;
+    border-left: 1px solid transparent;
+    &:hover {
+      color: #e50914 !important;
+      text-decoration: none !important;
     }
+  }
 
-    .sidenav_secu {
-        font-size: 1.25rem;
-        padding-left: 1.25rem;
-        border-left: 1px solid transparent;
-        &:hover{
-                color: #E50914 !important;
-                text-decoration: none !important;   
-        }
-    }
+  .sidenav-button {
+    position: fixed;
+    top: 73%;
+    left: 6rem;
+    background-color: #ffffff;
+    border-style: none;
+    padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+  }
 
-    .sidenav-button {
-        position: relative;
-        top: 30%;
-        left: 3.75rem;
-        background-color: #FFFFFF;
-        border-style: none;
-        padding: 0.625rem 1.25rem 0.625rem 1.25rem
-    }
-
-    @media screen and (max-width: 1300px) {
-        display: none;
-    }
-
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
 }
 
 a:hover {
-    color: #E50914;
+  color: #e50914;
 }
 
 #active {
-    color: #E50914;
+  color: #e50914;
 }
 
 .sidenav-button:hover {
-    background-color: #E50914;
-    color: #FFFFFF;
+  background-color: #e50914;
+  color: #ffffff;
 }
 
 .navbar-toggler {
-    background-color: #2b2d2f !important;
+  background-color: #2b2d2f !important;
 }
 
 .nav-link {
-    color: white !important;
-    font-family: 'poppins' !important;
+  color: white !important;
+  font-family: 'poppins' !important;
+}
+
+.nav-item {
+  @media screen and (max-width: 1000px) {
+    margin-left: 2.4rem;
+  }
 }
 
 .nav-resp {
-    display: none;
-    font-size: 1.5rem;
-    color: #ffffff;
+  display: none;
+  font-size: 1.5rem;
+  color: #ffffff;
 
-    @media screen and (max-width: 1000px) {
-        display: inline;
-
+  @media screen and (max-width: 1000px) {
+    display: inline;
+    margin-left: 3.3rem;
+    &:hover {
+      color: #e50914 !important;
+      text-decoration: none !important;
     }
+  }
 }
 
 .form-inline .form-control {
-    width: 31.25rem !important;
+  width: 31.25rem !important;
 }
 
 .active {
-    color: #E50914 !important;
+  color: #e50914 !important;
+  text-decoration: none !important;
+  &__sec {
+    border-left: 1px solid #fff !important;
+    border-color: #e50914 !important;
     text-decoration: none !important;
-    &__sec {
-        border-left: 1px solid #fff !important;
-        border-color: #E50914 !important;
-        text-decoration: none !important;
-    }
-    &__sec:hover{
-        color: #E50914 !important;
-        text-decoration: none !important;   
-    }
-    &:hover{
-        color: #E50914 !important;
-        text-decoration: none !important;
-    }
+  }
+  &__sec:hover {
+    color: #e50914 !important;
+    text-decoration: none !important;
+  }
+  &:hover {
+    color: #e50914 !important;
+    text-decoration: none !important;
+  }
+}
+
+.navbar-collapse {
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 3rem;
+  }
 }

@@ -25,17 +25,19 @@
           <form class="form-inline my-2 my-lg-0 float-right">
             <input class="form-control ml-sm-2 navbar-search" type="search" placeholder="Search" aria-label="Search">
           </form>
-          <ul class="navbar-nav nav__icons">
+          <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#"><i class="fas fa-plus fa-2x"></i> <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-bell fa-2x"></i></a>
+              <a class="nav-link" href="instellingen.html"><i class="fas fa-cog fa-2x"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#"><i class="fas fa-user-circle fa-2x"></i></a>
             </li>
             <a class= "nav-resp" href="dashboard.html">Dashboard</a>
+            <a class= "nav-resp" href="gebruikersstart.html">startpagina</a>
+
             <a class= "nav-resp" href="gebruikersbeheer_overzicht.html">Gebruikersbeheer</a>
             <a class= "nav-resp" href="gebruikersbeheer_overzicht.html">Gebruikers</a>
             <a class= "nav-resp" href="gebruikersbeheer_overzicht_archive.html">Archieven</a>
@@ -49,7 +51,9 @@
       </nav>
       <div_body class="row m-0 content">
       <sidenav class="col-md-2 pl-5 sidenav">
+        <div class="side__fixed">
         <a class= "sidenav_prim" href="dashboard.html">Dashboard</a>
+        <a class= "sidenav_prim active" href="gebruikersstart.html">Startpagina</a>
         <a class= "sidenav_prim" href="gebruikersbeheer_overzicht.html">Gebruikersbeheer</a>
         <a class= "sidenav_secu" href="gebruikersbeheer_overzicht.html">Gebruikers</a>
         <a class= "sidenav_secu" href="gebruikersbeheer_overzicht_archive.html">Archieven</a>
@@ -57,28 +61,36 @@
         <a class= "sidenav_secu" href="film_serie_detail.html">Film toevoegen</a>
         <a class= "sidenav_secu" href="film_serie_detail.html">Serie toevoegen</a>
         <a class= "sidenav_secu" href="film_serie_detail_edit.html">Edit</a>
-
-        <button class="sidenav-button" type="button" onclick="alert('Hello world!')"><i class="far fa-question-circle fa-lg"></i> Support</button>
+        
+        </div>
+        
+        <button class="sidenav-button" type="button" onclick="alert('Hello world!')"><i class="far fa-question-circle fa-lg"></i> 
+          uitloggen
+        </button>
+      
       </sidenav>
-      <main class="ml-5">
+      <main class="ml-5 gebrmain">
 
-        <h2 class="ml-4">Achtergrond afbeelding</h2>
+        <h2 class="ml-3">Achtergrond afbeelding</h2>
           <div class="head__foto">
             <img  class = "img-fluid" src="media/Daredevil-Banner-1024x474.png" alt="">
             <button class="head__button"><i class="fas fa-pen"></i>Edit</button>
           </div>
 
-          <h2 class="ml-4">categoriën</h2>
+          <h2 class="ml-3">categoriën</h2>
         
-            <select class="head__dropdown" name="series" id="series">
-                <option value="lijst">Mijn lijst</option>
-                <option value="kijken">Verder kijken</option>
-                <option value="Populair">Populair</option>
-                <option value="10">Top 10</option>
-            </select>
+          <div class="head__dropdown">
+            <button class="head__dropbtn"><a class="filteritem">film</a><i class="fas fa-caret-down"></i></button>
+            <div class="dropdown__content">
+              <a href="#">Verder kijken</a>
+              <a href="#">Mijn lijst</a>
+              <a href="#">Populair</a>
+              <a href="#">Top 10</a>
+            </div>
+          </div>
 
             <div class="row">
-                <ul class="row m-0 regular">
+                <ul class="head__rij row m-0 regular">
             <li class="li-container" style="padding-right: 63px;">
               <a href="film_serie_detail_edit.html"><img class="image series-list__1" src="media/PeakyBlinders.png"><div class="overlay"><p>Misdaad<br>Peaky Blinders</p></div></a>
             </li>
@@ -101,15 +113,18 @@
           </ul>
             </div>
 
-            <select class="head__dropdown" name="series" id="series">
-                <option value="kijken">Verder kijken</option>
-                <option value="lijst">Mijn lijst</option>
-                <option value="Populair">Populair</option>
-                <option value="10">Top 10</option>
-            </select>
+            <div class="head__dropdown">
+              <button class="head__dropbtn"><a class="filteritem">film</a><i class="fas fa-caret-down"></i></button>
+              <div class="dropdown__content">
+                <a href="#">Verder kijken</a>
+                <a href="#">Mijn lijst</a>
+                <a href="#">Populair</a>
+                <a href="#">Top 10</a>
+              </div>
+            </div>
 
             <div class="row">
-                <ul class="row m-0 regular">
+                <ul class="head__rij row m-0 regular">
             <li class="li-container" style="padding-right: 63px;">
               <a href="film_serie_detail_edit.html"><img class="image series-list__1" src="media/Mfamily.png"><div class="overlay"><p>Komedie<br>modern family</p></div></a>
             </li>
@@ -132,15 +147,18 @@
           </ul>
             </div>
 
-            <select class="head__dropdown" name="series" id="series">
-                <option value="Populair">Populair</option>
-                <option value="lijst">Mijn lijst</option>
-                <option value="kijken">Verder kijken</option>
-                <option value="10">Top 10</option>
-            </select>
+            <div class="head__dropdown">
+              <button class="head__dropbtn"><a class="filteritem">film</a><i class="fas fa-caret-down"></i></button>
+              <div class="dropdown__content">
+                <a href="#">Verder kijken</a>
+                <a href="#">Mijn lijst</a>
+                <a href="#">Populair</a>
+                <a href="#">Top 10</a>
+              </div>
+            </div>
 
             <div class="row">
-                <ul class="row m-0 regular">
+                <ul class="head__rij row m-0 regular">
             <li class="li-container" style="padding-right: 63px;">
               <a href="film_serie_detail_edit.html"><img class="image series-list__1" src="media/Dark.png"><div class="overlay"><p>Tijdreizen<br>Dark</p></div></a>
             </li>
